@@ -2,8 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="E:/Documents/Disciplinas/VC/projeto/jai_core-1.1.3.jar"/>
-	<classpathentry kind="lib" path="E:/Documents/Disciplinas/VC/projeto/jai_codec-1.1.3.jar"/>
-	<classpathentry kind="lib" path="E:/workspace/ProcessamentoImagens/weka.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/DEOGWorkstation/git/projetoIA2015_2/ProcessamentoImagens/lib/jai_core-1.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/DEOGWorkstation/git/projetoIA2015_2/ProcessamentoImagens/lib/jai_codec-1.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/DEOGWorkstation/git/projetoIA2015_2/ProcessamentoImagens/lib/weka.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
