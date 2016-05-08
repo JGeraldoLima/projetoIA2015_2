@@ -22,6 +22,7 @@ import javax.swing.JScrollPane;
 
 import com.sun.media.jai.widget.DisplayJAI;
 import com.util.DisplayHistogram;
+import com.util.DisplayTwoSynchronizedImages;
 
 public class DecodImageIO {
 
@@ -39,8 +40,8 @@ public class DecodImageIO {
 		// invertImage(f.getPath());
 		// binarizeImage(f.getPath()); //BUG!
 		// suavizeImage(f.getPath());
-		borderHorizontal(files[1].getPath());
-		histogramImage(files[1].getPath(), 128);
+		//borderHorizontal(files[1].getPath());
+		//histogramImage(files[1].getPath(), 128);
 		// dilataImage(f.getPath());
 		// erodeImage(f.getPath());
 		// rotateImage(f.getPath());
