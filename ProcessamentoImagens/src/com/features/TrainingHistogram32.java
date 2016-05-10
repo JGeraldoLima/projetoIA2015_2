@@ -1,8 +1,15 @@
 package com.features;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 import com.util.CalculateHistogram;
+import com.util.ReaderTxtToArff;
 
 public class TrainingHistogram32 {
 	
@@ -90,12 +97,12 @@ public class TrainingHistogram32 {
 			new File("images/non_festa/40.jpg")};
 	private static CalculateHistogram histogram = new CalculateHistogram();
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		trainingImagesFesta();
 		trainingImagesNonFesta();
 	}
 	
-	public static void trainingImagesFesta(){
+	public static void trainingImagesFesta() throws IOException{
 		System.out.println("imagens festa");
 		for (File fileFesta : filesFesta) {
 			histogram.histogramImage(fileFesta.getPath(), 32);
@@ -108,5 +115,4 @@ public class TrainingHistogram32 {
 			histogram.histogramImage(fileNonFesta.getPath(), 32);
 		}
 	}
-
 }

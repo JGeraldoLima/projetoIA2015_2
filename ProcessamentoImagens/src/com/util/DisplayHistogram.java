@@ -33,8 +33,10 @@ import java.awt.event.MouseMotionListener;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import javax.media.jai.Histogram;
 import javax.swing.JComponent;
@@ -71,6 +73,8 @@ public class DisplayHistogram extends JComponent implements MouseMotionListener 
 	private Font fontLarge = new Font("default", Font.ITALIC, 20);
 	// Values of points of histogram.
 	private List<Double> bars = new ArrayList<Double>();
+	private String barsValues;
+
 
 	/**
 	 * The constructor for this class, which will set its fields' values and get
@@ -102,6 +106,15 @@ public class DisplayHistogram extends JComponent implements MouseMotionListener 
 	 */
 	public List<Double> getBars() {
 		return bars;
+	}
+
+	/**
+	 * Returns the values of all bars of histogram. 
+	 * 
+	 * @return String content values
+	 */
+	public String getBarsValues() {
+		return barsValues;
 	}
 
 	/**
@@ -192,9 +205,8 @@ public class DisplayHistogram extends JComponent implements MouseMotionListener 
 			bars.add(barEnds);
 			g2d.drawRect(x, (int) barStarts, binWidth, (int) barEnds);
 		}
-		System.out.println(getBars());
 		try {
-			saveFile(bars);
+			System.out.println(getListBars(bars));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -210,6 +222,7 @@ public class DisplayHistogram extends JComponent implements MouseMotionListener 
 				String label = "" + (indexMultiplier * bin);
 				int textHeight = metrics.stringWidth(label); // remember it will
 																// be rotated!
+				@SuppressWarnings("unused")
 				int x = border.left + bin * binWidth + binWidth / 2;
 				g2d.translate(border.left + bin * binWidth + halfFontHeight, border.top + height + textHeight + 2);
 				g2d.rotate(-Math.PI / 2);
@@ -264,13 +277,13 @@ public class DisplayHistogram extends JComponent implements MouseMotionListener 
 		}
 	}
 
-	private void saveFile(List<Double> list) throws IOException {
-		FileWriter file = new FileWriter("e:\\imagem1.txt");
-		PrintWriter savesFile = new PrintWriter(file);
+	private String getListBars(List<Double> list) throws IOException {
+		String s = "";
 		for (int i = 0; i < list.size(); i++) {
-			savesFile.printf("%.1f\n", list.get(i));
+			s += list.get(i) + ", ";
 		}
-		file.close();
+		barsValues = s;
+		return s;
 	}
 
 }

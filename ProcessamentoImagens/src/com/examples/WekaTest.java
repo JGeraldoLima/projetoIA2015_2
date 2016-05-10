@@ -3,6 +3,8 @@ package com.examples;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.Scanner;
+
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.evaluation.NominalPrediction;
@@ -14,6 +16,7 @@ import weka.core.FastVector;
 import weka.core.Instances;
  
 public class WekaTest {
+	
 	public static BufferedReader readDataFile(String filename) {
 		BufferedReader inputReader = null;
  
@@ -61,7 +64,12 @@ public class WekaTest {
 	}
  
 	public static void main(String[] args) throws Exception {
-		BufferedReader datafile = readDataFile("weather.txt");
+		Scanner ler = new Scanner(System.in);
+		
+		System.out.printf("Informe o caminho dos arquivos de entrada:\n");
+	    String inputFile = ler.nextLine();
+		
+	    BufferedReader datafile = readDataFile(inputFile);
  
 		Instances data = new Instances(datafile);
 		data.setClassIndex(data.numAttributes() - 1);
@@ -91,10 +99,10 @@ public class WekaTest {
 			for (int i = 0; i < trainingSplits.length; i++) {
 				Evaluation validation = classify(models[j], trainingSplits[i], testingSplits[i]);
  
-				//predictions.appendElements(validation.predictions()); //ERROR! 
+//				/predictions.appendElements(validation.predictions()); //ERROR! 
  
 				// Uncomment to see the summary for each training-testing pair.
-				//System.out.println(models[j].toString());
+				System.out.println(models[j].toString());
 			}
  
 			// Calculate overall accuracy of current classifier on all splits
