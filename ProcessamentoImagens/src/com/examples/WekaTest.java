@@ -99,7 +99,7 @@ public class WekaTest {
 			for (int i = 0; i < trainingSplits.length; i++) {
 				Evaluation validation = classify(models[j], trainingSplits[i], testingSplits[i]);
  
-//				/predictions.appendElements(validation.predictions()); //ERROR! 
+//				predictions.appendElements(validation.predictions()); //ERROR! 
  
 				// Uncomment to see the summary for each training-testing pair.
 				System.out.println(models[j].toString());

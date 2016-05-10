@@ -32,6 +32,8 @@ public class ReaderTxtToArff {
 			line = data.readLine();
 		} catch (IOException e) {
 			System.err.printf("Erro na abertura do arquivo", e.getMessage());
+		} catch (NullPointerException e1){
+			System.err.printf("Não existem mais dados", e1.getMessage());
 		}
 		return line;
 	}
