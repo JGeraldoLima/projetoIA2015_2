@@ -52,29 +52,29 @@ public class DisplayHistogram extends JComponent implements MouseMotionListener 
 	 * 
 	 */
 	private static final long serialVersionUID = -8769348721959389029L;
-	// The histogram and its title.
 	private Histogram histogram;
 	private String title;
+	private int band;
 	// Some data and hints for the histogram plot.
 	private int[] counts;
-	private double maxCount;
+	private int maxCount;
 	private int indexMultiplier = 1;
 	private int skipIndexes = 8;
 	// The components' dimensions.
 	private int width, height = 250;
-	// Some constants for this component.
+	// Some constants for this component. Some may be changed through set
+	// methods.
 	private int verticalTicks = 10;
 	private Insets border = new Insets(40, 70, 40, 30);
 	private int binWidth = 3;
-	private Color backgroundColor = Color.BLACK;
-	private Color barColor = new Color(255, 255, 200);
-	private Color marksColor = new Color(100, 180, 255);
 	private Font fontSmall = new Font("monospaced", 0, 10);
 	private Font fontLarge = new Font("default", Font.ITALIC, 20);
+	private Color backgroundColor = Color.BLACK;
+	private Color barColor;
+	private Color marksColor;
 	// Values of points of histogram.
 	private List<Double> bars = new ArrayList<Double>();
 	private String barsValues;
-
 
 	/**
 	 * The constructor for this class, which will set its fields' values and get
@@ -85,13 +85,18 @@ public class DisplayHistogram extends JComponent implements MouseMotionListener 
 	 * @param title
 	 *            the title of the plot.
 	 */
-	public DisplayHistogram(Histogram histogram, String title) {
+	public DisplayHistogram(Histogram histogram, int band, String title) {
 		this.histogram = histogram;
 		this.title = title;
+		this.band = band;
+		// Use default colors.
+		backgroundColor = Color.BLACK;
+		barColor = new Color(255, 255, 200);
+		marksColor = new Color(100, 180, 255);
 		// Calculate the components dimensions.
-		width = histogram.getNumBins(0) * binWidth;
+		width = histogram.getNumBins(band) * binWidth;
 		// Get the histogram data.
-		counts = histogram.getBins(0);
+		counts = histogram.getBins(band);
 		// Get the max and min counts.
 		maxCount = Integer.MIN_VALUE;
 		for (int c = 0; c < counts.length; c++)
@@ -109,7 +114,7 @@ public class DisplayHistogram extends JComponent implements MouseMotionListener 
 	}
 
 	/**
-	 * Returns the values of all bars of histogram. 
+	 * Returns the values of all bars of histogram.
 	 * 
 	 * @return String content values
 	 */
@@ -122,7 +127,7 @@ public class DisplayHistogram extends JComponent implements MouseMotionListener 
 	 */
 	public void setBinWidth(int newWidth) {
 		binWidth = newWidth;
-		width = histogram.getNumBins(0) * binWidth;
+		width = histogram.getNumBins(band) * binWidth;
 	}
 
 	/**
@@ -160,6 +165,13 @@ public class DisplayHistogram extends JComponent implements MouseMotionListener 
 	}
 
 	/**
+	 * Returns the max count for this histogram.
+	 */
+	public int getMaxCount() {
+		return maxCount;
+	}
+
+	/**
 	 * This method informs the maximum size of this component, which will be the
 	 * same as the preferred size.
 	 */
@@ -184,6 +196,20 @@ public class DisplayHistogram extends JComponent implements MouseMotionListener 
 	}
 
 	/**
+	 * Sets the components' bars color.
+	 */
+	public void setBarColor(Color barColor) {
+		this.barColor = barColor;
+	}
+
+	/**
+	 * Sets the components' marks color.
+	 */
+	public void setMarksColor(Color marksColor) {
+		this.marksColor = marksColor;
+	}
+
+	/**
 	 * This method will paint the component.
 	 */
 	protected void paintComponent(Graphics g) {
@@ -197,7 +223,7 @@ public class DisplayHistogram extends JComponent implements MouseMotionListener 
 		// Draw the histogram bars.
 		g2d.setColor(barColor);
 		// Temporary array of bars values of the histogram.
-		for (int bin = 0; bin < histogram.getNumBins(0); bin++) {
+		for (int bin = 0; bin < histogram.getNumBins(band); bin++) {
 			int x = border.left + bin * binWidth;
 			double barStarts = border.top + height * (maxCount - counts[bin]) / (1. * maxCount);
 			double barEnds = Math.ceil(height * counts[bin] / (1. * maxCount));
@@ -211,13 +237,12 @@ public class DisplayHistogram extends JComponent implements MouseMotionListener 
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		// Draw the values on the horizontal axis. We will plot only 1/8th of
-		// them.
+		// Draw the values on the horizontal axis. We will plot only 1/8th of them.
 		g2d.setColor(marksColor);
 		g2d.setFont(fontSmall);
 		FontMetrics metrics = g2d.getFontMetrics();
 		int halfFontHeight = metrics.getHeight() / 2;
-		for (int bin = 0; bin <= histogram.getNumBins(0); bin++) {
+		for (int bin = 0; bin <= histogram.getNumBins(band); bin++) {
 			if (bin % skipIndexes == 0) {
 				String label = "" + (indexMultiplier * bin);
 				int textHeight = metrics.stringWidth(label); // remember it will

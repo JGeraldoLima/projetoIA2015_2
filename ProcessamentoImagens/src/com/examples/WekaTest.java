@@ -12,6 +12,8 @@ import weka.classifiers.rules.DecisionTable;
 import weka.classifiers.rules.PART;
 import weka.classifiers.trees.DecisionStump;
 import weka.classifiers.trees.J48;
+import weka.classifiers.trees.LMT;
+import weka.classifiers.trees.RandomTree;
 import weka.core.FastVector;
 import weka.core.Instances;
  
@@ -67,7 +69,7 @@ public class WekaTest {
 		Scanner ler = new Scanner(System.in);
 		
 		System.out.printf("Informe o caminho dos arquivos de entrada:\n");
-	    String inputFile = ler.nextLine();
+	    String inputFile = "classifier/" + ler.nextLine();
 		
 	    BufferedReader datafile = readDataFile(inputFile);
  
@@ -84,8 +86,8 @@ public class WekaTest {
 		// Use a set of classifiers
 		Classifier[] models = { 
 				new J48(), // a decision tree
-				new PART(), 
-				new DecisionTable(),//decision table majority classifier
+				new LMT(),
+				new RandomTree(), 
 				new DecisionStump() //one-level decision tree
 		};
  

@@ -244,7 +244,7 @@ public class DecodImageIO {
 		Histogram histo = (Histogram) dummyImage.getProperty("histogram");
 
 		JFrame f = new JFrame("Histograma: " + file);
-		DisplayHistogram dh1 = new DisplayHistogram(histo, String.valueOf(bins) + " bins");
+		DisplayHistogram dh1 = new DisplayHistogram(histo, 0, String.valueOf(bins) + " bins");
 		dh1.setBinWidth((int) Math.pow(2, (10 - (Math.log(bins) / Math.log(2)))));
 		dh1.setHeight(160);
 		dh1.setIndexMultiplier(8);

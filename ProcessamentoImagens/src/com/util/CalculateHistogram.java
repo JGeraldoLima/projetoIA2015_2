@@ -1,20 +1,21 @@
 package com.util;
 
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.GridLayout;
 import java.awt.image.renderable.ParameterBlock;
-import java.io.File;
-import java.util.List;
 
 import javax.media.jai.Histogram;
 import javax.media.jai.JAI;
-import javax.media.jai.KernelJAI;
 import javax.media.jai.PlanarImage;
 import javax.swing.JFrame;
 
 public class CalculateHistogram {
 
-	public CalculateHistogram(){}
-	
-	public void histogramImage(String file, int bins) {
+	public CalculateHistogram() {
+	}
+
+	public void histogramGrayImage(String file, int bins) {
 		PlanarImage image = JAI.create("fileload", file);
 
 		ParameterBlock pb1 = new ParameterBlock();
@@ -30,14 +31,58 @@ public class CalculateHistogram {
 		Histogram histo = (Histogram) dummyImage.getProperty("histogram");
 
 		JFrame f = new JFrame("Histograma: " + file);
-		DisplayHistogram dh1 = new DisplayHistogram(histo, String.valueOf(bins) + " bins");
+		DisplayHistogram dh1 = new DisplayHistogram(histo, 0, String.valueOf(bins) + " bins");
 		dh1.setBinWidth((int) Math.pow(2, (10 - (Math.log(bins) / Math.log(2)))));
 		dh1.setHeight(160);
 		dh1.setIndexMultiplier(8);
 		f.getContentPane().add(dh1);
-		//f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		// f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.pack();
 		f.setVisible(true);
+	}
+
+	public void histogramRGBImage(String file, int bins) {
+		PlanarImage image = JAI.create("fileload", file);
+		ParameterBlock pb = new ParameterBlock();
+		pb.addSource(image);
+		pb.add(null); // The ROI.
+		pb.add(1); // Samplings.
+		pb.add(1);
+		pb.add(new int[] { bins }); // Num. bins.
+		pb.add(new double[] { 0 }); // Min value to be considered.
+		pb.add(new double[] { 256 }); // Max value to be considered.
+		// Creates the histogram.
+		PlanarImage temp = JAI.create("histogram", pb);
+		Histogram h = (Histogram) temp.getProperty("histogram");
+		// Creates the GUI to display three histogram components.
+		JFrame frame = new JFrame("R,G,B Histograms");
+		Container cp = frame.getContentPane();
+		cp.setLayout(new GridLayout(3, 1));
+		DisplayHistogram cRed = new DisplayHistogram(h, 0, "Red");
+		DisplayHistogram cGreen = new DisplayHistogram(h, 1, "Green");
+		DisplayHistogram cBlue = new DisplayHistogram(h, 2, "Blue");
+		cRed.setBarColor(Color.RED);
+		cRed.setMarksColor(Color.WHITE);
+		cGreen.setBarColor(Color.GREEN);
+		cGreen.setMarksColor(Color.WHITE);
+		cBlue.setBarColor(Color.BLUE);
+		cBlue.setMarksColor(Color.WHITE);
+		// Set the width auto of histograms.
+		cRed.setBinWidth((int) Math.pow(2, (10 - (Math.log(bins) / Math.log(2)))));
+		cGreen.setBinWidth((int) Math.pow(2, (10 - (Math.log(bins) / Math.log(2)))));
+		cBlue.setBinWidth((int) Math.pow(2, (10 - (Math.log(bins) / Math.log(2)))));
+		// Use the same scale on the y-axis.
+		int max = Math.max(cRed.getMaxCount(), Math.max(cGreen.getMaxCount(), cBlue.getMaxCount()));
+		cRed.setMaxCount(max);
+		cGreen.setMaxCount(max);
+		cBlue.setMaxCount(max);
+		cp.add(cRed);
+		cp.add(cGreen);
+		cp.add(cBlue);
+		// Set the closing operation so the application is finished.
+		//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.pack(); // Adjust the frame size using preferred dimensions.
+		frame.setVisible(true); // Show the frame.
 	}
 
 }
