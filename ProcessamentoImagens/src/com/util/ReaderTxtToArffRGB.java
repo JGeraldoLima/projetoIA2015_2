@@ -43,7 +43,7 @@ public class ReaderTxtToArffRGB {
 		for (int i = 1; i <= bins; i++) {
 			printer.printf("@attribute bin" + i + " numeric\n");
 		}
-		printer.printf("@attribute color {R, G, B}");
+		printer.printf("@attribute color {R, G, B}\n");
 		printer.printf("@attribute isParty {YES, NO}");
 		printer.printf("\n\n");
 		printer.printf("@data\n");
@@ -52,9 +52,9 @@ public class ReaderTxtToArffRGB {
 	public void saveDataToArff(String party){
 		String[] colors = {"R", "G", "B"};
 		while (readData() != null) {
-			printer.printf(readData() + ", " + colors[0] + party + "\n");
-			printer.printf(readData() + ", " + colors[1] + party + "\n");
-			printer.printf(readData() + ", " + colors[2] + party + "\n");
+			printer.printf(readData() + colors[0] + ", " + party + "\n");
+			printer.printf(readData() + colors[1] + ", " + party + "\n");
+			printer.printf(readData() + colors[2] + ", " + party + "\n");
 		}
 	}
 	
