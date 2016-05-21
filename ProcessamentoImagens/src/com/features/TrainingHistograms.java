@@ -8,11 +8,12 @@ import com.util.CalculateHistogram;
 public class TrainingHistograms {
 	
 	private static File[] filesFesta = new File[] {
-			new File("images/training/festa/01.jpg"),
-			new File("images/training/festa/02.jpg"),
-			new File("images/training/festa/03.jpg"),
-			new File("images/training/festa/04.jpg"),
-			new File("images/training/festa/05.jpg"),
+			new File("images/training/festa/01.jpg")
+//			,
+//			new File("images/training/festa/02.jpg"),
+//			new File("images/training/festa/03.jpg"),
+//			new File("images/training/festa/04.jpg"),
+//			new File("images/training/festa/05.jpg"),
 //			new File("images/training/festa/06.jpg"),
 //			new File("images/training/festa/07.jpg"),
 //			new File("images/training/festa/08.jpg"),
@@ -47,7 +48,8 @@ public class TrainingHistograms {
 //			new File("images/training/festa/37.jpg"),
 //			new File("images/training/festa/38.jpg"),
 //			new File("images/training/festa/39.jpg"),
-			new File("images/training/festa/40.jpg")};
+//			new File("images/training/festa/40.jpg")
+			};
 	private static File[] filesNonFesta = new File[] {
 			new File("images/training/non_festa/01.jpg"),
 			new File("images/training/non_festa/02.jpg"),
@@ -92,7 +94,8 @@ public class TrainingHistograms {
 	private static CalculateHistogram histogram = new CalculateHistogram();
 
 	public static void main(String[] args) throws IOException {
-		trainingImages(filesFesta, "color", 32);
+		trainingImages(filesFesta, "gray", 64);
+		trainingImages(filesFesta, "color", 4);
 	}
 	
 	public static void trainingImages(File[] array, String color, int bins) throws IOException{

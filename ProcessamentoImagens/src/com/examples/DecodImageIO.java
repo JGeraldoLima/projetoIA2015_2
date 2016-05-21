@@ -21,7 +21,7 @@ import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 
 import com.sun.media.jai.widget.DisplayJAI;
-import com.util.DisplayHistogram;
+import com.util.DisplayGrayHistogram;
 import com.util.DisplayTwoSynchronizedImages;
 
 public class DecodImageIO {
@@ -244,7 +244,7 @@ public class DecodImageIO {
 		Histogram histo = (Histogram) dummyImage.getProperty("histogram");
 
 		JFrame f = new JFrame("Histograma: " + file);
-		DisplayHistogram dh1 = new DisplayHistogram(histo, 0, String.valueOf(bins) + " bins");
+		DisplayGrayHistogram dh1 = new DisplayGrayHistogram(histo, 0, String.valueOf(bins) + " bins");
 		dh1.setBinWidth((int) Math.pow(2, (10 - (Math.log(bins) / Math.log(2)))));
 		dh1.setHeight(160);
 		dh1.setIndexMultiplier(8);

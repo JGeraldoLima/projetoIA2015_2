@@ -31,7 +31,7 @@ public class CalculateHistogram {
 		Histogram histo = (Histogram) dummyImage.getProperty("histogram");
 
 		JFrame f = new JFrame("Histograma: " + file);
-		DisplayHistogram dh1 = new DisplayHistogram(histo, 0, String.valueOf(bins) + " bins");
+		DisplayGrayHistogram dh1 = new DisplayGrayHistogram(histo, 0, String.valueOf(bins) + " bins");
 		dh1.setBinWidth((int) Math.pow(2, (10 - (Math.log(bins) / Math.log(2)))));
 		dh1.setHeight(160);
 		dh1.setIndexMultiplier(8);
@@ -41,7 +41,7 @@ public class CalculateHistogram {
 		f.setVisible(true);
 	}
 
-	public void histogramRGBImage(String file, int bins) {
+	public void histogramsRGBImage(String file, int bins) {
 		PlanarImage image = JAI.create("fileload", file);
 		ParameterBlock pb = new ParameterBlock();
 		pb.addSource(image);
@@ -58,9 +58,9 @@ public class CalculateHistogram {
 		JFrame frame = new JFrame("R,G,B Histograms");
 		Container cp = frame.getContentPane();
 		cp.setLayout(new GridLayout(3, 1));
-		DisplayHistogram cRed = new DisplayHistogram(h, 0, "Red");
-		DisplayHistogram cGreen = new DisplayHistogram(h, 1, "Green");
-		DisplayHistogram cBlue = new DisplayHistogram(h, 2, "Blue");
+		DisplayGrayHistogram cRed = new DisplayGrayHistogram(h, 0, "Red");
+		DisplayGrayHistogram cGreen = new DisplayGrayHistogram(h, 1, "Green");
+		DisplayGrayHistogram cBlue = new DisplayGrayHistogram(h, 2, "Blue");
 		cRed.setBarColor(Color.RED);
 		cRed.setMarksColor(Color.WHITE);
 		cGreen.setBarColor(Color.GREEN);
@@ -83,6 +83,32 @@ public class CalculateHistogram {
 		//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.pack(); // Adjust the frame size using preferred dimensions.
 		frame.setVisible(true); // Show the frame.
+	}
+	
+	public void histogramRGBImage(String file, int bins) {
+		PlanarImage image = JAI.create("fileload", file);
+
+		ParameterBlock pb1 = new ParameterBlock();
+		pb1.addSource(image);
+		pb1.add(null);
+		pb1.add(1);
+		pb1.add(1);
+		pb1.add(new int[] { bins });
+		pb1.add(new double[] { 0 });
+		pb1.add(new double[] { 256 });
+
+		PlanarImage dummyImage = JAI.create("histogram", pb1);
+		Histogram histo = (Histogram) dummyImage.getProperty("histogram");
+
+		JFrame f = new JFrame("Histograma RGB: " + file);
+		DisplayRGBHistogram dh1 = new DisplayRGBHistogram(histo, String.valueOf(bins) + " bins");
+		dh1.setBinWidth((int) Math.pow(2, (10 - (Math.log(bins) / Math.log(2)))));
+		dh1.setHeight(160);
+		dh1.setIndexMultiplier(8);
+		f.getContentPane().add(dh1);
+		// f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.pack();
+		f.setVisible(true);
 	}
 
 }
