@@ -26,6 +26,7 @@ import com.util.DisplayTwoSynchronizedImages;
 
 public class DecodImageIO {
 
+	@SuppressWarnings("unused")
 	private static File[] files = new File[] { new File("images/1.jpg"), new File("images/01.jpg"),
 			new File("images/02.jpg"), new File("images/03.jpg"), new File("images/04.jpg"), new File("images/05.jpg"),
 			new File("images/06.jpg"), new File("images/07.jpg"), new File("images/08.jpg"), new File("images/09.jpg"),

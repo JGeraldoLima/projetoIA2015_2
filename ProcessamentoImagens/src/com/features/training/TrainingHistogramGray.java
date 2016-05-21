@@ -1,4 +1,4 @@
-package com.features;
+package com.features.training;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -6,7 +6,7 @@ import java.io.IOException;
 
 import com.util.CalculateHistogram;
 
-public class TrainingHistogramRGB {
+public class TrainingHistogramGray {
 	
 	private static File[] filesFesta = new File[] {
 			new File("images/training/festa/01.jpg"),
@@ -217,18 +217,20 @@ public class TrainingHistogramRGB {
 	private static String filename;
 	
 	public static void main(String[] args) throws IOException {
-		trainingImages(filesFesta, 2, "festaRGB");
-		trainingImages(filesFesta, 3, "festaRGB");
-		trainingImages(filesFesta, 4, "festaRGB");
-		trainingImages(filesNonFesta, 2, "NonFestaRGB");
-		trainingImages(filesNonFesta, 3, "NonFestaRGB");
-		trainingImages(filesNonFesta, 4, "NonFestaRGB");
+		trainingImages(filesFesta, 32, "festaGray");
+		trainingImages(filesFesta, 64, "festaGray");
+		trainingImages(filesFesta, 128, "festaGray");
+		trainingImages(filesFesta, 256, "festaGray");
+		trainingImages(filesNonFesta, 32, "NonFestaGray");
+		trainingImages(filesNonFesta, 64, "NonFestaGray");
+		trainingImages(filesNonFesta, 128, "NonFestaGray");
+		trainingImages(filesNonFesta, 256, "NonFestaGray");
 	}
 	
 	public static void trainingImages(File[] array, int bins, String fileName) throws IOException{
-		filename = String.format("./data/%s%s.txt", fileName, String.valueOf((int) Math.pow(bins, 3)));
+		filename = String.format("./data/%s%s.txt", fileName, bins);
 		for (File fileFesta : array) {
-			histogram.histogramRGBImage(fileFesta.getPath(), bins);
+			histogram.histogramGrayImage(fileFesta.getPath(), bins);
 		}
 	}
 	

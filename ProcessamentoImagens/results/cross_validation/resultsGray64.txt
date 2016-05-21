@@ -1,0 +1,2221 @@
+J48 pruned tree
+------------------
+
+bin3 <= 15
+|   bin7 <= 105: NO (30.0/1.0)
+|   bin7 > 105: YES (3.0/1.0)
+bin3 > 15
+|   bin38 <= 57
+|   |   bin60 <= 49
+|   |   |   bin63 <= 12
+|   |   |   |   bin41 <= 33
+|   |   |   |   |   bin2 <= 18: NO (3.0)
+|   |   |   |   |   bin2 > 18
+|   |   |   |   |   |   bin59 <= 5
+|   |   |   |   |   |   |   bin59 <= 4
+|   |   |   |   |   |   |   |   bin51 <= 9: YES (13.0/1.0)
+|   |   |   |   |   |   |   |   bin51 > 9: NO (2.0)
+|   |   |   |   |   |   |   bin59 > 4: NO (2.0)
+|   |   |   |   |   |   bin59 > 5: YES (8.0)
+|   |   |   |   bin41 > 33: NO (3.0)
+|   |   |   bin63 > 12: YES (17.0)
+|   |   bin60 > 49: NO (3.0)
+|   bin38 > 57: NO (6.0)
+
+Number of Leaves  : 	11
+
+Size of the tree : 	21
+J48 pruned tree
+------------------
+
+bin5 <= 95
+|   bin41 <= 34
+|   |   bin1 <= 14
+|   |   |   bin62 <= 13: NO (10.0)
+|   |   |   bin62 > 13
+|   |   |   |   bin1 <= 6: YES (6.0/1.0)
+|   |   |   |   bin1 > 6: NO (2.0)
+|   |   bin1 > 14
+|   |   |   bin60 <= 6
+|   |   |   |   bin53 <= 4: YES (8.0/1.0)
+|   |   |   |   bin53 > 4: NO (6.0/1.0)
+|   |   |   bin60 > 6: YES (9.0)
+|   bin41 > 34: NO (30.0/1.0)
+bin5 > 95
+|   bin7 <= 149: YES (16.0)
+|   bin7 > 149: NO (3.0/1.0)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	17
+J48 pruned tree
+------------------
+
+bin48 <= 87
+|   bin2 <= 24
+|   |   bin61 <= 9: NO (16.0)
+|   |   bin61 > 9
+|   |   |   bin60 <= 16: YES (7.0)
+|   |   |   bin60 > 16
+|   |   |   |   bin12 <= 6: YES (2.0)
+|   |   |   |   bin12 > 6: NO (10.0/1.0)
+|   bin2 > 24: YES (41.0/11.0)
+bin48 > 87: NO (14.0)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+J48 pruned tree
+------------------
+
+bin4 <= 53
+|   bin1 <= 52
+|   |   bin64 <= 114: NO (33.0/1.0)
+|   |   bin64 > 114
+|   |   |   bin4 <= 4: YES (3.0)
+|   |   |   bin4 > 4: NO (7.0/1.0)
+|   bin1 > 52
+|   |   bin11 <= 11: YES (5.0)
+|   |   bin11 > 11
+|   |   |   bin63 <= 10: NO (6.0/1.0)
+|   |   |   bin63 > 10: YES (5.0/1.0)
+bin4 > 53
+|   bin35 <= 82
+|   |   bin7 <= 149
+|   |   |   bin62 <= 4
+|   |   |   |   bin27 <= 15: YES (3.0)
+|   |   |   |   bin27 > 15: NO (2.0)
+|   |   |   bin62 > 4: YES (22.0)
+|   |   bin7 > 149: NO (2.0)
+|   bin35 > 82: NO (2.0)
+
+Number of Leaves  : 	11
+
+Size of the tree : 	21
+J48 pruned tree
+------------------
+
+bin2 <= 15
+|   bin62 <= 13: NO (26.0)
+|   bin62 > 13
+|   |   bin46 <= 32: YES (8.0/1.0)
+|   |   bin46 > 32: NO (6.0)
+bin2 > 15
+|   bin4 <= 87
+|   |   bin1 <= 58: NO (10.0/1.0)
+|   |   bin1 > 58
+|   |   |   bin50 <= 45
+|   |   |   |   bin64 <= 14
+|   |   |   |   |   bin55 <= 4: YES (5.0)
+|   |   |   |   |   bin55 > 4: NO (5.0/1.0)
+|   |   |   |   bin64 > 14: YES (10.0)
+|   |   |   bin50 > 45: NO (3.0)
+|   bin4 > 87: YES (17.0/1.0)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	17
+J48 pruned tree
+------------------
+
+bin48 <= 87
+|   bin3 <= 103
+|   |   bin1 <= 11
+|   |   |   bin61 <= 9: NO (12.0)
+|   |   |   bin61 > 9
+|   |   |   |   bin1 <= 5
+|   |   |   |   |   bin44 <= 41: YES (6.0)
+|   |   |   |   |   bin44 > 41: NO (3.0/1.0)
+|   |   |   |   bin1 > 5: NO (3.0)
+|   |   bin1 > 11
+|   |   |   bin17 <= 131: YES (38.0/9.0)
+|   |   |   bin17 > 131: NO (3.0)
+|   bin3 > 103: YES (14.0)
+bin48 > 87: NO (11.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+J48 pruned tree
+------------------
+
+bin49 <= 88
+|   bin2 <= 24
+|   |   bin64 <= 10: NO (7.0)
+|   |   bin64 > 10
+|   |   |   bin15 <= 7: YES (4.0)
+|   |   |   bin15 > 7
+|   |   |   |   bin52 <= 6: NO (6.0)
+|   |   |   |   bin52 > 6
+|   |   |   |   |   bin60 <= 16: YES (7.0)
+|   |   |   |   |   bin60 > 16: NO (7.0/1.0)
+|   bin2 > 24: YES (45.0/7.0)
+bin49 > 88: NO (14.0)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+J48 pruned tree
+------------------
+
+bin17 <= 131
+|   bin7 <= 68
+|   |   bin1 <= 42
+|   |   |   bin64 <= 114: NO (25.0)
+|   |   |   bin64 > 114
+|   |   |   |   bin52 <= 10: NO (3.0/1.0)
+|   |   |   |   bin52 > 10: YES (4.0)
+|   |   bin1 > 42
+|   |   |   bin63 <= 9
+|   |   |   |   bin45 <= 18
+|   |   |   |   |   bin59 <= 4: YES (9.0)
+|   |   |   |   |   bin59 > 4
+|   |   |   |   |   |   bin2 <= 43: NO (2.0)
+|   |   |   |   |   |   bin2 > 43: YES (2.0)
+|   |   |   |   bin45 > 18: NO (3.0)
+|   |   |   bin63 > 9: YES (11.0/1.0)
+|   bin7 > 68: YES (26.0/2.0)
+bin17 > 131: NO (5.0)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+J48 pruned tree
+------------------
+
+bin48 <= 87
+|   bin4 <= 42
+|   |   bin1 <= 48
+|   |   |   bin60 <= 7: NO (13.0)
+|   |   |   bin60 > 7
+|   |   |   |   bin2 <= 9
+|   |   |   |   |   bin60 <= 16: YES (4.0)
+|   |   |   |   |   bin60 > 16
+|   |   |   |   |   |   bin64 <= 114: NO (3.0)
+|   |   |   |   |   |   bin64 > 114: YES (4.0/1.0)
+|   |   |   |   bin2 > 9: NO (5.0)
+|   |   bin1 > 48
+|   |   |   bin53 <= 4: YES (8.0)
+|   |   |   bin53 > 4
+|   |   |   |   bin35 <= 8: NO (3.0)
+|   |   |   |   bin35 > 8: YES (7.0/1.0)
+|   bin4 > 42
+|   |   bin7 <= 149: YES (29.0/1.0)
+|   |   bin7 > 149: NO (3.0/1.0)
+bin48 > 87: NO (11.0)
+
+Number of Leaves  : 	11
+
+Size of the tree : 	21
+J48 pruned tree
+------------------
+
+bin48 <= 87
+|   bin2 <= 24
+|   |   bin64 <= 7: NO (9.0)
+|   |   bin64 > 7
+|   |   |   bin1 <= 2: YES (8.0/1.0)
+|   |   |   bin1 > 2
+|   |   |   |   bin16 <= 6: YES (3.0)
+|   |   |   |   bin16 > 6
+|   |   |   |   |   bin60 <= 14
+|   |   |   |   |   |   bin2 <= 15: NO (3.0)
+|   |   |   |   |   |   bin2 > 15: YES (2.0)
+|   |   |   |   |   bin60 > 14: NO (7.0)
+|   bin2 > 24: YES (49.0/11.0)
+bin48 > 87: NO (9.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+Logistic model tree 
+------------------
+: LM_1:5/5 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.77 + 
+[bin1] * 0    +
+[bin3] * 0.01 +
+[bin7] * 0    +
+[bin42] * -0.01 +
+[bin56] * -0.01
+
+Class 1 :
+0.77 + 
+[bin1] * -0 +
+[bin3] * -0.01 +
+[bin7] * -0 +
+[bin42] * 0.01 +
+[bin56] * 0.01
+Logistic model tree 
+------------------
+
+bin5 <= 95: LM_1:11/22 (71)
+bin5 > 95: LM_2:11/22 (19)
+
+Number of Leaves  : 	2
+
+Size of the Tree : 	3
+
+LM_1:
+Class 0 :
+-0.8 + 
+[bin1] * 0.01 +
+[bin4] * 0.01 +
+[bin5] * -0.01 +
+[bin7] * 0.01 +
+[bin10] * -0.01 +
+[bin11] * -0 +
+[bin18] * -0 +
+[bin42] * -0.02 +
+[bin46] * -0.01 +
+[bin49] * -0.01 +
+[bin56] * -0 +
+[bin59] * 0.01 +
+[bin64] * 0.01
+
+Class 1 :
+0.8  + 
+[bin1] * -0.01 +
+[bin4] * -0.01 +
+[bin5] * 0.01 +
+[bin7] * -0.01 +
+[bin10] * 0.01 +
+[bin11] * 0    +
+[bin18] * 0    +
+[bin42] * 0.02 +
+[bin46] * 0.01 +
+[bin49] * 0.01 +
+[bin56] * 0    +
+[bin59] * -0.01 +
+[bin64] * -0.01
+
+LM_2:
+Class 0 :
+6.6  + 
+[bin1] * -0.03 +
+[bin4] * 0.01 +
+[bin7] * 0    +
+[bin8] * -0.01 +
+[bin10] * -0.04 +
+[bin11] * -0 +
+[bin18] * -0 +
+[bin42] * -0.01 +
+[bin49] * 0.02 +
+[bin56] * -0 +
+[bin57] * 0.03 +
+[bin59] * 0.04 +
+[bin62] * 0.02 +
+[bin64] * 0   
+
+Class 1 :
+-6.6 + 
+[bin1] * 0.03 +
+[bin4] * -0.01 +
+[bin7] * -0 +
+[bin8] * 0.01 +
+[bin10] * 0.04 +
+[bin11] * 0    +
+[bin18] * 0    +
+[bin42] * 0.01 +
+[bin49] * -0.02 +
+[bin56] * 0    +
+[bin57] * -0.03 +
+[bin59] * -0.04 +
+[bin62] * -0.02 +
+[bin64] * -0
+Logistic model tree 
+------------------
+: LM_1:2/2 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.27 + 
+[bin3] * 0.01 +
+[bin49] * -0.01
+
+Class 1 :
+0.27 + 
+[bin3] * -0.01 +
+[bin49] * 0.01
+Logistic model tree 
+------------------
+: LM_1:5/5 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-1.02 + 
+[bin1] * 0    +
+[bin3] * 0.01 +
+[bin5] * 0    +
+[bin49] * -0.01 +
+[bin64] * 0   
+
+Class 1 :
+1.02 + 
+[bin1] * -0 +
+[bin3] * -0.01 +
+[bin5] * -0 +
+[bin49] * 0.01 +
+[bin64] * -0
+Logistic model tree 
+------------------
+: LM_1:5/5 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.59 + 
+[bin1] * 0    +
+[bin3] * 0.01 +
+[bin42] * -0.02 +
+[bin64] * 0   
+
+Class 1 :
+0.59 + 
+[bin1] * -0 +
+[bin3] * -0.01 +
+[bin42] * 0.02 +
+[bin64] * -0
+Logistic model tree 
+------------------
+: LM_1:8/8 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.55 + 
+[bin1] * 0    +
+[bin3] * 0.01 +
+[bin7] * 0    +
+[bin18] * -0.01 +
+[bin49] * -0.01 +
+[bin56] * -0 +
+[bin60] * 0.01 +
+[bin64] * 0   
+
+Class 1 :
+0.55 + 
+[bin1] * -0 +
+[bin3] * -0.01 +
+[bin7] * -0 +
+[bin18] * 0.01 +
+[bin49] * 0.01 +
+[bin56] * 0    +
+[bin60] * -0.01 +
+[bin64] * -0
+Logistic model tree 
+------------------
+: LM_1:6/6 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.5 + 
+[bin1] * 0    +
+[bin3] * 0.01 +
+[bin7] * 0    +
+[bin33] * -0 +
+[bin49] * -0.01 +
+[bin64] * 0   
+
+Class 1 :
+0.5  + 
+[bin1] * -0 +
+[bin3] * -0.01 +
+[bin7] * -0 +
+[bin33] * 0    +
+[bin49] * 0.01 +
+[bin64] * -0
+Logistic model tree 
+------------------
+: LM_1:9/9 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.44 + 
+[bin1] * 0    +
+[bin3] * 0.01 +
+[bin7] * 0.01 +
+[bin20] * -0.01 +
+[bin42] * -0.01 +
+[bin49] * -0 +
+[bin64] * 0   
+
+Class 1 :
+0.44 + 
+[bin1] * -0 +
+[bin3] * -0.01 +
+[bin7] * -0.01 +
+[bin20] * 0.01 +
+[bin42] * 0.01 +
+[bin49] * 0    +
+[bin64] * -0
+Logistic model tree 
+------------------
+: LM_1:4/4 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.49 + 
+[bin1] * 0    +
+[bin4] * 0.01 +
+[bin42] * -0.01 +
+[bin64] * 0   
+
+Class 1 :
+0.49 + 
+[bin1] * -0 +
+[bin4] * -0.01 +
+[bin42] * 0.01 +
+[bin64] * -0
+Logistic model tree 
+------------------
+: LM_1:9/9 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.6 + 
+[bin1] * 0    +
+[bin3] * 0.01 +
+[bin7] * 0.01 +
+[bin20] * -0 +
+[bin42] * -0.01 +
+[bin49] * -0 +
+[bin64] * 0.01
+
+Class 1 :
+0.6  + 
+[bin1] * -0 +
+[bin3] * -0.01 +
+[bin7] * -0.01 +
+[bin20] * 0    +
+[bin42] * 0.01 +
+[bin49] * 0    +
+[bin64] * -0.01
+
+RandomTree
+==========
+
+bin42 < 36
+|   bin5 < 31.5
+|   |   bin45 < 10
+|   |   |   bin28 < 14.5
+|   |   |   |   bin2 < 15.5
+|   |   |   |   |   bin13 < 32.5 : NO (3/0)
+|   |   |   |   |   bin13 >= 32.5 : YES (1/0)
+|   |   |   |   bin2 >= 15.5
+|   |   |   |   |   bin7 < 3.5 : NO (1/0)
+|   |   |   |   |   bin7 >= 3.5
+|   |   |   |   |   |   bin32 < 7.5 : YES (6/0)
+|   |   |   |   |   |   bin32 >= 7.5
+|   |   |   |   |   |   |   bin8 < 14.5 : NO (1/0)
+|   |   |   |   |   |   |   bin8 >= 14.5 : YES (1/0)
+|   |   |   bin28 >= 14.5 : NO (4/0)
+|   |   bin45 >= 10 : NO (8/0)
+|   bin5 >= 31.5
+|   |   bin2 < 16.5
+|   |   |   bin44 < 8.5 : NO (4/0)
+|   |   |   bin44 >= 8.5 : YES (3/0)
+|   |   bin2 >= 16.5
+|   |   |   bin64 < 5.5
+|   |   |   |   bin36 < 20 : YES (5/0)
+|   |   |   |   bin36 >= 20
+|   |   |   |   |   bin7 < 89 : NO (1/0)
+|   |   |   |   |   bin7 >= 89 : YES (1/0)
+|   |   |   bin64 >= 5.5 : YES (18/0)
+bin42 >= 36
+|   bin6 < 60 : NO (25/0)
+|   bin6 >= 60
+|   |   bin18 < 112.5
+|   |   |   bin12 < 46.5 : NO (1/0)
+|   |   |   bin12 >= 46.5 : YES (5/0)
+|   |   bin18 >= 112.5 : NO (2/0)
+
+Size of the tree : 35
+RandomTree
+==========
+
+bin42 < 37.5
+|   bin5 < 99
+|   |   bin50 < 27
+|   |   |   bin63 < 11.5
+|   |   |   |   bin2 < 18 : NO (9/0)
+|   |   |   |   bin2 >= 18
+|   |   |   |   |   bin13 < 27.5
+|   |   |   |   |   |   bin7 < 3.5 : NO (1/0)
+|   |   |   |   |   |   bin7 >= 3.5
+|   |   |   |   |   |   |   bin32 < 7.5 : YES (7/0)
+|   |   |   |   |   |   |   bin32 >= 7.5
+|   |   |   |   |   |   |   |   bin8 < 14.5 : NO (1/0)
+|   |   |   |   |   |   |   |   bin8 >= 14.5 : YES (2/0)
+|   |   |   |   |   bin13 >= 27.5
+|   |   |   |   |   |   bin17 < 35.5 : NO (3/0)
+|   |   |   |   |   |   bin17 >= 35.5 : YES (1/0)
+|   |   |   bin63 >= 11.5
+|   |   |   |   bin12 < 28
+|   |   |   |   |   bin38 < 15.5
+|   |   |   |   |   |   bin36 < 9.5 : YES (3/0)
+|   |   |   |   |   |   bin36 >= 9.5 : NO (3/0)
+|   |   |   |   |   bin38 >= 15.5 : YES (3/0)
+|   |   |   |   bin12 >= 28 : YES (6/0)
+|   |   bin50 >= 27 : NO (4/0)
+|   bin5 >= 99
+|   |   bin7 < 154.5 : YES (13/0)
+|   |   bin7 >= 154.5 : NO (1/0)
+bin42 >= 37.5
+|   bin6 < 107.5
+|   |   bin62 < 31.5 : NO (21/0)
+|   |   bin62 >= 31.5
+|   |   |   bin7 < 33 : YES (1/0)
+|   |   |   bin7 >= 33 : NO (6/0)
+|   bin6 >= 107.5
+|   |   bin29 < 56.5 : NO (1/0)
+|   |   bin29 >= 56.5 : YES (4/0)
+
+Size of the tree : 37
+RandomTree
+==========
+
+bin48 < 89.5
+|   bin3 < 68.5
+|   |   bin61 < 8.5
+|   |   |   bin29 < 9.5
+|   |   |   |   bin4 < 14.5 : YES (2/0)
+|   |   |   |   bin4 >= 14.5
+|   |   |   |   |   bin1 < 52 : NO (2/0)
+|   |   |   |   |   bin1 >= 52
+|   |   |   |   |   |   bin56 < 4 : YES (4/0)
+|   |   |   |   |   |   bin56 >= 4 : NO (2/0)
+|   |   |   bin29 >= 9.5 : NO (17/0)
+|   |   bin61 >= 8.5
+|   |   |   bin61 < 12.5 : YES (7/0)
+|   |   |   bin61 >= 12.5
+|   |   |   |   bin47 < 28.5
+|   |   |   |   |   bin60 < 20.5
+|   |   |   |   |   |   bin12 < 43.5 : NO (3/0)
+|   |   |   |   |   |   bin12 >= 43.5 : YES (2/0)
+|   |   |   |   |   bin60 >= 20.5 : YES (4/0)
+|   |   |   |   bin47 >= 28.5
+|   |   |   |   |   bin19 < 71.5 : NO (7/0)
+|   |   |   |   |   bin19 >= 71.5
+|   |   |   |   |   |   bin12 < 89 : YES (2/0)
+|   |   |   |   |   |   bin12 >= 89 : NO (1/0)
+|   bin3 >= 68.5
+|   |   bin28 < 58.5
+|   |   |   bin61 < 4.5
+|   |   |   |   bin9 < 35 : YES (2/0)
+|   |   |   |   bin9 >= 35 : NO (1/0)
+|   |   |   bin61 >= 4.5 : YES (14/0)
+|   |   bin28 >= 58.5
+|   |   |   bin7 < 105 : NO (2/0)
+|   |   |   bin7 >= 105
+|   |   |   |   bin26 < 67.5 : NO (1/0)
+|   |   |   |   bin26 >= 67.5 : YES (3/0)
+bin48 >= 89.5 : NO (14/0)
+
+Size of the tree : 37
+RandomTree
+==========
+
+bin48 < 89.5
+|   bin3 < 32.5
+|   |   bin12 < 11.5
+|   |   |   bin50 < 27
+|   |   |   |   bin15 < 7.5 : YES (6/0)
+|   |   |   |   bin15 >= 7.5
+|   |   |   |   |   bin1 < 87 : NO (1/0)
+|   |   |   |   |   bin1 >= 87 : YES (1/0)
+|   |   |   bin50 >= 27 : NO (3/0)
+|   |   bin12 >= 11.5
+|   |   |   bin15 < 40 : NO (16/0)
+|   |   |   bin15 >= 40
+|   |   |   |   bin57 < 26 : NO (5/0)
+|   |   |   |   bin57 >= 26
+|   |   |   |   |   bin18 < 117.5 : YES (3/0)
+|   |   |   |   |   bin18 >= 117.5 : NO (1/0)
+|   bin3 >= 32.5
+|   |   bin34 < 91.5
+|   |   |   bin16 < 136
+|   |   |   |   bin60 < 5
+|   |   |   |   |   bin23 < 21.5
+|   |   |   |   |   |   bin11 < 4.5 : NO (1/0)
+|   |   |   |   |   |   bin11 >= 4.5 : YES (6/0)
+|   |   |   |   |   bin23 >= 21.5
+|   |   |   |   |   |   bin21 < 86 : NO (4/0)
+|   |   |   |   |   |   bin21 >= 86 : YES (1/0)
+|   |   |   |   bin60 >= 5
+|   |   |   |   |   bin9 < 24
+|   |   |   |   |   |   bin7 < 23 : YES (1/0)
+|   |   |   |   |   |   bin7 >= 23 : NO (1/0)
+|   |   |   |   |   bin9 >= 24 : YES (22/0)
+|   |   |   bin16 >= 136 : NO (2/0)
+|   |   bin34 >= 91.5 : NO (2/0)
+bin48 >= 89.5 : NO (14/0)
+
+Size of the tree : 35
+RandomTree
+==========
+
+bin48 < 89.5
+|   bin3 < 68.5
+|   |   bin41 < 35
+|   |   |   bin50 < 27
+|   |   |   |   bin15 < 7.5
+|   |   |   |   |   bin19 < 1.5 : NO (1/0)
+|   |   |   |   |   bin19 >= 1.5 : YES (7/0)
+|   |   |   |   bin15 >= 7.5
+|   |   |   |   |   bin62 < 2.5 : NO (5/0)
+|   |   |   |   |   bin62 >= 2.5
+|   |   |   |   |   |   bin57 < 13
+|   |   |   |   |   |   |   bin26 < 9.5 : NO (4/0)
+|   |   |   |   |   |   |   bin26 >= 9.5
+|   |   |   |   |   |   |   |   bin60 < 10.5
+|   |   |   |   |   |   |   |   |   bin33 < 16.5 : YES (4/0)
+|   |   |   |   |   |   |   |   |   bin33 >= 16.5
+|   |   |   |   |   |   |   |   |   |   bin59 < 6.5 : NO (3/0)
+|   |   |   |   |   |   |   |   |   |   bin59 >= 6.5 : YES (2/0)
+|   |   |   |   |   |   |   |   bin60 >= 10.5 : NO (2/0)
+|   |   |   |   |   |   bin57 >= 13 : YES (4/0)
+|   |   |   bin50 >= 27 : NO (4/0)
+|   |   bin41 >= 35
+|   |   |   bin23 < 83.5 : NO (11/0)
+|   |   |   bin23 >= 83.5
+|   |   |   |   bin56 < 31.5 : NO (2/0)
+|   |   |   |   bin56 >= 31.5 : YES (2/0)
+|   bin3 >= 68.5
+|   |   bin43 < 24 : YES (13/0)
+|   |   bin43 >= 24
+|   |   |   bin9 < 52.5 : NO (2/0)
+|   |   |   bin9 >= 52.5
+|   |   |   |   bin25 < 112.5
+|   |   |   |   |   bin58 < 17.5 : NO (1/0)
+|   |   |   |   |   bin58 >= 17.5 : YES (8/0)
+|   |   |   |   bin25 >= 112.5 : NO (1/0)
+bin48 >= 89.5 : NO (14/0)
+
+Size of the tree : 37
+RandomTree
+==========
+
+bin48 < 89.5
+|   bin3 < 105
+|   |   bin61 < 8.5
+|   |   |   bin29 < 9.5
+|   |   |   |   bin24 < 5.5
+|   |   |   |   |   bin1 < 52 : NO (2/0)
+|   |   |   |   |   bin1 >= 52
+|   |   |   |   |   |   bin15 < 8.5 : YES (4/0)
+|   |   |   |   |   |   bin15 >= 8.5 : NO (1/0)
+|   |   |   |   bin24 >= 5.5 : YES (5/0)
+|   |   |   bin29 >= 9.5
+|   |   |   |   bin61 < 4.5 : NO (11/0)
+|   |   |   |   bin61 >= 4.5
+|   |   |   |   |   bin33 < 12.5 : YES (1/0)
+|   |   |   |   |   bin33 >= 12.5
+|   |   |   |   |   |   bin9 < 34.5 : NO (4/0)
+|   |   |   |   |   |   bin9 >= 34.5
+|   |   |   |   |   |   |   bin9 < 51.5 : YES (1/0)
+|   |   |   |   |   |   |   bin9 >= 51.5 : NO (1/0)
+|   |   bin61 >= 8.5
+|   |   |   bin41 < 36.5
+|   |   |   |   bin50 < 5 : NO (1/0)
+|   |   |   |   bin50 >= 5
+|   |   |   |   |   bin51 < 19.5 : YES (15/0)
+|   |   |   |   |   bin51 >= 19.5
+|   |   |   |   |   |   bin43 < 18.5 : NO (1/0)
+|   |   |   |   |   |   bin43 >= 18.5 : YES (4/0)
+|   |   |   bin41 >= 36.5
+|   |   |   |   bin15 < 44.5 : NO (4/0)
+|   |   |   |   bin15 >= 44.5
+|   |   |   |   |   bin47 < 37 : NO (2/0)
+|   |   |   |   |   bin47 >= 37
+|   |   |   |   |   |   bin3 < 75.5 : YES (5/0)
+|   |   |   |   |   |   bin3 >= 75.5
+|   |   |   |   |   |   |   bin8 < 76 : YES (1/0)
+|   |   |   |   |   |   |   bin8 >= 76 : NO (2/0)
+|   bin3 >= 105 : YES (14/0)
+bin48 >= 89.5 : NO (11/0)
+
+Size of the tree : 39
+RandomTree
+==========
+
+bin48 < 89.5
+|   bin3 < 29.5
+|   |   bin12 < 5.5 : YES (4/0)
+|   |   bin12 >= 5.5
+|   |   |   bin34 < 7.5
+|   |   |   |   bin4 < 23 : YES (4/0)
+|   |   |   |   bin4 >= 23 : NO (1/0)
+|   |   |   bin34 >= 7.5
+|   |   |   |   bin28 < 69
+|   |   |   |   |   bin62 < 11 : NO (10/0)
+|   |   |   |   |   bin62 >= 11
+|   |   |   |   |   |   bin61 < 11.5 : YES (2/0)
+|   |   |   |   |   |   bin61 >= 11.5 : NO (7/0)
+|   |   |   |   bin28 >= 69
+|   |   |   |   |   bin18 < 94 : YES (3/0)
+|   |   |   |   |   bin18 >= 94 : NO (1/0)
+|   bin3 >= 29.5
+|   |   bin34 < 91.5
+|   |   |   bin58 < 4.5
+|   |   |   |   bin41 < 14
+|   |   |   |   |   bin7 < 7 : NO (1/0)
+|   |   |   |   |   bin7 >= 7
+|   |   |   |   |   |   bin11 < 141 : YES (6/0)
+|   |   |   |   |   |   bin11 >= 141 : NO (1/0)
+|   |   |   |   bin41 >= 14 : NO (2/0)
+|   |   |   bin58 >= 4.5
+|   |   |   |   bin61 < 3.5 : NO (1/0)
+|   |   |   |   bin61 >= 3.5 : YES (31/0)
+|   |   bin34 >= 91.5 : NO (3/0)
+bin48 >= 89.5 : NO (13/0)
+
+Size of the tree : 31
+RandomTree
+==========
+
+bin48 < 89.5
+|   bin3 < 32.5
+|   |   bin12 < 5.5 : YES (4/0)
+|   |   bin12 >= 5.5
+|   |   |   bin7 < 9 : NO (6/0)
+|   |   |   bin7 >= 9
+|   |   |   |   bin9 < 10.5 : YES (4/0)
+|   |   |   |   bin9 >= 10.5
+|   |   |   |   |   bin63 < 2.5 : NO (6/0)
+|   |   |   |   |   bin63 >= 2.5
+|   |   |   |   |   |   bin62 < 7 : YES (2/0)
+|   |   |   |   |   |   bin62 >= 7
+|   |   |   |   |   |   |   bin61 < 9 : NO (4/0)
+|   |   |   |   |   |   |   bin61 >= 9
+|   |   |   |   |   |   |   |   bin47 < 28.5 : YES (3/0)
+|   |   |   |   |   |   |   |   bin47 >= 28.5
+|   |   |   |   |   |   |   |   |   bin26 < 79.5 : NO (4/0)
+|   |   |   |   |   |   |   |   |   bin26 >= 79.5 : YES (2/0)
+|   bin3 >= 32.5
+|   |   bin16 < 136
+|   |   |   bin41 < 60
+|   |   |   |   bin7 < 61.5
+|   |   |   |   |   bin51 < 21
+|   |   |   |   |   |   bin13 < 33 : YES (10/0)
+|   |   |   |   |   |   bin13 >= 33
+|   |   |   |   |   |   |   bin15 < 37 : NO (2/0)
+|   |   |   |   |   |   |   bin15 >= 37 : YES (2/0)
+|   |   |   |   |   bin51 >= 21 : NO (2/0)
+|   |   |   |   bin7 >= 61.5 : YES (22/0)
+|   |   |   bin41 >= 60
+|   |   |   |   bin7 < 114.5 : NO (2/0)
+|   |   |   |   bin7 >= 114.5 : YES (1/0)
+|   |   bin16 >= 136 : NO (2/0)
+bin48 >= 89.5 : NO (12/0)
+
+Size of the tree : 35
+RandomTree
+==========
+
+bin48 < 89.5
+|   bin3 < 50.5
+|   |   bin41 < 35
+|   |   |   bin34 < 95.5
+|   |   |   |   bin15 < 6.5 : YES (6/0)
+|   |   |   |   bin15 >= 6.5
+|   |   |   |   |   bin6 < 9 : NO (4/0)
+|   |   |   |   |   bin6 >= 9
+|   |   |   |   |   |   bin37 < 20
+|   |   |   |   |   |   |   bin28 < 15.5
+|   |   |   |   |   |   |   |   bin26 < 5.5 : NO (2/0)
+|   |   |   |   |   |   |   |   bin26 >= 5.5
+|   |   |   |   |   |   |   |   |   bin34 < 7.5 : YES (4/0)
+|   |   |   |   |   |   |   |   |   bin34 >= 7.5
+|   |   |   |   |   |   |   |   |   |   bin55 < 5.5 : NO (2/0)
+|   |   |   |   |   |   |   |   |   |   bin55 >= 5.5 : YES (3/0)
+|   |   |   |   |   |   |   bin28 >= 15.5 : NO (4/0)
+|   |   |   |   |   |   bin37 >= 20 : YES (6/0)
+|   |   |   bin34 >= 95.5 : NO (2/0)
+|   |   bin41 >= 35
+|   |   |   bin51 < 49 : NO (11/0)
+|   |   |   bin51 >= 49
+|   |   |   |   bin7 < 25 : NO (1/0)
+|   |   |   |   bin7 >= 25 : YES (2/0)
+|   bin3 >= 50.5
+|   |   bin11 < 5.5 : NO (1/0)
+|   |   bin11 >= 5.5
+|   |   |   bin13 < 149.5
+|   |   |   |   bin54 < 50 : YES (27/0)
+|   |   |   |   bin54 >= 50
+|   |   |   |   |   bin7 < 52.5 : NO (1/0)
+|   |   |   |   |   bin7 >= 52.5 : YES (2/0)
+|   |   |   bin13 >= 149.5 : NO (1/0)
+bin48 >= 89.5 : NO (11/0)
+
+Size of the tree : 35
+RandomTree
+==========
+
+bin48 < 93
+|   bin3 < 68.5
+|   |   bin41 < 35
+|   |   |   bin50 < 33
+|   |   |   |   bin15 < 7.5
+|   |   |   |   |   bin19 < 1.5 : NO (1/0)
+|   |   |   |   |   bin19 >= 1.5 : YES (9/0)
+|   |   |   |   bin15 >= 7.5
+|   |   |   |   |   bin62 < 2.5 : NO (5/0)
+|   |   |   |   |   bin62 >= 2.5
+|   |   |   |   |   |   bin22 < 9.5 : NO (3/0)
+|   |   |   |   |   |   bin22 >= 9.5
+|   |   |   |   |   |   |   bin33 < 21.5
+|   |   |   |   |   |   |   |   bin26 < 20.5
+|   |   |   |   |   |   |   |   |   bin9 < 87.5 : YES (5/0)
+|   |   |   |   |   |   |   |   |   bin9 >= 87.5
+|   |   |   |   |   |   |   |   |   |   bin19 < 31.5 : NO (1/0)
+|   |   |   |   |   |   |   |   |   |   bin19 >= 31.5 : YES (1/0)
+|   |   |   |   |   |   |   |   bin26 >= 20.5 : NO (2/0)
+|   |   |   |   |   |   |   bin33 >= 21.5 : YES (7/0)
+|   |   |   bin50 >= 33 : NO (3/0)
+|   |   bin41 >= 35
+|   |   |   bin23 < 83.5 : NO (10/0)
+|   |   |   bin23 >= 83.5
+|   |   |   |   bin56 < 31.5 : NO (2/0)
+|   |   |   |   bin56 >= 31.5 : YES (3/0)
+|   bin3 >= 68.5
+|   |   bin43 < 24 : YES (16/0)
+|   |   bin43 >= 24
+|   |   |   bin9 < 52.5 : NO (2/0)
+|   |   |   bin9 >= 52.5
+|   |   |   |   bin25 < 112.5
+|   |   |   |   |   bin58 < 14.5 : NO (1/0)
+|   |   |   |   |   bin58 >= 14.5 : YES (9/0)
+|   |   |   |   bin25 >= 112.5 : NO (1/0)
+bin48 >= 93 : NO (9/0)
+
+Size of the tree : 37Decision Stump
+
+Classifications
+
+bin2 <= 25.0 : NO
+bin2 > 25.0 : YES
+bin2 is missing : NO
+
+Class distributions
+
+bin2 <= 25.0
+YES	NO	
+0.1590909090909091	0.8409090909090909	
+bin2 > 25.0
+YES	NO	
+0.717391304347826	0.2826086956521739	
+bin2 is missing
+YES	NO	
+0.4444444444444444	0.5555555555555556	
+Decision Stump
+
+Classifications
+
+bin41 <= 35.0 : YES
+bin41 > 35.0 : NO
+bin41 is missing : NO
+
+Class distributions
+
+bin41 <= 35.0
+YES	NO	
+0.6363636363636364	0.36363636363636365	
+bin41 > 35.0
+YES	NO	
+0.14285714285714285	0.8571428571428571	
+bin41 is missing
+YES	NO	
+0.4444444444444444	0.5555555555555556	
+Decision Stump
+
+Classifications
+
+bin2 <= 25.0 : NO
+bin2 > 25.0 : YES
+bin2 is missing : NO
+
+Class distributions
+
+bin2 <= 25.0
+YES	NO	
+0.2127659574468085	0.7872340425531915	
+bin2 > 25.0
+YES	NO	
+0.6976744186046512	0.3023255813953488	
+bin2 is missing
+YES	NO	
+0.4444444444444444	0.5555555555555556	
+Decision Stump
+
+Classifications
+
+bin3 <= 32.5 : NO
+bin3 > 32.5 : YES
+bin3 is missing : NO
+
+Class distributions
+
+bin3 <= 32.5
+YES	NO	
+0.20408163265306123	0.7959183673469388	
+bin3 > 32.5
+YES	NO	
+0.7317073170731707	0.2682926829268293	
+bin3 is missing
+YES	NO	
+0.4444444444444444	0.5555555555555556	
+Decision Stump
+
+Classifications
+
+bin2 <= 25.0 : NO
+bin2 > 25.0 : YES
+bin2 is missing : NO
+
+Class distributions
+
+bin2 <= 25.0
+YES	NO	
+0.1956521739130435	0.8043478260869565	
+bin2 > 25.0
+YES	NO	
+0.7045454545454546	0.29545454545454547	
+bin2 is missing
+YES	NO	
+0.4444444444444444	0.5555555555555556	
+Decision Stump
+
+Classifications
+
+bin2 <= 28.5 : NO
+bin2 > 28.5 : YES
+bin2 is missing : YES
+
+Class distributions
+
+bin2 <= 28.5
+YES	NO	
+0.3023255813953488	0.6976744186046512	
+bin2 > 28.5
+YES	NO	
+0.7872340425531915	0.2127659574468085	
+bin2 is missing
+YES	NO	
+0.5555555555555556	0.4444444444444444	
+Decision Stump
+
+Classifications
+
+bin2 <= 28.5 : NO
+bin2 > 28.5 : YES
+bin2 is missing : YES
+
+Class distributions
+
+bin2 <= 28.5
+YES	NO	
+0.28888888888888886	0.7111111111111111	
+bin2 > 28.5
+YES	NO	
+0.8222222222222222	0.17777777777777778	
+bin2 is missing
+YES	NO	
+0.5555555555555556	0.4444444444444444	
+Decision Stump
+
+Classifications
+
+bin2 <= 28.5 : NO
+bin2 > 28.5 : YES
+bin2 is missing : YES
+
+Class distributions
+
+bin2 <= 28.5
+YES	NO	
+0.29545454545454547	0.7045454545454546	
+bin2 > 28.5
+YES	NO	
+0.8043478260869565	0.1956521739130435	
+bin2 is missing
+YES	NO	
+0.5555555555555556	0.4444444444444444	
+Decision Stump
+
+Classifications
+
+bin4 <= 54.5 : NO
+bin4 > 54.5 : YES
+bin4 is missing : YES
+
+Class distributions
+
+bin4 <= 54.5
+YES	NO	
+0.3620689655172414	0.6379310344827587	
+bin4 > 54.5
+YES	NO	
+0.90625	0.09375	
+bin4 is missing
+YES	NO	
+0.5555555555555556	0.4444444444444444	
+Decision Stump
+
+Classifications
+
+bin2 <= 25.0 : NO
+bin2 > 25.0 : YES
+bin2 is missing : YES
+
+Class distributions
+
+bin2 <= 25.0
+YES	NO	
+0.3	0.7	
+bin2 > 25.0
+YES	NO	
+0.76	0.24	
+bin2 is missing
+YES	NO	
+0.5555555555555556	0.4444444444444444	
+J48 pruned tree
+------------------
+
+bin3 <= 15
+|   bin7 <= 105: NO (30.0/1.0)
+|   bin7 > 105: YES (3.0/1.0)
+bin3 > 15
+|   bin38 <= 57
+|   |   bin60 <= 49
+|   |   |   bin63 <= 12
+|   |   |   |   bin41 <= 33
+|   |   |   |   |   bin2 <= 18: NO (3.0)
+|   |   |   |   |   bin2 > 18
+|   |   |   |   |   |   bin59 <= 5
+|   |   |   |   |   |   |   bin59 <= 4
+|   |   |   |   |   |   |   |   bin51 <= 9: YES (13.0/1.0)
+|   |   |   |   |   |   |   |   bin51 > 9: NO (2.0)
+|   |   |   |   |   |   |   bin59 > 4: NO (2.0)
+|   |   |   |   |   |   bin59 > 5: YES (8.0)
+|   |   |   |   bin41 > 33: NO (3.0)
+|   |   |   bin63 > 12: YES (17.0)
+|   |   bin60 > 49: NO (3.0)
+|   bin38 > 57: NO (6.0)
+
+Number of Leaves  : 	11
+
+Size of the tree : 	21
+J48 pruned tree
+------------------
+
+bin5 <= 95
+|   bin41 <= 34
+|   |   bin1 <= 14
+|   |   |   bin62 <= 13: NO (10.0)
+|   |   |   bin62 > 13
+|   |   |   |   bin1 <= 6: YES (6.0/1.0)
+|   |   |   |   bin1 > 6: NO (2.0)
+|   |   bin1 > 14
+|   |   |   bin60 <= 6
+|   |   |   |   bin53 <= 4: YES (8.0/1.0)
+|   |   |   |   bin53 > 4: NO (6.0/1.0)
+|   |   |   bin60 > 6: YES (9.0)
+|   bin41 > 34: NO (30.0/1.0)
+bin5 > 95
+|   bin7 <= 149: YES (16.0)
+|   bin7 > 149: NO (3.0/1.0)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	17
+J48 pruned tree
+------------------
+
+bin48 <= 87
+|   bin2 <= 24
+|   |   bin61 <= 9: NO (16.0)
+|   |   bin61 > 9
+|   |   |   bin60 <= 16: YES (7.0)
+|   |   |   bin60 > 16
+|   |   |   |   bin12 <= 6: YES (2.0)
+|   |   |   |   bin12 > 6: NO (10.0/1.0)
+|   bin2 > 24: YES (41.0/11.0)
+bin48 > 87: NO (14.0)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+J48 pruned tree
+------------------
+
+bin4 <= 53
+|   bin1 <= 52
+|   |   bin64 <= 114: NO (33.0/1.0)
+|   |   bin64 > 114
+|   |   |   bin4 <= 4: YES (3.0)
+|   |   |   bin4 > 4: NO (7.0/1.0)
+|   bin1 > 52
+|   |   bin11 <= 11: YES (5.0)
+|   |   bin11 > 11
+|   |   |   bin63 <= 10: NO (6.0/1.0)
+|   |   |   bin63 > 10: YES (5.0/1.0)
+bin4 > 53
+|   bin35 <= 82
+|   |   bin7 <= 149
+|   |   |   bin62 <= 4
+|   |   |   |   bin27 <= 15: YES (3.0)
+|   |   |   |   bin27 > 15: NO (2.0)
+|   |   |   bin62 > 4: YES (22.0)
+|   |   bin7 > 149: NO (2.0)
+|   bin35 > 82: NO (2.0)
+
+Number of Leaves  : 	11
+
+Size of the tree : 	21
+J48 pruned tree
+------------------
+
+bin2 <= 15
+|   bin62 <= 13: NO (26.0)
+|   bin62 > 13
+|   |   bin46 <= 32: YES (8.0/1.0)
+|   |   bin46 > 32: NO (6.0)
+bin2 > 15
+|   bin4 <= 87
+|   |   bin1 <= 58: NO (10.0/1.0)
+|   |   bin1 > 58
+|   |   |   bin50 <= 45
+|   |   |   |   bin64 <= 14
+|   |   |   |   |   bin55 <= 4: YES (5.0)
+|   |   |   |   |   bin55 > 4: NO (5.0/1.0)
+|   |   |   |   bin64 > 14: YES (10.0)
+|   |   |   bin50 > 45: NO (3.0)
+|   bin4 > 87: YES (17.0/1.0)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	17
+J48 pruned tree
+------------------
+
+bin48 <= 87
+|   bin3 <= 103
+|   |   bin1 <= 11
+|   |   |   bin61 <= 9: NO (12.0)
+|   |   |   bin61 > 9
+|   |   |   |   bin1 <= 5
+|   |   |   |   |   bin44 <= 41: YES (6.0)
+|   |   |   |   |   bin44 > 41: NO (3.0/1.0)
+|   |   |   |   bin1 > 5: NO (3.0)
+|   |   bin1 > 11
+|   |   |   bin17 <= 131: YES (38.0/9.0)
+|   |   |   bin17 > 131: NO (3.0)
+|   bin3 > 103: YES (14.0)
+bin48 > 87: NO (11.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+J48 pruned tree
+------------------
+
+bin49 <= 88
+|   bin2 <= 24
+|   |   bin64 <= 10: NO (7.0)
+|   |   bin64 > 10
+|   |   |   bin15 <= 7: YES (4.0)
+|   |   |   bin15 > 7
+|   |   |   |   bin52 <= 6: NO (6.0)
+|   |   |   |   bin52 > 6
+|   |   |   |   |   bin60 <= 16: YES (7.0)
+|   |   |   |   |   bin60 > 16: NO (7.0/1.0)
+|   bin2 > 24: YES (45.0/7.0)
+bin49 > 88: NO (14.0)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+J48 pruned tree
+------------------
+
+bin17 <= 131
+|   bin7 <= 68
+|   |   bin1 <= 42
+|   |   |   bin64 <= 114: NO (25.0)
+|   |   |   bin64 > 114
+|   |   |   |   bin52 <= 10: NO (3.0/1.0)
+|   |   |   |   bin52 > 10: YES (4.0)
+|   |   bin1 > 42
+|   |   |   bin63 <= 9
+|   |   |   |   bin45 <= 18
+|   |   |   |   |   bin59 <= 4: YES (9.0)
+|   |   |   |   |   bin59 > 4
+|   |   |   |   |   |   bin2 <= 43: NO (2.0)
+|   |   |   |   |   |   bin2 > 43: YES (2.0)
+|   |   |   |   bin45 > 18: NO (3.0)
+|   |   |   bin63 > 9: YES (11.0/1.0)
+|   bin7 > 68: YES (26.0/2.0)
+bin17 > 131: NO (5.0)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+J48 pruned tree
+------------------
+
+bin48 <= 87
+|   bin4 <= 42
+|   |   bin1 <= 48
+|   |   |   bin60 <= 7: NO (13.0)
+|   |   |   bin60 > 7
+|   |   |   |   bin2 <= 9
+|   |   |   |   |   bin60 <= 16: YES (4.0)
+|   |   |   |   |   bin60 > 16
+|   |   |   |   |   |   bin64 <= 114: NO (3.0)
+|   |   |   |   |   |   bin64 > 114: YES (4.0/1.0)
+|   |   |   |   bin2 > 9: NO (5.0)
+|   |   bin1 > 48
+|   |   |   bin53 <= 4: YES (8.0)
+|   |   |   bin53 > 4
+|   |   |   |   bin35 <= 8: NO (3.0)
+|   |   |   |   bin35 > 8: YES (7.0/1.0)
+|   bin4 > 42
+|   |   bin7 <= 149: YES (29.0/1.0)
+|   |   bin7 > 149: NO (3.0/1.0)
+bin48 > 87: NO (11.0)
+
+Number of Leaves  : 	11
+
+Size of the tree : 	21
+J48 pruned tree
+------------------
+
+bin48 <= 87
+|   bin2 <= 24
+|   |   bin64 <= 7: NO (9.0)
+|   |   bin64 > 7
+|   |   |   bin1 <= 2: YES (8.0/1.0)
+|   |   |   bin1 > 2
+|   |   |   |   bin16 <= 6: YES (3.0)
+|   |   |   |   bin16 > 6
+|   |   |   |   |   bin60 <= 14
+|   |   |   |   |   |   bin2 <= 15: NO (3.0)
+|   |   |   |   |   |   bin2 > 15: YES (2.0)
+|   |   |   |   |   bin60 > 14: NO (7.0)
+|   bin2 > 24: YES (49.0/11.0)
+bin48 > 87: NO (9.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+Accuracy of J48: 52,00%
+---------------------------------Logistic model tree 
+------------------
+: LM_1:5/5 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.77 + 
+[bin1] * 0    +
+[bin3] * 0.01 +
+[bin7] * 0    +
+[bin42] * -0.01 +
+[bin56] * -0.01
+
+Class 1 :
+0.77 + 
+[bin1] * -0 +
+[bin3] * -0.01 +
+[bin7] * -0 +
+[bin42] * 0.01 +
+[bin56] * 0.01
+Logistic model tree 
+------------------
+
+bin5 <= 95: LM_1:11/22 (71)
+bin5 > 95: LM_2:11/22 (19)
+
+Number of Leaves  : 	2
+
+Size of the Tree : 	3
+
+LM_1:
+Class 0 :
+-0.8 + 
+[bin1] * 0.01 +
+[bin4] * 0.01 +
+[bin5] * -0.01 +
+[bin7] * 0.01 +
+[bin10] * -0.01 +
+[bin11] * -0 +
+[bin18] * -0 +
+[bin42] * -0.02 +
+[bin46] * -0.01 +
+[bin49] * -0.01 +
+[bin56] * -0 +
+[bin59] * 0.01 +
+[bin64] * 0.01
+
+Class 1 :
+0.8  + 
+[bin1] * -0.01 +
+[bin4] * -0.01 +
+[bin5] * 0.01 +
+[bin7] * -0.01 +
+[bin10] * 0.01 +
+[bin11] * 0    +
+[bin18] * 0    +
+[bin42] * 0.02 +
+[bin46] * 0.01 +
+[bin49] * 0.01 +
+[bin56] * 0    +
+[bin59] * -0.01 +
+[bin64] * -0.01
+
+LM_2:
+Class 0 :
+6.6  + 
+[bin1] * -0.03 +
+[bin4] * 0.01 +
+[bin7] * 0    +
+[bin8] * -0.01 +
+[bin10] * -0.04 +
+[bin11] * -0 +
+[bin18] * -0 +
+[bin42] * -0.01 +
+[bin49] * 0.02 +
+[bin56] * -0 +
+[bin57] * 0.03 +
+[bin59] * 0.04 +
+[bin62] * 0.02 +
+[bin64] * 0   
+
+Class 1 :
+-6.6 + 
+[bin1] * 0.03 +
+[bin4] * -0.01 +
+[bin7] * -0 +
+[bin8] * 0.01 +
+[bin10] * 0.04 +
+[bin11] * 0    +
+[bin18] * 0    +
+[bin42] * 0.01 +
+[bin49] * -0.02 +
+[bin56] * 0    +
+[bin57] * -0.03 +
+[bin59] * -0.04 +
+[bin62] * -0.02 +
+[bin64] * -0
+Logistic model tree 
+------------------
+: LM_1:2/2 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.27 + 
+[bin3] * 0.01 +
+[bin49] * -0.01
+
+Class 1 :
+0.27 + 
+[bin3] * -0.01 +
+[bin49] * 0.01
+Logistic model tree 
+------------------
+: LM_1:5/5 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-1.02 + 
+[bin1] * 0    +
+[bin3] * 0.01 +
+[bin5] * 0    +
+[bin49] * -0.01 +
+[bin64] * 0   
+
+Class 1 :
+1.02 + 
+[bin1] * -0 +
+[bin3] * -0.01 +
+[bin5] * -0 +
+[bin49] * 0.01 +
+[bin64] * -0
+Logistic model tree 
+------------------
+: LM_1:5/5 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.59 + 
+[bin1] * 0    +
+[bin3] * 0.01 +
+[bin42] * -0.02 +
+[bin64] * 0   
+
+Class 1 :
+0.59 + 
+[bin1] * -0 +
+[bin3] * -0.01 +
+[bin42] * 0.02 +
+[bin64] * -0
+Logistic model tree 
+------------------
+: LM_1:8/8 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.55 + 
+[bin1] * 0    +
+[bin3] * 0.01 +
+[bin7] * 0    +
+[bin18] * -0.01 +
+[bin49] * -0.01 +
+[bin56] * -0 +
+[bin60] * 0.01 +
+[bin64] * 0   
+
+Class 1 :
+0.55 + 
+[bin1] * -0 +
+[bin3] * -0.01 +
+[bin7] * -0 +
+[bin18] * 0.01 +
+[bin49] * 0.01 +
+[bin56] * 0    +
+[bin60] * -0.01 +
+[bin64] * -0
+Logistic model tree 
+------------------
+: LM_1:6/6 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.5 + 
+[bin1] * 0    +
+[bin3] * 0.01 +
+[bin7] * 0    +
+[bin33] * -0 +
+[bin49] * -0.01 +
+[bin64] * 0   
+
+Class 1 :
+0.5  + 
+[bin1] * -0 +
+[bin3] * -0.01 +
+[bin7] * -0 +
+[bin33] * 0    +
+[bin49] * 0.01 +
+[bin64] * -0
+Logistic model tree 
+------------------
+: LM_1:9/9 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.44 + 
+[bin1] * 0    +
+[bin3] * 0.01 +
+[bin7] * 0.01 +
+[bin20] * -0.01 +
+[bin42] * -0.01 +
+[bin49] * -0 +
+[bin64] * 0   
+
+Class 1 :
+0.44 + 
+[bin1] * -0 +
+[bin3] * -0.01 +
+[bin7] * -0.01 +
+[bin20] * 0.01 +
+[bin42] * 0.01 +
+[bin49] * 0    +
+[bin64] * -0
+Logistic model tree 
+------------------
+: LM_1:4/4 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.49 + 
+[bin1] * 0    +
+[bin4] * 0.01 +
+[bin42] * -0.01 +
+[bin64] * 0   
+
+Class 1 :
+0.49 + 
+[bin1] * -0 +
+[bin4] * -0.01 +
+[bin42] * 0.01 +
+[bin64] * -0
+Logistic model tree 
+------------------
+: LM_1:9/9 (90)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.6 + 
+[bin1] * 0    +
+[bin3] * 0.01 +
+[bin7] * 0.01 +
+[bin20] * -0 +
+[bin42] * -0.01 +
+[bin49] * -0 +
+[bin64] * 0.01
+
+Class 1 :
+0.6  + 
+[bin1] * -0 +
+[bin3] * -0.01 +
+[bin7] * -0.01 +
+[bin20] * 0    +
+[bin42] * 0.01 +
+[bin49] * 0    +
+[bin64] * -0.01
+Accuracy of LMT: 65,00%
+---------------------------------
+RandomTree
+==========
+
+bin42 < 36
+|   bin5 < 31.5
+|   |   bin45 < 10
+|   |   |   bin28 < 14.5
+|   |   |   |   bin2 < 15.5
+|   |   |   |   |   bin13 < 32.5 : NO (3/0)
+|   |   |   |   |   bin13 >= 32.5 : YES (1/0)
+|   |   |   |   bin2 >= 15.5
+|   |   |   |   |   bin7 < 3.5 : NO (1/0)
+|   |   |   |   |   bin7 >= 3.5
+|   |   |   |   |   |   bin32 < 7.5 : YES (6/0)
+|   |   |   |   |   |   bin32 >= 7.5
+|   |   |   |   |   |   |   bin8 < 14.5 : NO (1/0)
+|   |   |   |   |   |   |   bin8 >= 14.5 : YES (1/0)
+|   |   |   bin28 >= 14.5 : NO (4/0)
+|   |   bin45 >= 10 : NO (8/0)
+|   bin5 >= 31.5
+|   |   bin2 < 16.5
+|   |   |   bin44 < 8.5 : NO (4/0)
+|   |   |   bin44 >= 8.5 : YES (3/0)
+|   |   bin2 >= 16.5
+|   |   |   bin64 < 5.5
+|   |   |   |   bin36 < 20 : YES (5/0)
+|   |   |   |   bin36 >= 20
+|   |   |   |   |   bin7 < 89 : NO (1/0)
+|   |   |   |   |   bin7 >= 89 : YES (1/0)
+|   |   |   bin64 >= 5.5 : YES (18/0)
+bin42 >= 36
+|   bin6 < 60 : NO (25/0)
+|   bin6 >= 60
+|   |   bin18 < 112.5
+|   |   |   bin12 < 46.5 : NO (1/0)
+|   |   |   bin12 >= 46.5 : YES (5/0)
+|   |   bin18 >= 112.5 : NO (2/0)
+
+Size of the tree : 35
+RandomTree
+==========
+
+bin42 < 37.5
+|   bin5 < 99
+|   |   bin50 < 27
+|   |   |   bin63 < 11.5
+|   |   |   |   bin2 < 18 : NO (9/0)
+|   |   |   |   bin2 >= 18
+|   |   |   |   |   bin13 < 27.5
+|   |   |   |   |   |   bin7 < 3.5 : NO (1/0)
+|   |   |   |   |   |   bin7 >= 3.5
+|   |   |   |   |   |   |   bin32 < 7.5 : YES (7/0)
+|   |   |   |   |   |   |   bin32 >= 7.5
+|   |   |   |   |   |   |   |   bin8 < 14.5 : NO (1/0)
+|   |   |   |   |   |   |   |   bin8 >= 14.5 : YES (2/0)
+|   |   |   |   |   bin13 >= 27.5
+|   |   |   |   |   |   bin17 < 35.5 : NO (3/0)
+|   |   |   |   |   |   bin17 >= 35.5 : YES (1/0)
+|   |   |   bin63 >= 11.5
+|   |   |   |   bin12 < 28
+|   |   |   |   |   bin38 < 15.5
+|   |   |   |   |   |   bin36 < 9.5 : YES (3/0)
+|   |   |   |   |   |   bin36 >= 9.5 : NO (3/0)
+|   |   |   |   |   bin38 >= 15.5 : YES (3/0)
+|   |   |   |   bin12 >= 28 : YES (6/0)
+|   |   bin50 >= 27 : NO (4/0)
+|   bin5 >= 99
+|   |   bin7 < 154.5 : YES (13/0)
+|   |   bin7 >= 154.5 : NO (1/0)
+bin42 >= 37.5
+|   bin6 < 107.5
+|   |   bin62 < 31.5 : NO (21/0)
+|   |   bin62 >= 31.5
+|   |   |   bin7 < 33 : YES (1/0)
+|   |   |   bin7 >= 33 : NO (6/0)
+|   bin6 >= 107.5
+|   |   bin29 < 56.5 : NO (1/0)
+|   |   bin29 >= 56.5 : YES (4/0)
+
+Size of the tree : 37
+RandomTree
+==========
+
+bin48 < 89.5
+|   bin3 < 68.5
+|   |   bin61 < 8.5
+|   |   |   bin29 < 9.5
+|   |   |   |   bin4 < 14.5 : YES (2/0)
+|   |   |   |   bin4 >= 14.5
+|   |   |   |   |   bin1 < 52 : NO (2/0)
+|   |   |   |   |   bin1 >= 52
+|   |   |   |   |   |   bin56 < 4 : YES (4/0)
+|   |   |   |   |   |   bin56 >= 4 : NO (2/0)
+|   |   |   bin29 >= 9.5 : NO (17/0)
+|   |   bin61 >= 8.5
+|   |   |   bin61 < 12.5 : YES (7/0)
+|   |   |   bin61 >= 12.5
+|   |   |   |   bin47 < 28.5
+|   |   |   |   |   bin60 < 20.5
+|   |   |   |   |   |   bin12 < 43.5 : NO (3/0)
+|   |   |   |   |   |   bin12 >= 43.5 : YES (2/0)
+|   |   |   |   |   bin60 >= 20.5 : YES (4/0)
+|   |   |   |   bin47 >= 28.5
+|   |   |   |   |   bin19 < 71.5 : NO (7/0)
+|   |   |   |   |   bin19 >= 71.5
+|   |   |   |   |   |   bin12 < 89 : YES (2/0)
+|   |   |   |   |   |   bin12 >= 89 : NO (1/0)
+|   bin3 >= 68.5
+|   |   bin28 < 58.5
+|   |   |   bin61 < 4.5
+|   |   |   |   bin9 < 35 : YES (2/0)
+|   |   |   |   bin9 >= 35 : NO (1/0)
+|   |   |   bin61 >= 4.5 : YES (14/0)
+|   |   bin28 >= 58.5
+|   |   |   bin7 < 105 : NO (2/0)
+|   |   |   bin7 >= 105
+|   |   |   |   bin26 < 67.5 : NO (1/0)
+|   |   |   |   bin26 >= 67.5 : YES (3/0)
+bin48 >= 89.5 : NO (14/0)
+
+Size of the tree : 37
+RandomTree
+==========
+
+bin48 < 89.5
+|   bin3 < 32.5
+|   |   bin12 < 11.5
+|   |   |   bin50 < 27
+|   |   |   |   bin15 < 7.5 : YES (6/0)
+|   |   |   |   bin15 >= 7.5
+|   |   |   |   |   bin1 < 87 : NO (1/0)
+|   |   |   |   |   bin1 >= 87 : YES (1/0)
+|   |   |   bin50 >= 27 : NO (3/0)
+|   |   bin12 >= 11.5
+|   |   |   bin15 < 40 : NO (16/0)
+|   |   |   bin15 >= 40
+|   |   |   |   bin57 < 26 : NO (5/0)
+|   |   |   |   bin57 >= 26
+|   |   |   |   |   bin18 < 117.5 : YES (3/0)
+|   |   |   |   |   bin18 >= 117.5 : NO (1/0)
+|   bin3 >= 32.5
+|   |   bin34 < 91.5
+|   |   |   bin16 < 136
+|   |   |   |   bin60 < 5
+|   |   |   |   |   bin23 < 21.5
+|   |   |   |   |   |   bin11 < 4.5 : NO (1/0)
+|   |   |   |   |   |   bin11 >= 4.5 : YES (6/0)
+|   |   |   |   |   bin23 >= 21.5
+|   |   |   |   |   |   bin21 < 86 : NO (4/0)
+|   |   |   |   |   |   bin21 >= 86 : YES (1/0)
+|   |   |   |   bin60 >= 5
+|   |   |   |   |   bin9 < 24
+|   |   |   |   |   |   bin7 < 23 : YES (1/0)
+|   |   |   |   |   |   bin7 >= 23 : NO (1/0)
+|   |   |   |   |   bin9 >= 24 : YES (22/0)
+|   |   |   bin16 >= 136 : NO (2/0)
+|   |   bin34 >= 91.5 : NO (2/0)
+bin48 >= 89.5 : NO (14/0)
+
+Size of the tree : 35
+RandomTree
+==========
+
+bin48 < 89.5
+|   bin3 < 68.5
+|   |   bin41 < 35
+|   |   |   bin50 < 27
+|   |   |   |   bin15 < 7.5
+|   |   |   |   |   bin19 < 1.5 : NO (1/0)
+|   |   |   |   |   bin19 >= 1.5 : YES (7/0)
+|   |   |   |   bin15 >= 7.5
+|   |   |   |   |   bin62 < 2.5 : NO (5/0)
+|   |   |   |   |   bin62 >= 2.5
+|   |   |   |   |   |   bin57 < 13
+|   |   |   |   |   |   |   bin26 < 9.5 : NO (4/0)
+|   |   |   |   |   |   |   bin26 >= 9.5
+|   |   |   |   |   |   |   |   bin60 < 10.5
+|   |   |   |   |   |   |   |   |   bin33 < 16.5 : YES (4/0)
+|   |   |   |   |   |   |   |   |   bin33 >= 16.5
+|   |   |   |   |   |   |   |   |   |   bin59 < 6.5 : NO (3/0)
+|   |   |   |   |   |   |   |   |   |   bin59 >= 6.5 : YES (2/0)
+|   |   |   |   |   |   |   |   bin60 >= 10.5 : NO (2/0)
+|   |   |   |   |   |   bin57 >= 13 : YES (4/0)
+|   |   |   bin50 >= 27 : NO (4/0)
+|   |   bin41 >= 35
+|   |   |   bin23 < 83.5 : NO (11/0)
+|   |   |   bin23 >= 83.5
+|   |   |   |   bin56 < 31.5 : NO (2/0)
+|   |   |   |   bin56 >= 31.5 : YES (2/0)
+|   bin3 >= 68.5
+|   |   bin43 < 24 : YES (13/0)
+|   |   bin43 >= 24
+|   |   |   bin9 < 52.5 : NO (2/0)
+|   |   |   bin9 >= 52.5
+|   |   |   |   bin25 < 112.5
+|   |   |   |   |   bin58 < 17.5 : NO (1/0)
+|   |   |   |   |   bin58 >= 17.5 : YES (8/0)
+|   |   |   |   bin25 >= 112.5 : NO (1/0)
+bin48 >= 89.5 : NO (14/0)
+
+Size of the tree : 37
+RandomTree
+==========
+
+bin48 < 89.5
+|   bin3 < 105
+|   |   bin61 < 8.5
+|   |   |   bin29 < 9.5
+|   |   |   |   bin24 < 5.5
+|   |   |   |   |   bin1 < 52 : NO (2/0)
+|   |   |   |   |   bin1 >= 52
+|   |   |   |   |   |   bin15 < 8.5 : YES (4/0)
+|   |   |   |   |   |   bin15 >= 8.5 : NO (1/0)
+|   |   |   |   bin24 >= 5.5 : YES (5/0)
+|   |   |   bin29 >= 9.5
+|   |   |   |   bin61 < 4.5 : NO (11/0)
+|   |   |   |   bin61 >= 4.5
+|   |   |   |   |   bin33 < 12.5 : YES (1/0)
+|   |   |   |   |   bin33 >= 12.5
+|   |   |   |   |   |   bin9 < 34.5 : NO (4/0)
+|   |   |   |   |   |   bin9 >= 34.5
+|   |   |   |   |   |   |   bin9 < 51.5 : YES (1/0)
+|   |   |   |   |   |   |   bin9 >= 51.5 : NO (1/0)
+|   |   bin61 >= 8.5
+|   |   |   bin41 < 36.5
+|   |   |   |   bin50 < 5 : NO (1/0)
+|   |   |   |   bin50 >= 5
+|   |   |   |   |   bin51 < 19.5 : YES (15/0)
+|   |   |   |   |   bin51 >= 19.5
+|   |   |   |   |   |   bin43 < 18.5 : NO (1/0)
+|   |   |   |   |   |   bin43 >= 18.5 : YES (4/0)
+|   |   |   bin41 >= 36.5
+|   |   |   |   bin15 < 44.5 : NO (4/0)
+|   |   |   |   bin15 >= 44.5
+|   |   |   |   |   bin47 < 37 : NO (2/0)
+|   |   |   |   |   bin47 >= 37
+|   |   |   |   |   |   bin3 < 75.5 : YES (5/0)
+|   |   |   |   |   |   bin3 >= 75.5
+|   |   |   |   |   |   |   bin8 < 76 : YES (1/0)
+|   |   |   |   |   |   |   bin8 >= 76 : NO (2/0)
+|   bin3 >= 105 : YES (14/0)
+bin48 >= 89.5 : NO (11/0)
+
+Size of the tree : 39
+RandomTree
+==========
+
+bin48 < 89.5
+|   bin3 < 29.5
+|   |   bin12 < 5.5 : YES (4/0)
+|   |   bin12 >= 5.5
+|   |   |   bin34 < 7.5
+|   |   |   |   bin4 < 23 : YES (4/0)
+|   |   |   |   bin4 >= 23 : NO (1/0)
+|   |   |   bin34 >= 7.5
+|   |   |   |   bin28 < 69
+|   |   |   |   |   bin62 < 11 : NO (10/0)
+|   |   |   |   |   bin62 >= 11
+|   |   |   |   |   |   bin61 < 11.5 : YES (2/0)
+|   |   |   |   |   |   bin61 >= 11.5 : NO (7/0)
+|   |   |   |   bin28 >= 69
+|   |   |   |   |   bin18 < 94 : YES (3/0)
+|   |   |   |   |   bin18 >= 94 : NO (1/0)
+|   bin3 >= 29.5
+|   |   bin34 < 91.5
+|   |   |   bin58 < 4.5
+|   |   |   |   bin41 < 14
+|   |   |   |   |   bin7 < 7 : NO (1/0)
+|   |   |   |   |   bin7 >= 7
+|   |   |   |   |   |   bin11 < 141 : YES (6/0)
+|   |   |   |   |   |   bin11 >= 141 : NO (1/0)
+|   |   |   |   bin41 >= 14 : NO (2/0)
+|   |   |   bin58 >= 4.5
+|   |   |   |   bin61 < 3.5 : NO (1/0)
+|   |   |   |   bin61 >= 3.5 : YES (31/0)
+|   |   bin34 >= 91.5 : NO (3/0)
+bin48 >= 89.5 : NO (13/0)
+
+Size of the tree : 31
+RandomTree
+==========
+
+bin48 < 89.5
+|   bin3 < 32.5
+|   |   bin12 < 5.5 : YES (4/0)
+|   |   bin12 >= 5.5
+|   |   |   bin7 < 9 : NO (6/0)
+|   |   |   bin7 >= 9
+|   |   |   |   bin9 < 10.5 : YES (4/0)
+|   |   |   |   bin9 >= 10.5
+|   |   |   |   |   bin63 < 2.5 : NO (6/0)
+|   |   |   |   |   bin63 >= 2.5
+|   |   |   |   |   |   bin62 < 7 : YES (2/0)
+|   |   |   |   |   |   bin62 >= 7
+|   |   |   |   |   |   |   bin61 < 9 : NO (4/0)
+|   |   |   |   |   |   |   bin61 >= 9
+|   |   |   |   |   |   |   |   bin47 < 28.5 : YES (3/0)
+|   |   |   |   |   |   |   |   bin47 >= 28.5
+|   |   |   |   |   |   |   |   |   bin26 < 79.5 : NO (4/0)
+|   |   |   |   |   |   |   |   |   bin26 >= 79.5 : YES (2/0)
+|   bin3 >= 32.5
+|   |   bin16 < 136
+|   |   |   bin41 < 60
+|   |   |   |   bin7 < 61.5
+|   |   |   |   |   bin51 < 21
+|   |   |   |   |   |   bin13 < 33 : YES (10/0)
+|   |   |   |   |   |   bin13 >= 33
+|   |   |   |   |   |   |   bin15 < 37 : NO (2/0)
+|   |   |   |   |   |   |   bin15 >= 37 : YES (2/0)
+|   |   |   |   |   bin51 >= 21 : NO (2/0)
+|   |   |   |   bin7 >= 61.5 : YES (22/0)
+|   |   |   bin41 >= 60
+|   |   |   |   bin7 < 114.5 : NO (2/0)
+|   |   |   |   bin7 >= 114.5 : YES (1/0)
+|   |   bin16 >= 136 : NO (2/0)
+bin48 >= 89.5 : NO (12/0)
+
+Size of the tree : 35
+RandomTree
+==========
+
+bin48 < 89.5
+|   bin3 < 50.5
+|   |   bin41 < 35
+|   |   |   bin34 < 95.5
+|   |   |   |   bin15 < 6.5 : YES (6/0)
+|   |   |   |   bin15 >= 6.5
+|   |   |   |   |   bin6 < 9 : NO (4/0)
+|   |   |   |   |   bin6 >= 9
+|   |   |   |   |   |   bin37 < 20
+|   |   |   |   |   |   |   bin28 < 15.5
+|   |   |   |   |   |   |   |   bin26 < 5.5 : NO (2/0)
+|   |   |   |   |   |   |   |   bin26 >= 5.5
+|   |   |   |   |   |   |   |   |   bin34 < 7.5 : YES (4/0)
+|   |   |   |   |   |   |   |   |   bin34 >= 7.5
+|   |   |   |   |   |   |   |   |   |   bin55 < 5.5 : NO (2/0)
+|   |   |   |   |   |   |   |   |   |   bin55 >= 5.5 : YES (3/0)
+|   |   |   |   |   |   |   bin28 >= 15.5 : NO (4/0)
+|   |   |   |   |   |   bin37 >= 20 : YES (6/0)
+|   |   |   bin34 >= 95.5 : NO (2/0)
+|   |   bin41 >= 35
+|   |   |   bin51 < 49 : NO (11/0)
+|   |   |   bin51 >= 49
+|   |   |   |   bin7 < 25 : NO (1/0)
+|   |   |   |   bin7 >= 25 : YES (2/0)
+|   bin3 >= 50.5
+|   |   bin11 < 5.5 : NO (1/0)
+|   |   bin11 >= 5.5
+|   |   |   bin13 < 149.5
+|   |   |   |   bin54 < 50 : YES (27/0)
+|   |   |   |   bin54 >= 50
+|   |   |   |   |   bin7 < 52.5 : NO (1/0)
+|   |   |   |   |   bin7 >= 52.5 : YES (2/0)
+|   |   |   bin13 >= 149.5 : NO (1/0)
+bin48 >= 89.5 : NO (11/0)
+
+Size of the tree : 35
+RandomTree
+==========
+
+bin48 < 93
+|   bin3 < 68.5
+|   |   bin41 < 35
+|   |   |   bin50 < 33
+|   |   |   |   bin15 < 7.5
+|   |   |   |   |   bin19 < 1.5 : NO (1/0)
+|   |   |   |   |   bin19 >= 1.5 : YES (9/0)
+|   |   |   |   bin15 >= 7.5
+|   |   |   |   |   bin62 < 2.5 : NO (5/0)
+|   |   |   |   |   bin62 >= 2.5
+|   |   |   |   |   |   bin22 < 9.5 : NO (3/0)
+|   |   |   |   |   |   bin22 >= 9.5
+|   |   |   |   |   |   |   bin33 < 21.5
+|   |   |   |   |   |   |   |   bin26 < 20.5
+|   |   |   |   |   |   |   |   |   bin9 < 87.5 : YES (5/0)
+|   |   |   |   |   |   |   |   |   bin9 >= 87.5
+|   |   |   |   |   |   |   |   |   |   bin19 < 31.5 : NO (1/0)
+|   |   |   |   |   |   |   |   |   |   bin19 >= 31.5 : YES (1/0)
+|   |   |   |   |   |   |   |   bin26 >= 20.5 : NO (2/0)
+|   |   |   |   |   |   |   bin33 >= 21.5 : YES (7/0)
+|   |   |   bin50 >= 33 : NO (3/0)
+|   |   bin41 >= 35
+|   |   |   bin23 < 83.5 : NO (10/0)
+|   |   |   bin23 >= 83.5
+|   |   |   |   bin56 < 31.5 : NO (2/0)
+|   |   |   |   bin56 >= 31.5 : YES (3/0)
+|   bin3 >= 68.5
+|   |   bin43 < 24 : YES (16/0)
+|   |   bin43 >= 24
+|   |   |   bin9 < 52.5 : NO (2/0)
+|   |   |   bin9 >= 52.5
+|   |   |   |   bin25 < 112.5
+|   |   |   |   |   bin58 < 14.5 : NO (1/0)
+|   |   |   |   |   bin58 >= 14.5 : YES (9/0)
+|   |   |   |   bin25 >= 112.5 : NO (1/0)
+bin48 >= 93 : NO (9/0)
+
+Size of the tree : 37Accuracy of RandomTree: 59,00%
+---------------------------------Decision Stump
+
+Classifications
+
+bin2 <= 25.0 : NO
+bin2 > 25.0 : YES
+bin2 is missing : NO
+
+Class distributions
+
+bin2 <= 25.0
+YES	NO	
+0.1590909090909091	0.8409090909090909	
+bin2 > 25.0
+YES	NO	
+0.717391304347826	0.2826086956521739	
+bin2 is missing
+YES	NO	
+0.4444444444444444	0.5555555555555556	
+Decision Stump
+
+Classifications
+
+bin41 <= 35.0 : YES
+bin41 > 35.0 : NO
+bin41 is missing : NO
+
+Class distributions
+
+bin41 <= 35.0
+YES	NO	
+0.6363636363636364	0.36363636363636365	
+bin41 > 35.0
+YES	NO	
+0.14285714285714285	0.8571428571428571	
+bin41 is missing
+YES	NO	
+0.4444444444444444	0.5555555555555556	
+Decision Stump
+
+Classifications
+
+bin2 <= 25.0 : NO
+bin2 > 25.0 : YES
+bin2 is missing : NO
+
+Class distributions
+
+bin2 <= 25.0
+YES	NO	
+0.2127659574468085	0.7872340425531915	
+bin2 > 25.0
+YES	NO	
+0.6976744186046512	0.3023255813953488	
+bin2 is missing
+YES	NO	
+0.4444444444444444	0.5555555555555556	
+Decision Stump
+
+Classifications
+
+bin3 <= 32.5 : NO
+bin3 > 32.5 : YES
+bin3 is missing : NO
+
+Class distributions
+
+bin3 <= 32.5
+YES	NO	
+0.20408163265306123	0.7959183673469388	
+bin3 > 32.5
+YES	NO	
+0.7317073170731707	0.2682926829268293	
+bin3 is missing
+YES	NO	
+0.4444444444444444	0.5555555555555556	
+Decision Stump
+
+Classifications
+
+bin2 <= 25.0 : NO
+bin2 > 25.0 : YES
+bin2 is missing : NO
+
+Class distributions
+
+bin2 <= 25.0
+YES	NO	
+0.1956521739130435	0.8043478260869565	
+bin2 > 25.0
+YES	NO	
+0.7045454545454546	0.29545454545454547	
+bin2 is missing
+YES	NO	
+0.4444444444444444	0.5555555555555556	
+Decision Stump
+
+Classifications
+
+bin2 <= 28.5 : NO
+bin2 > 28.5 : YES
+bin2 is missing : YES
+
+Class distributions
+
+bin2 <= 28.5
+YES	NO	
+0.3023255813953488	0.6976744186046512	
+bin2 > 28.5
+YES	NO	
+0.7872340425531915	0.2127659574468085	
+bin2 is missing
+YES	NO	
+0.5555555555555556	0.4444444444444444	
+Decision Stump
+
+Classifications
+
+bin2 <= 28.5 : NO
+bin2 > 28.5 : YES
+bin2 is missing : YES
+
+Class distributions
+
+bin2 <= 28.5
+YES	NO	
+0.28888888888888886	0.7111111111111111	
+bin2 > 28.5
+YES	NO	
+0.8222222222222222	0.17777777777777778	
+bin2 is missing
+YES	NO	
+0.5555555555555556	0.4444444444444444	
+Decision Stump
+
+Classifications
+
+bin2 <= 28.5 : NO
+bin2 > 28.5 : YES
+bin2 is missing : YES
+
+Class distributions
+
+bin2 <= 28.5
+YES	NO	
+0.29545454545454547	0.7045454545454546	
+bin2 > 28.5
+YES	NO	
+0.8043478260869565	0.1956521739130435	
+bin2 is missing
+YES	NO	
+0.5555555555555556	0.4444444444444444	
+Decision Stump
+
+Classifications
+
+bin4 <= 54.5 : NO
+bin4 > 54.5 : YES
+bin4 is missing : YES
+
+Class distributions
+
+bin4 <= 54.5
+YES	NO	
+0.3620689655172414	0.6379310344827587	
+bin4 > 54.5
+YES	NO	
+0.90625	0.09375	
+bin4 is missing
+YES	NO	
+0.5555555555555556	0.4444444444444444	
+Decision Stump
+
+Classifications
+
+bin2 <= 25.0 : NO
+bin2 > 25.0 : YES
+bin2 is missing : YES
+
+Class distributions
+
+bin2 <= 25.0
+YES	NO	
+0.3	0.7	
+bin2 > 25.0
+YES	NO	
+0.76	0.24	
+bin2 is missing
+YES	NO	
+0.5555555555555556	0.4444444444444444	
+Accuracy of DecisionStump: 69,00%
+---------------------------------

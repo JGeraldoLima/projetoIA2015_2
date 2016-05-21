@@ -73,6 +73,10 @@ import javax.imageio.ImageIO;
 
 public class FiltroCanny extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2319198523068516708L;
 	// Atributos
 	// Escala e magnitude para imagens
 	static double ORI_SCALE = 40.0;
@@ -214,6 +218,7 @@ public class FiltroCanny extends JFrame {
 	private void canny(double s, BufferedImage imagem, 
 			BufferedImage imagemMag, BufferedImage imagemOrig) {
 		
+		@SuppressWarnings("unused")
 		int width = 0, k, n, nc, nr;
 		double[][]	componenteX,	// Componente x da imagem original convolvida
 															// com a função Gaussiana
@@ -365,6 +370,7 @@ public class FiltroCanny extends JFrame {
 	private void removeFalsoMax(double[][] derivX, double[][] derivY, 
 		int nr, int nc, BufferedImage imagemMag, BufferedImage imagemOrig) {
 
+		@SuppressWarnings("unused")
 		int k, n, m, top, bottom, left, right;
 		double xx, yy, grad1, grad2, grad3, grad4, gradiente, compX, compY;
 

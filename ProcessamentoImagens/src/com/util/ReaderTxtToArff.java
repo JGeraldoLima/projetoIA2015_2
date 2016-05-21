@@ -60,6 +60,7 @@ public class ReaderTxtToArff {
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
+		@SuppressWarnings("resource")
 		Scanner ler = new Scanner(System.in);
 		
 		System.out.printf("Informe o caminho dos arquivos de entrada:\n");

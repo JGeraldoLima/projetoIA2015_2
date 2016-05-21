@@ -17,7 +17,7 @@ import java.util.List;
 import javax.media.jai.Histogram;
 import javax.swing.JComponent;
 
-import com.features.TrainingHistogramRGB;
+import com.features.training.TrainingHistogramRGB;
 
 /**
  * This class displays a histogram (instance of Histogram) as a component. Only

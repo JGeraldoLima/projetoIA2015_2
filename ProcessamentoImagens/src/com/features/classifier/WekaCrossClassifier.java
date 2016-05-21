@@ -1,8 +1,9 @@
-package com.examples;
+package com.features.classifier;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.Scanner;
 
 import weka.classifiers.Classifier;
@@ -17,7 +18,7 @@ import weka.classifiers.trees.RandomTree;
 import weka.core.FastVector;
 import weka.core.Instances;
  
-public class WekaTest {
+public class WekaCrossClassifier {
 	
 	public static BufferedReader readDataFile(String filename) {
 		BufferedReader inputReader = null;
@@ -64,12 +65,28 @@ public class WekaTest {
  
 		return split;
 	}
+	
+	public static void writeLine(String filename, String line) {
+		try {
+			FileWriter fw = new FileWriter(filename, true);// em modo de append!!
+		    fw.write(line);
+		    fw.close();
+		} catch (Exception e) {
+			System.out.println(String.format("Erro ao gerar o arquivo: %s", e.getMessage()));
+		}
+	}
  
 	public static void main(String[] args) throws Exception {
 		Scanner ler = new Scanner(System.in);
 		
 		System.out.printf("Informe o caminho dos arquivos de entrada:\n");
 	    String inputFile = "classifier/" + ler.nextLine();
+	    
+	    System.out.printf("Informe o tipo de histograma (Gray ou RGB):\n");
+	    String type = ler.nextLine();
+	    
+	    System.out.printf("Informe a quantidade de bins:\n");
+	    String bins = ler.nextLine();
 		
 	    BufferedReader datafile = readDataFile(inputFile);
  
@@ -104,7 +121,7 @@ public class WekaTest {
 				predictions.appendElements(validation.predictions()); 
  
 				// Uncomment to see the summary for each training-testing pair.
-				System.out.println(models[j].toString());
+				writeLine("results/cross_validation/results" + type + bins + ".txt", models[j].toString());
 			}
  
 			// Calculate overall accuracy of current classifier on all splits
@@ -112,7 +129,7 @@ public class WekaTest {
  
 			// Print current classifier's name and accuracy in a complicated,
 			// but nice-looking way.
-			System.out.println("Accuracy of " + models[j].getClass().getSimpleName() + ": "
+			writeLine("results/cross_validation/results" + type + bins + ".txt", "Accuracy of " + models[j].getClass().getSimpleName() + ": "
 					+ String.format("%.2f%%", accuracy)
 					+ "\n---------------------------------");
 		}
