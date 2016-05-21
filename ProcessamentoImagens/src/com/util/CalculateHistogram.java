@@ -33,7 +33,7 @@ public class CalculateHistogram {
 		JFrame f = new JFrame("Histograma: " + file);
 		DisplayGrayHistogram dh1 = new DisplayGrayHistogram(histo, 0, String.valueOf(bins) + " bins");
 		dh1.setBinWidth((int) Math.pow(2, (10 - (Math.log(bins) / Math.log(2)))));
-		dh1.setHeight(160);
+		dh1.setHeight(200);
 		dh1.setIndexMultiplier(8);
 		f.getContentPane().add(dh1);
 		f.pack();
