@@ -17,7 +17,7 @@ import java.util.List;
 import javax.media.jai.Histogram;
 import javax.swing.JComponent;
 
-import com.features.TrainingHistograms;
+import com.features.TrainingHistogramRGB;
 
 /**
  * This class displays a histogram (instance of Histogram) as a component. Only
@@ -234,7 +234,7 @@ public class DisplayRGBHistogram extends JComponent implements MouseMotionListen
 			}
 		}
 		try {
-			TrainingHistograms.writeLine(getListBars(bars)+"\n");
+			TrainingHistogramRGB.writeLine(getListBars(bars)+"\n");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

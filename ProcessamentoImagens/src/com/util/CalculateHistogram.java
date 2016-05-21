@@ -101,7 +101,7 @@ public class CalculateHistogram {
 		Histogram histo = (Histogram) dummyImage.getProperty("histogram");
 
 		JFrame f = new JFrame("Histograma RGB: " + file);
-		DisplayRGBHistogram dh1 = new DisplayRGBHistogram(histo, String.valueOf(bins) + " bins");
+		DisplayRGBHistogram dh1 = new DisplayRGBHistogram(histo, String.valueOf((int)Math.pow(bins, 3)) + " bins");
 		dh1.setBinWidth((int) Math.pow(2, (10 - (Math.log(bins) / Math.log(2)))));
 		dh1.setHeight(160);
 		dh1.setIndexMultiplier(8);

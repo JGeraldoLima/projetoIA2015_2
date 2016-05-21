@@ -17,7 +17,7 @@ import java.util.List;
 import javax.media.jai.Histogram;
 import javax.swing.JComponent;
 
-import com.features.TrainingHistograms;
+import com.features.TrainingHistogramGray;
 
 /**
  * This class displays a histogram (instance of Histogram) as a component. Only
@@ -210,7 +210,7 @@ public class DisplayGrayHistogram extends JComponent implements MouseMotionListe
 			g2d.drawRect(x, (int) barStarts, binWidth, (int) barEnds);
 		}
 		try {
-			TrainingHistograms.writeLine(getListBars(bars)+"\n");
+			TrainingHistogramGray.writeLine(getListBars(bars)+"\n");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
