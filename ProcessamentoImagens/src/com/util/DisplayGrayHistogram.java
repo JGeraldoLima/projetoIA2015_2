@@ -41,6 +41,8 @@ import java.util.Locale;
 import javax.media.jai.Histogram;
 import javax.swing.JComponent;
 
+import com.features.TrainingHistograms;
+
 /**
  * This class displays a histogram (instance of Histogram) as a component. Only
  * the first histogram band ins considered for plotting. The component has a
@@ -103,7 +105,7 @@ public class DisplayGrayHistogram extends JComponent implements MouseMotionListe
 			maxCount = Math.max(maxCount, counts[c]);
 		addMouseMotionListener(this);
 	}
-
+	
 	/**
 	 * Returns the values of each bar of histogram.
 	 * 
@@ -233,7 +235,7 @@ public class DisplayGrayHistogram extends JComponent implements MouseMotionListe
 		}
 		try {
 			System.out.println(getListBars(bars));
-			System.out.println("\n" + bars.size());
+			TrainingHistograms.writeLine(getListBars(bars)+"\n");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
