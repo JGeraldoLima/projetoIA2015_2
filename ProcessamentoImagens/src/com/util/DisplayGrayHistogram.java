@@ -1,25 +1,5 @@
 package com.util;
 
-/*
- * Created on Jun 10, 2005
- * @author Rafael Santos (rafael.santos@lac.inpe.br)
- * 
- * Part of the Java Advanced Imaging Stuff site
- * (http://www.lac.inpe.br/~rafael.santos/Java/JAI)
- * 
- * STATUS: Complete, but could be improved, for example, with:
- *   - Plotting more than one band of the histogram.
- *   - Considering the minimum number of pixels in a bin.
- *   - Customization as a JavaBean.
- * 
- * Redistribution and usage conditions must be done under the
- * Creative Commons license:
- * English: http://creativecommons.org/licenses/by-nc-sa/2.0/br/deed.en
- * Portuguese: http://creativecommons.org/licenses/by-nc-sa/2.0/br/deed.pt
- * More information on design and applications are on the projects' page
- * (http://www.lac.inpe.br/~rafael.santos/Java/JAI).
- */
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -30,13 +10,9 @@ import java.awt.Insets;
 import java.awt.RenderingHints;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 import javax.media.jai.Histogram;
 import javax.swing.JComponent;
@@ -234,7 +210,6 @@ public class DisplayGrayHistogram extends JComponent implements MouseMotionListe
 			g2d.drawRect(x, (int) barStarts, binWidth, (int) barEnds);
 		}
 		try {
-			System.out.println(getListBars(bars));
 			TrainingHistograms.writeLine(getListBars(bars)+"\n");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

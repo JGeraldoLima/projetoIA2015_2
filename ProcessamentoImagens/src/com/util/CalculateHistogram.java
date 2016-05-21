@@ -36,7 +36,6 @@ public class CalculateHistogram {
 		dh1.setHeight(160);
 		dh1.setIndexMultiplier(8);
 		f.getContentPane().add(dh1);
-		// f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.pack();
 		f.setVisible(true);
 	}
@@ -78,9 +77,6 @@ public class CalculateHistogram {
 		cBlue.setMaxCount(max);
 		cp.add(cRed);
 		cp.add(cGreen);
-		cp.add(cBlue);
-		// Set the closing operation so the application is finished.
-		//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.pack(); // Adjust the frame size using preferred dimensions.
 		frame.setVisible(true); // Show the frame.
 	}
@@ -101,12 +97,11 @@ public class CalculateHistogram {
 		Histogram histo = (Histogram) dummyImage.getProperty("histogram");
 
 		JFrame f = new JFrame("Histograma RGB: " + file);
-		DisplayRGBHistogram dh1 = new DisplayRGBHistogram(histo, String.valueOf(bins) + " bins");
+		DisplayRGBHistogram dh1 = new DisplayRGBHistogram(histo, String.valueOf((int)Math.pow(bins, 3)) + " bins");
 		dh1.setBinWidth((int) Math.pow(2, (10 - (Math.log(bins) / Math.log(2)))));
-		dh1.setHeight(160);
+		dh1.setHeight(200);
 		dh1.setIndexMultiplier(8);
 		f.getContentPane().add(dh1);
-		// f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.pack();
 		f.setVisible(true);
 	}

@@ -1,25 +1,5 @@
 package com.util;
 
-/*
- * Created on Jun 10, 2005
- * @author Rafael Santos (rafael.santos@lac.inpe.br)
- * 
- * Part of the Java Advanced Imaging Stuff site
- * (http://www.lac.inpe.br/~rafael.santos/Java/JAI)
- * 
- * STATUS: Complete, but could be improved, for example, with:
- *   - Plotting more than one band of the histogram.
- *   - Considering the minimum number of pixels in a bin.
- *   - Customization as a JavaBean.
- * 
- * Redistribution and usage conditions must be done under the
- * Creative Commons license:
- * English: http://creativecommons.org/licenses/by-nc-sa/2.0/br/deed.en
- * Portuguese: http://creativecommons.org/licenses/by-nc-sa/2.0/br/deed.pt
- * More information on design and applications are on the projects' page
- * (http://www.lac.inpe.br/~rafael.santos/Java/JAI).
- */
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -30,13 +10,9 @@ import java.awt.Insets;
 import java.awt.RenderingHints;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 import javax.media.jai.Histogram;
 import javax.swing.JComponent;
@@ -61,7 +37,7 @@ public class DisplayRGBHistogram extends JComponent implements MouseMotionListen
 	private int[] countsRed;
 	private int[] countsBlue;
 	private int[] countsGreen;
-	private int maxCount;
+	private double maxCount;
 	private int indexMultiplier = 1;
 	private int skipIndexes = 8;
 	// The components' dimensions.
@@ -94,7 +70,6 @@ public class DisplayRGBHistogram extends JComponent implements MouseMotionListen
 	public DisplayRGBHistogram(Histogram histogram, String title) {
 		this.histogram = histogram;
 		this.title = title;
-		this.band = band;
 		// Use default colors.
 		backgroundColor = Color.BLACK;
 		barColor = new Color(255, 255, 200);
@@ -106,9 +81,17 @@ public class DisplayRGBHistogram extends JComponent implements MouseMotionListen
 		countsBlue = histogram.getBins(1);
 		countsGreen = histogram.getBins(2);
 		// Get the max and min counts.
-		maxCount = Integer.MIN_VALUE;
-		for (int c = 0; c < countsRed.length; c++)
-			maxCount = Math.max(maxCount, countsRed[c]);
+		maxCount = 0.0;
+		int length = Math.max(countsRed.length, Math.max(countsBlue.length, countsGreen.length));
+		for (int c = 0; c < length; c++){
+			
+			double redR = countsRed[c];
+	        double blueR = countsBlue[c];
+	        double greenR = countsGreen[c];
+	        double valueR = Math.sqrt(redR*redR + blueR*blueR + greenR*greenR);
+	        maxCount = Math.max(maxCount, valueR);
+		}
+
 		addMouseMotionListener(this);
 	}
 
@@ -120,6 +103,7 @@ public class DisplayRGBHistogram extends JComponent implements MouseMotionListen
 	public List<Double> getBars() {
 		return bars;
 	}
+	
 
 	/**
 	 * Returns the values of all bars of histogram.
@@ -168,14 +152,14 @@ public class DisplayRGBHistogram extends JComponent implements MouseMotionListen
 	 * value is defined in the constructor and can be overriden with this
 	 * method.
 	 */
-	public void setMaxCount(int m) {
+	public void setMaxCount(double m) {
 		maxCount = m;
 	}
 
 	/**
 	 * Returns the max count for this histogram.
 	 */
-	public int getMaxCount() {
+	public double getMaxCount() {
 		return maxCount;
 	}
 
@@ -234,19 +218,22 @@ public class DisplayRGBHistogram extends JComponent implements MouseMotionListen
 		for (int red = 0; red < histogram.getNumBins(0); red++) {
 			for (int blue = 0; blue < histogram.getNumBins(1); blue++) {
 				for (int green = 0; green < histogram.getNumBins(2); green++) {
-					int x = border.left + green * binWidth;
-					double barStarts = border.top + height * ((maxCount - (countsRed[red] + countsBlue[blue] + countsGreen[green])/3)) / (1. * maxCount);
-					double barEnds = Math.ceil(height * ((countsRed[red] + countsBlue[blue] + countsGreen[green])/3) / (1. * maxCount));
-					// Add value point histogram in array
-					//Math.max(countsRed[red], Math.max(countsBlue[blue], countsGreen[green])
-					//countsRed[red] + countsBlue[blue] + countsGreen[green])/3
+					int x = border.left + (red*4*4 + blue*4 + green) * binWidth/16;
+					
+					double redR = countsRed[red];
+			        double blueR = countsBlue[blue];
+			        double greenR = countsGreen[green];
+			        double valueR = Math.sqrt(redR*redR + blueR*blueR + greenR*greenR);
+
+					double barStarts = border.top + height * (maxCount - valueR)/maxCount;
+					double barEnds = Math.ceil(height * valueR/maxCount);
+
 					bars.add(barEnds);
-					g2d.drawRect(x, (int) barStarts, binWidth, (int) barEnds);
+					g2d.drawRect(x, (int) barStarts, binWidth/16, (int) barEnds);
 				}
 			}
 		}
 		try {
-			System.out.println(getListBars(bars));
 			TrainingHistograms.writeLine(getListBars(bars)+"\n");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
