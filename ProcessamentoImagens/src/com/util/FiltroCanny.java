@@ -138,7 +138,7 @@ public class FiltroCanny extends JFrame {
 
 		long eq_time = System.currentTimeMillis();
 
-		FiltroCanny fc = new FiltroCanny("../../../images/1.jpg", dp, inf, sup); //alteração 
+		FiltroCanny fc = new FiltroCanny("images/test/festa/01.jpg", dp, inf, sup); //alteração 
 
     eq_time = System.currentTimeMillis() - eq_time;
 		String msg = "Canny: tempo de execucao ";
