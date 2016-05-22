@@ -1,0 +1,68 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     party
+Instances:    100
+Attributes:   9
+              bin1
+              bin2
+              bin3
+              bin4
+              bin5
+              bin6
+              bin7
+              bin8
+              isParty
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+bin8 <= 110.5 : YES
+bin8 > 110.5 : NO
+bin8 is missing : YES
+
+Class distributions
+
+bin8 <= 110.5
+YES	NO	
+0.7377049180327869	0.26229508196721313	
+bin8 > 110.5
+YES	NO	
+0.1282051282051282	0.8717948717948718	
+bin8 is missing
+YES	NO	
+0.5	0.5	
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          76               76      %
+Incorrectly Classified Instances        24               24      %
+Kappa statistic                          0.52  
+Mean absolute error                      0.343 
+Root mean squared error                  0.4306
+Relative absolute error                 68.5926 %
+Root relative squared error             86.1261 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,840    0,320    0,724      0,840    0,778      0,527    0,723     0,659     YES
+                 0,680    0,160    0,810      0,680    0,739      0,527    0,723     0,701     NO
+Weighted Avg.    0,760    0,240    0,767      0,760    0,758      0,527    0,723     0,680     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 42  8 |  a = YES
+ 16 34 |  b = NO
+
+

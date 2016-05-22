@@ -1,0 +1,106 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     party
+Instances:    100
+Attributes:   9
+              bin1
+              bin2
+              bin3
+              bin4
+              bin5
+              bin6
+              bin7
+              bin8
+              isParty
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+bin6 < 116.5
+|   bin5 < 131
+|   |   bin4 < 116
+|   |   |   bin4 < 101
+|   |   |   |   bin4 < 98 : NO (1/0)
+|   |   |   |   bin4 >= 98 : YES (2/0)
+|   |   |   bin4 >= 101 : NO (3/0)
+|   |   bin4 >= 116 : YES (3/0)
+|   bin5 >= 131
+|   |   bin3 < 130.5 : YES (20/0)
+|   |   bin3 >= 130.5
+|   |   |   bin2 < 112 : NO (1/0)
+|   |   |   bin2 >= 112
+|   |   |   |   bin7 < 117
+|   |   |   |   |   bin4 < 78.5 : NO (1/0)
+|   |   |   |   |   bin4 >= 78.5
+|   |   |   |   |   |   bin2 < 128.5 : YES (3/0)
+|   |   |   |   |   |   bin2 >= 128.5
+|   |   |   |   |   |   |   bin2 < 131.5 : NO (2/0)
+|   |   |   |   |   |   |   bin2 >= 131.5
+|   |   |   |   |   |   |   |   bin3 < 134 : YES (2/0)
+|   |   |   |   |   |   |   |   bin3 >= 134
+|   |   |   |   |   |   |   |   |   bin2 < 135 : NO (1/0)
+|   |   |   |   |   |   |   |   |   bin2 >= 135 : YES (1/0)
+|   |   |   |   bin7 >= 117 : YES (5/0)
+bin6 >= 116.5
+|   bin3 < 143.5
+|   |   bin1 < 135
+|   |   |   bin3 < 111.5
+|   |   |   |   bin4 < 125.5 : YES (2/0)
+|   |   |   |   bin4 >= 125.5 : NO (2/0)
+|   |   |   bin3 >= 111.5 : NO (11/0)
+|   |   bin1 >= 135
+|   |   |   bin5 < 169.5
+|   |   |   |   bin7 < 135
+|   |   |   |   |   bin3 < 123.5 : YES (3/0)
+|   |   |   |   |   bin3 >= 123.5
+|   |   |   |   |   |   bin4 < 113.5 : NO (4/0)
+|   |   |   |   |   |   bin4 >= 113.5
+|   |   |   |   |   |   |   bin3 < 130.5 : NO (2/0)
+|   |   |   |   |   |   |   bin3 >= 130.5
+|   |   |   |   |   |   |   |   bin6 < 120 : NO (1/0)
+|   |   |   |   |   |   |   |   bin6 >= 120 : YES (3/0)
+|   |   |   |   bin7 >= 135 : YES (5/0)
+|   |   |   bin5 >= 169.5 : NO (2/0)
+|   bin3 >= 143.5
+|   |   bin8 < 126.5
+|   |   |   bin7 < 145.5 : NO (3/0)
+|   |   |   bin7 >= 145.5
+|   |   |   |   bin2 < 116.5 : NO (1/0)
+|   |   |   |   bin2 >= 116.5 : YES (1/0)
+|   |   bin8 >= 126.5 : NO (15/0)
+
+Size of the tree : 53
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          67               67      %
+Incorrectly Classified Instances        33               33      %
+Kappa statistic                          0.34  
+Mean absolute error                      0.33  
+Root mean squared error                  0.5745
+Relative absolute error                 66      %
+Root relative squared error            114.8913 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,680    0,340    0,667      0,680    0,673      0,340    0,670     0,613     YES
+                 0,660    0,320    0,673      0,660    0,667      0,340    0,670     0,614     NO
+Weighted Avg.    0,670    0,330    0,670      0,670    0,670      0,340    0,670     0,614     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 34 16 |  a = YES
+ 17 33 |  b = NO
+
+

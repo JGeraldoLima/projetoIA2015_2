@@ -1,0 +1,87 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     party
+Instances:    100
+Attributes:   28
+              bin1
+              bin2
+              bin3
+              bin4
+              bin5
+              bin6
+              bin7
+              bin8
+              bin9
+              bin10
+              bin11
+              bin12
+              bin13
+              bin14
+              bin15
+              bin16
+              bin17
+              bin18
+              bin19
+              bin20
+              bin21
+              bin22
+              bin23
+              bin24
+              bin25
+              bin26
+              bin27
+              isParty
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+bin1 <= 157
+|   bin17 <= 112
+|   |   bin12 <= 103: YES (3.0)
+|   |   bin12 > 103: NO (4.0)
+|   bin17 > 112: NO (26.0)
+bin1 > 157
+|   bin7 <= 141
+|   |   bin21 <= 95
+|   |   |   bin12 <= 101: NO (6.0)
+|   |   |   bin12 > 101: YES (2.0)
+|   |   bin21 > 95: YES (49.0/5.0)
+|   bin7 > 141: NO (10.0/1.0)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Time taken to build model: 0.07 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          78               78      %
+Incorrectly Classified Instances        22               22      %
+Kappa statistic                          0.56  
+Mean absolute error                      0.2596
+Root mean squared error                  0.4578
+Relative absolute error                 51.9162 %
+Root relative squared error             91.5625 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,800    0,240    0,769      0,800    0,784      0,560    0,727     0,636     YES
+                 0,760    0,200    0,792      0,760    0,776      0,560    0,727     0,721     NO
+Weighted Avg.    0,780    0,220    0,780      0,780    0,780      0,560    0,727     0,678     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 40 10 |  a = YES
+ 12 38 |  b = NO
+
+

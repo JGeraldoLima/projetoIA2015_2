@@ -1,0 +1,68 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     party
+Instances:    100
+Attributes:   257
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+bin192 <= 79
+|   bin4 <= 5
+|   |   bin250 <= 8: NO (15.0)
+|   |   bin250 > 8
+|   |   |   bin13 <= 15
+|   |   |   |   bin13 <= 2
+|   |   |   |   |   bin2 <= 0: NO (2.0)
+|   |   |   |   |   bin2 > 0: YES (4.0)
+|   |   |   |   bin13 > 2: NO (6.0)
+|   |   |   bin13 > 15: YES (5.0)
+|   bin4 > 5
+|   |   bin163 <= 26
+|   |   |   bin241 <= 3
+|   |   |   |   bin228 <= 2: YES (14.0/2.0)
+|   |   |   |   bin228 > 2: NO (3.0)
+|   |   |   bin241 > 3: YES (25.0)
+|   |   bin163 > 26
+|   |   |   bin177 <= 40: NO (10.0/1.0)
+|   |   |   bin177 > 40: YES (3.0)
+bin192 > 79: NO (13.0)
+
+Number of Leaves  : 	11
+
+Size of the tree : 	21
+
+
+Time taken to build model: 0.12 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          68               68      %
+Incorrectly Classified Instances        32               32      %
+Kappa statistic                          0.36  
+Mean absolute error                      0.3226
+Root mean squared error                  0.5381
+Relative absolute error                 64.5155 %
+Root relative squared error            107.6158 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,640    0,280    0,696      0,640    0,667      0,361    0,685     0,627     YES
+                 0,720    0,360    0,667      0,720    0,692      0,361    0,685     0,648     NO
+Weighted Avg.    0,680    0,320    0,681      0,680    0,679      0,361    0,685     0,638     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 32 18 |  a = YES
+ 14 36 |  b = NO
+
+

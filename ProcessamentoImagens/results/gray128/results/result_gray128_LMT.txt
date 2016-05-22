@@ -1,0 +1,74 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     party
+Instances:    100
+Attributes:   129
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:10/10 (100)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.51 + 
+[bin1] * 0    +
+[bin4] * 0    +
+[bin8] * 0.01 +
+[bin13] * 0    +
+[bin39] * -0 +
+[bin83] * -0.01 +
+[bin98] * -0 +
+[bin111] * -0.01 +
+[bin117] * 0.01 +
+[bin128] * 0   
+
+Class 1 :
+0.51 + 
+[bin1] * -0 +
+[bin4] * -0 +
+[bin8] * -0.01 +
+[bin13] * -0 +
+[bin39] * 0    +
+[bin83] * 0.01 +
+[bin98] * 0    +
+[bin111] * 0.01 +
+[bin117] * -0.01 +
+[bin128] * -0
+
+
+Time taken to build model: 0.46 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          67               67      %
+Incorrectly Classified Instances        33               33      %
+Kappa statistic                          0.34  
+Mean absolute error                      0.3784
+Root mean squared error                  0.454 
+Relative absolute error                 75.6852 %
+Root relative squared error             90.8084 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,680    0,340    0,667      0,680    0,673      0,340    0,749     0,700     YES
+                 0,660    0,320    0,673      0,660    0,667      0,340    0,749     0,764     NO
+Weighted Avg.    0,670    0,330    0,670      0,670    0,670      0,340    0,749     0,732     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 34 16 |  a = YES
+ 17 33 |  b = NO
+
+

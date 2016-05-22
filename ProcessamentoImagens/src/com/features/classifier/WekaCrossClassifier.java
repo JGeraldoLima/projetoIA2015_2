@@ -14,6 +14,7 @@ import weka.classifiers.rules.PART;
 import weka.classifiers.trees.DecisionStump;
 import weka.classifiers.trees.J48;
 import weka.classifiers.trees.LMT;
+import weka.classifiers.trees.REPTree;
 import weka.classifiers.trees.RandomTree;
 import weka.core.FastVector;
 import weka.core.Instances;
@@ -104,7 +105,9 @@ public class WekaCrossClassifier {
 		Classifier[] models = { 
 				new J48(), // a decision tree
 				new LMT(),
-				new RandomTree(), 
+				new RandomTree(),
+				new REPTree(),
+				new RandomTree(),
 				new DecisionStump() //one-level decision tree
 		};
  

@@ -1,0 +1,116 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     party
+Instances:    100
+Attributes:   65
+              bin1
+              bin2
+              bin3
+              bin4
+              bin5
+              bin6
+              bin7
+              bin8
+              bin9
+              bin10
+              bin11
+              bin12
+              bin13
+              bin14
+              bin15
+              bin16
+              bin17
+              bin18
+              bin19
+              bin20
+              bin21
+              bin22
+              bin23
+              bin24
+              bin25
+              bin26
+              bin27
+              bin28
+              bin29
+              bin30
+              bin31
+              bin32
+              bin33
+              bin34
+              bin35
+              bin36
+              bin37
+              bin38
+              bin39
+              bin40
+              bin41
+              bin42
+              bin43
+              bin44
+              bin45
+              bin46
+              bin47
+              bin48
+              bin49
+              bin50
+              bin51
+              bin52
+              bin53
+              bin54
+              bin55
+              bin56
+              bin57
+              bin58
+              bin59
+              bin60
+              bin61
+              bin62
+              bin63
+              bin64
+              isParty
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+bin38 < 61.5 : YES (28/2) [12/3]
+bin38 >= 61.5
+|   bin50 < 119 : NO (23/0) [12/2]
+|   bin50 >= 119
+|   |   bin7 < 103 : NO (5/0) [3/1]
+|   |   bin7 >= 103 : YES (10/3) [7/2]
+
+Size of the tree : 7
+
+Time taken to build model: 0.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          70               70      %
+Incorrectly Classified Instances        30               30      %
+Kappa statistic                          0.4   
+Mean absolute error                      0.338 
+Root mean squared error                  0.4764
+Relative absolute error                 67.598  %
+Root relative squared error             95.2827 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,700    0,300    0,700      0,700    0,700      0,400    0,762     0,764     YES
+                 0,700    0,300    0,700      0,700    0,700      0,400    0,762     0,732     NO
+Weighted Avg.    0,700    0,300    0,700      0,700    0,700      0,400    0,762     0,748     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 35 15 |  a = YES
+ 15 35 |  b = NO
+
+

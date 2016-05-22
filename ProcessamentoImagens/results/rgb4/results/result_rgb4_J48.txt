@@ -1,0 +1,126 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     party
+Instances:    100
+Attributes:   65
+              bin1
+              bin2
+              bin3
+              bin4
+              bin5
+              bin6
+              bin7
+              bin8
+              bin9
+              bin10
+              bin11
+              bin12
+              bin13
+              bin14
+              bin15
+              bin16
+              bin17
+              bin18
+              bin19
+              bin20
+              bin21
+              bin22
+              bin23
+              bin24
+              bin25
+              bin26
+              bin27
+              bin28
+              bin29
+              bin30
+              bin31
+              bin32
+              bin33
+              bin34
+              bin35
+              bin36
+              bin37
+              bin38
+              bin39
+              bin40
+              bin41
+              bin42
+              bin43
+              bin44
+              bin45
+              bin46
+              bin47
+              bin48
+              bin49
+              bin50
+              bin51
+              bin52
+              bin53
+              bin54
+              bin55
+              bin56
+              bin57
+              bin58
+              bin59
+              bin60
+              bin61
+              bin62
+              bin63
+              bin64
+              isParty
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+bin44 <= 117
+|   bin49 <= 84: NO (6.0)
+|   bin49 > 84
+|   |   bin25 <= 144
+|   |   |   bin19 <= 96
+|   |   |   |   bin21 <= 74: YES (3.0)
+|   |   |   |   bin21 > 74: NO (5.0)
+|   |   |   bin19 > 96
+|   |   |   |   bin49 <= 120
+|   |   |   |   |   bin33 <= 105: YES (3.0)
+|   |   |   |   |   bin33 > 105: NO (5.0/1.0)
+|   |   |   |   bin49 > 120: YES (44.0/2.0)
+|   |   bin25 > 144: NO (8.0/1.0)
+bin44 > 117: NO (26.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Time taken to build model: 0.09 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          67               67      %
+Incorrectly Classified Instances        33               33      %
+Kappa statistic                          0.34  
+Mean absolute error                      0.3376
+Root mean squared error                  0.5663
+Relative absolute error                 67.5203 %
+Root relative squared error            113.2611 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,700    0,360    0,660      0,700    0,680      0,341    0,652     0,587     YES
+                 0,640    0,300    0,681      0,640    0,660      0,341    0,652     0,630     NO
+Weighted Avg.    0,670    0,330    0,671      0,670    0,670      0,341    0,652     0,609     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 35 15 |  a = YES
+ 18 32 |  b = NO
+
+

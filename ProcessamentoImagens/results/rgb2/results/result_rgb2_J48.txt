@@ -1,0 +1,58 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     party
+Instances:    100
+Attributes:   9
+              bin1
+              bin2
+              bin3
+              bin4
+              bin5
+              bin6
+              bin7
+              bin8
+              isParty
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+bin8 <= 108: YES (61.0/16.0)
+bin8 > 108: NO (39.0/5.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          70               70      %
+Incorrectly Classified Instances        30               30      %
+Kappa statistic                          0.4   
+Mean absolute error                      0.3818
+Root mean squared error                  0.4868
+Relative absolute error                 76.3539 %
+Root relative squared error             97.3665 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,780    0,380    0,672      0,780    0,722      0,405    0,659     0,602     YES
+                 0,620    0,220    0,738      0,620    0,674      0,405    0,659     0,627     NO
+Weighted Avg.    0,700    0,300    0,705      0,700    0,698      0,405    0,659     0,615     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 39 11 |  a = YES
+ 19 31 |  b = NO
+
+

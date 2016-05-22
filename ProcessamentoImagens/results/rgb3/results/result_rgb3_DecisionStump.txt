@@ -1,0 +1,87 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     party
+Instances:    100
+Attributes:   28
+              bin1
+              bin2
+              bin3
+              bin4
+              bin5
+              bin6
+              bin7
+              bin8
+              bin9
+              bin10
+              bin11
+              bin12
+              bin13
+              bin14
+              bin15
+              bin16
+              bin17
+              bin18
+              bin19
+              bin20
+              bin21
+              bin22
+              bin23
+              bin24
+              bin25
+              bin26
+              bin27
+              isParty
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+bin15 <= 99.5 : YES
+bin15 > 99.5 : NO
+bin15 is missing : YES
+
+Class distributions
+
+bin15 <= 99.5
+YES	NO	
+0.7678571428571429	0.23214285714285715	
+bin15 > 99.5
+YES	NO	
+0.1590909090909091	0.8409090909090909	
+bin15 is missing
+YES	NO	
+0.5	0.5	
+
+
+Time taken to build model: 0.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          70               70      %
+Incorrectly Classified Instances        30               30      %
+Kappa statistic                          0.4   
+Mean absolute error                      0.3762
+Root mean squared error                  0.474 
+Relative absolute error                 75.2477 %
+Root relative squared error             94.7964 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,700    0,300    0,700      0,700    0,700      0,400    0,701     0,665     YES
+                 0,700    0,300    0,700      0,700    0,700      0,400    0,701     0,657     NO
+Weighted Avg.    0,700    0,300    0,700      0,700    0,700      0,400    0,701     0,661     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 35 15 |  a = YES
+ 15 35 |  b = NO
+
+

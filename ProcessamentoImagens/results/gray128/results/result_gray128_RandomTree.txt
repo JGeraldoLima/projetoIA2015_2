@@ -1,0 +1,86 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     party
+Instances:    100
+Attributes:   129
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+bin91 < 20.5
+|   bin91 < 16
+|   |   bin4 < 23.5
+|   |   |   bin24 < 5.5
+|   |   |   |   bin58 < 4.5 : YES (7/0)
+|   |   |   |   bin58 >= 4.5
+|   |   |   |   |   bin55 < 5 : NO (1/0)
+|   |   |   |   |   bin55 >= 5 : YES (1/0)
+|   |   |   bin24 >= 5.5
+|   |   |   |   bin27 < 28.5
+|   |   |   |   |   bin108 < 2.5
+|   |   |   |   |   |   bin17 < 6.5 : NO (1/0)
+|   |   |   |   |   |   bin17 >= 6.5
+|   |   |   |   |   |   |   bin1 < 82 : NO (1/0)
+|   |   |   |   |   |   |   bin1 >= 82 : YES (1/0)
+|   |   |   |   |   bin108 >= 2.5 : NO (10/0)
+|   |   |   |   bin27 >= 28.5
+|   |   |   |   |   bin48 < 31 : YES (4/0)
+|   |   |   |   |   bin48 >= 31 : NO (4/0)
+|   |   bin4 >= 23.5
+|   |   |   bin15 < 22.5
+|   |   |   |   bin115 < 5
+|   |   |   |   |   bin14 < 9 : NO (1/0)
+|   |   |   |   |   bin14 >= 9
+|   |   |   |   |   |   bin26 < 14.5 : YES (1/0)
+|   |   |   |   |   |   bin26 >= 14.5 : NO (1/0)
+|   |   |   |   bin115 >= 5 : YES (3/0)
+|   |   |   bin15 >= 22.5 : YES (13/0)
+|   bin91 >= 16 : YES (10/0)
+bin91 >= 20.5
+|   bin32 < 27.5 : NO (16/0)
+|   bin32 >= 27.5
+|   |   bin113 < 17.5 : NO (7/0)
+|   |   bin113 >= 17.5
+|   |   |   bin12 < 97.5
+|   |   |   |   bin86 < 44.5
+|   |   |   |   |   bin15 < 54 : YES (3/0)
+|   |   |   |   |   bin15 >= 54 : NO (1/0)
+|   |   |   |   bin86 >= 44.5 : NO (7/0)
+|   |   |   bin12 >= 97.5 : YES (7/0)
+
+Size of the tree : 41
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          58               58      %
+Incorrectly Classified Instances        42               42      %
+Kappa statistic                          0.16  
+Mean absolute error                      0.42  
+Root mean squared error                  0.6481
+Relative absolute error                 84      %
+Root relative squared error            129.6148 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,620    0,460    0,574      0,620    0,596      0,161    0,580     0,546     YES
+                 0,540    0,380    0,587      0,540    0,563      0,161    0,580     0,547     NO
+Weighted Avg.    0,580    0,420    0,581      0,580    0,579      0,161    0,580     0,546     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 31 19 |  a = YES
+ 23 27 |  b = NO
+
+

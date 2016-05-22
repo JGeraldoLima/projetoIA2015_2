@@ -1,0 +1,124 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     party
+Instances:    100
+Attributes:   65
+              bin1
+              bin2
+              bin3
+              bin4
+              bin5
+              bin6
+              bin7
+              bin8
+              bin9
+              bin10
+              bin11
+              bin12
+              bin13
+              bin14
+              bin15
+              bin16
+              bin17
+              bin18
+              bin19
+              bin20
+              bin21
+              bin22
+              bin23
+              bin24
+              bin25
+              bin26
+              bin27
+              bin28
+              bin29
+              bin30
+              bin31
+              bin32
+              bin33
+              bin34
+              bin35
+              bin36
+              bin37
+              bin38
+              bin39
+              bin40
+              bin41
+              bin42
+              bin43
+              bin44
+              bin45
+              bin46
+              bin47
+              bin48
+              bin49
+              bin50
+              bin51
+              bin52
+              bin53
+              bin54
+              bin55
+              bin56
+              bin57
+              bin58
+              bin59
+              bin60
+              bin61
+              bin62
+              bin63
+              bin64
+              isParty
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+bin28 <= 102.5 : YES
+bin28 > 102.5 : NO
+bin28 is missing : YES
+
+Class distributions
+
+bin28 <= 102.5
+YES	NO	
+0.7272727272727273	0.2727272727272727	
+bin28 > 102.5
+YES	NO	
+0.058823529411764705	0.9411764705882353	
+bin28 is missing
+YES	NO	
+0.5	0.5	
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          70               70      %
+Incorrectly Classified Instances        30               30      %
+Kappa statistic                          0.4   
+Mean absolute error                      0.3663
+Root mean squared error                  0.4602
+Relative absolute error                 73.2604 %
+Root relative squared error             92.0451 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,880    0,480    0,647      0,880    0,746      0,429    0,706     0,657     YES
+                 0,520    0,120    0,813      0,520    0,634      0,429    0,706     0,716     NO
+Weighted Avg.    0,700    0,300    0,730      0,700    0,690      0,429    0,706     0,687     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 44  6 |  a = YES
+ 24 26 |  b = NO
+
+

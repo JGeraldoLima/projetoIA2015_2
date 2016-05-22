@@ -10,8 +10,8 @@ import com.features.training.TrainingBorder;
 public class CalculateLines {
 	
 	public static final float[] HORIZONTAL_LINES = { -1, -1, -1, 
-													2, 2, 2, 
-													-1, -1, -1 };
+													  2, 2, 2, 
+													 -1, -1, -1 };
 	public static final float[] POSITIVE_DIAGONAL_LINES = { -1, -1, 2, 
 															-1, 2, -1, 
 															2, -1, -1 };
