@@ -2,40 +2,9 @@
 
 Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
 Relation:     party
-Instances:    100
-Attributes:   33
-              bin1
-              bin2
-              bin3
-              bin4
-              bin5
-              bin6
-              bin7
-              bin8
-              bin9
-              bin10
-              bin11
-              bin12
-              bin13
-              bin14
-              bin15
-              bin16
-              bin17
-              bin18
-              bin19
-              bin20
-              bin21
-              bin22
-              bin23
-              bin24
-              bin25
-              bin26
-              bin27
-              bin28
-              bin29
-              bin30
-              bin31
-              bin32
+Instances:    156
+Attributes:   2
+              borders
               isParty
 Test mode:    10-fold cross-validation
 
@@ -44,55 +13,39 @@ Test mode:    10-fold cross-validation
 J48 pruned tree
 ------------------
 
-bin25 <= 91
-|   bin2 <= 69
-|   |   bin1 <= 59
-|   |   |   bin30 <= 8: NO (12.0)
-|   |   |   bin30 > 8
-|   |   |   |   bin30 <= 17: YES (7.0/2.0)
-|   |   |   |   bin30 > 17
-|   |   |   |   |   bin5 <= 7: YES (2.0)
-|   |   |   |   |   bin5 > 7: NO (12.0/1.0)
-|   |   bin1 > 59
-|   |   |   bin2 <= 39: YES (7.0)
-|   |   |   bin2 > 39
-|   |   |   |   bin32 <= 26: NO (7.0/1.0)
-|   |   |   |   bin32 > 26: YES (4.0)
-|   bin2 > 69
-|   |   bin19 <= 83: YES (33.0/3.0)
-|   |   bin19 > 83: NO (2.0)
-bin25 > 91: NO (14.0)
+borders <= 321: NO (24.0/5.0)
+borders > 321: YES (132.0/59.0)
 
-Number of Leaves  : 	10
+Number of Leaves  : 	2
 
-Size of the tree : 	19
+Size of the tree : 	3
 
 
-Time taken to build model: 0.08 seconds
+Time taken to build model: 0.02 seconds
 
 === Stratified cross-validation ===
 === Summary ===
 
-Correctly Classified Instances          65               65      %
-Incorrectly Classified Instances        35               35      %
-Kappa statistic                          0.3   
-Mean absolute error                      0.3693
-Root mean squared error                  0.5471
-Relative absolute error                 73.8649 %
-Root relative squared error            109.4209 %
-Total Number of Instances              100     
+Correctly Classified Instances          75               48.0769 %
+Incorrectly Classified Instances        81               51.9231 %
+Kappa statistic                         -0.0385
+Mean absolute error                      0.5019
+Root mean squared error                  0.5167
+Relative absolute error                100.357  %
+Root relative squared error            103.3136 %
+Total Number of Instances              156     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0,680    0,380    0,642      0,680    0,660      0,301    0,669     0,632     YES
-                 0,620    0,320    0,660      0,620    0,639      0,301    0,669     0,630     NO
-Weighted Avg.    0,650    0,350    0,651      0,650    0,650      0,301    0,669     0,631     
+                 0,615    0,654    0,485      0,615    0,542      -0,040   0,479     0,487     YES
+                 0,346    0,385    0,474      0,346    0,400      -0,040   0,479     0,488     NO
+Weighted Avg.    0,481    0,519    0,479      0,481    0,471      -0,040   0,479     0,487     
 
 === Confusion Matrix ===
 
   a  b   <-- classified as
- 34 16 |  a = YES
- 19 31 |  b = NO
+ 48 30 |  a = YES
+ 51 27 |  b = NO
 
 
