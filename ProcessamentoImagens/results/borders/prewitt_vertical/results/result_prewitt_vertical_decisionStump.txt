@@ -57,5 +57,3 @@ Weighted Avg.    0,963    0,963    0,927      0,963    0,945      0,000    0,500
   a  b   <-- classified as
   0  3 |  a = YES
   0 78 |  b = NO
-
-

@@ -2,40 +2,9 @@
 
 Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
 Relation:     party
-Instances:    100
-Attributes:   33
-              bin1
-              bin2
-              bin3
-              bin4
-              bin5
-              bin6
-              bin7
-              bin8
-              bin9
-              bin10
-              bin11
-              bin12
-              bin13
-              bin14
-              bin15
-              bin16
-              bin17
-              bin18
-              bin19
-              bin20
-              bin21
-              bin22
-              bin23
-              bin24
-              bin25
-              bin26
-              bin27
-              bin28
-              bin29
-              bin30
-              bin31
-              bin32
+Instances:    156
+Attributes:   2
+              borders
               isParty
 Test mode:    10-fold cross-validation
 
@@ -45,76 +14,126 @@ Test mode:    10-fold cross-validation
 RandomTree
 ==========
 
-bin2 < 70.5
-|   bin25 < 79
-|   |   bin15 < 18.5
-|   |   |   bin20 < 2.5 : NO (2/0)
-|   |   |   bin20 >= 2.5
-|   |   |   |   bin10 < 6.5 : YES (3/0)
-|   |   |   |   bin10 >= 6.5
-|   |   |   |   |   bin26 < 43
-|   |   |   |   |   |   bin26 < 17
-|   |   |   |   |   |   |   bin17 < 12
-|   |   |   |   |   |   |   |   bin30 < 14
-|   |   |   |   |   |   |   |   |   bin3 < 49 : YES (4/0)
-|   |   |   |   |   |   |   |   |   bin3 >= 49
-|   |   |   |   |   |   |   |   |   |   bin3 < 61.5 : NO (1/0)
-|   |   |   |   |   |   |   |   |   |   bin3 >= 61.5 : YES (1/0)
-|   |   |   |   |   |   |   |   bin30 >= 14 : NO (1/0)
-|   |   |   |   |   |   |   bin17 >= 12 : NO (2/0)
-|   |   |   |   |   |   bin26 >= 17 : YES (4/0)
-|   |   |   |   |   bin26 >= 43 : NO (1/0)
-|   |   bin15 >= 18.5
-|   |   |   bin26 < 12 : NO (11/0)
-|   |   |   bin26 >= 12
-|   |   |   |   bin26 < 24 : YES (4/0)
-|   |   |   |   bin26 >= 24
-|   |   |   |   |   bin20 < 58.5 : NO (7/0)
-|   |   |   |   |   bin20 >= 58.5
-|   |   |   |   |   |   bin8 < 86.5
-|   |   |   |   |   |   |   bin5 < 24 : YES (1/0)
-|   |   |   |   |   |   |   bin5 >= 24
-|   |   |   |   |   |   |   |   bin2 < 6.5 : YES (1/0)
-|   |   |   |   |   |   |   |   bin2 >= 6.5 : NO (4/0)
-|   |   |   |   |   |   bin8 >= 86.5 : YES (2/0)
-|   bin25 >= 79 : NO (16/0)
-bin2 >= 70.5
-|   bin17 < 100.5
-|   |   bin31 < 11.5
-|   |   |   bin23 < 26
-|   |   |   |   bin29 < 11 : YES (11/0)
-|   |   |   |   bin29 >= 11 : NO (1/0)
-|   |   |   bin23 >= 26 : NO (2/0)
-|   |   bin31 >= 11.5 : YES (19/0)
-|   bin17 >= 100.5 : NO (2/0)
+borders < 0.5 : NO (37/14)
+borders >= 0.5
+|   borders < 3.5
+|   |   borders < 2.5 : YES (20/6)
+|   |   borders >= 2.5 : YES (5/2)
+|   borders >= 3.5
+|   |   borders < 8.5
+|   |   |   borders < 6.5
+|   |   |   |   borders < 4.5 : NO (3/1)
+|   |   |   |   borders >= 4.5
+|   |   |   |   |   borders < 5.5 : YES (2/1)
+|   |   |   |   |   borders >= 5.5 : NO (3/1)
+|   |   |   borders >= 6.5 : NO (4/0)
+|   |   borders >= 8.5
+|   |   |   borders < 581.5
+|   |   |   |   borders < 230
+|   |   |   |   |   borders < 82
+|   |   |   |   |   |   borders < 69
+|   |   |   |   |   |   |   borders < 60.5
+|   |   |   |   |   |   |   |   borders < 51
+|   |   |   |   |   |   |   |   |   borders < 11.5
+|   |   |   |   |   |   |   |   |   |   borders < 9.5 : YES (2/1)
+|   |   |   |   |   |   |   |   |   |   borders >= 9.5 : YES (2/0)
+|   |   |   |   |   |   |   |   |   borders >= 11.5
+|   |   |   |   |   |   |   |   |   |   borders < 14.5
+|   |   |   |   |   |   |   |   |   |   |   borders < 12.5 : YES (2/1)
+|   |   |   |   |   |   |   |   |   |   |   borders >= 12.5 : NO (2/0)
+|   |   |   |   |   |   |   |   |   |   borders >= 14.5
+|   |   |   |   |   |   |   |   |   |   |   borders < 20.5
+|   |   |   |   |   |   |   |   |   |   |   |   borders < 17 : YES (3/1)
+|   |   |   |   |   |   |   |   |   |   |   |   borders >= 17 : YES (2/0)
+|   |   |   |   |   |   |   |   |   |   |   borders >= 20.5
+|   |   |   |   |   |   |   |   |   |   |   |   borders < 33.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   borders < 32.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   borders < 31
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders < 26
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders < 24.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders < 23 : YES (2/1)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders >= 23 : NO (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders >= 24.5 : YES (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders >= 26 : NO (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   borders >= 31 : YES (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   borders >= 32.5 : NO (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   borders >= 33.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   borders < 34.5 : YES (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   borders >= 34.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   borders < 37
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders < 35.5 : YES (2/1)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders >= 35.5 : NO (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   borders >= 37
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders < 39 : YES (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders >= 39
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders < 40.5 : NO (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders >= 40.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders < 42 : YES (2/1)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders >= 42
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders < 45 : YES (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   borders >= 45 : YES (2/1)
+|   |   |   |   |   |   |   |   borders >= 51 : NO (2/0)
+|   |   |   |   |   |   |   borders >= 60.5 : YES (3/0)
+|   |   |   |   |   |   borders >= 69 : NO (3/0)
+|   |   |   |   |   borders >= 82
+|   |   |   |   |   |   borders < 103 : YES (5/0)
+|   |   |   |   |   |   borders >= 103
+|   |   |   |   |   |   |   borders < 128.5
+|   |   |   |   |   |   |   |   borders < 110.5 : NO (1/0)
+|   |   |   |   |   |   |   |   borders >= 110.5
+|   |   |   |   |   |   |   |   |   borders < 125
+|   |   |   |   |   |   |   |   |   |   borders < 118 : YES (2/1)
+|   |   |   |   |   |   |   |   |   |   borders >= 118 : YES (1/0)
+|   |   |   |   |   |   |   |   |   borders >= 125 : NO (1/0)
+|   |   |   |   |   |   |   borders >= 128.5
+|   |   |   |   |   |   |   |   borders < 205.5 : YES (4/0)
+|   |   |   |   |   |   |   |   borders >= 205.5
+|   |   |   |   |   |   |   |   |   borders < 223.5 : NO (1/0)
+|   |   |   |   |   |   |   |   |   borders >= 223.5 : YES (1/0)
+|   |   |   |   borders >= 230
+|   |   |   |   |   borders < 288 : NO (4/0)
+|   |   |   |   |   borders >= 288
+|   |   |   |   |   |   borders < 336.5 : YES (2/0)
+|   |   |   |   |   |   borders >= 336.5
+|   |   |   |   |   |   |   borders < 503.5 : NO (4/0)
+|   |   |   |   |   |   |   borders >= 503.5
+|   |   |   |   |   |   |   |   borders < 562.5 : YES (1/0)
+|   |   |   |   |   |   |   |   borders >= 562.5 : NO (1/0)
+|   |   |   borders >= 581.5
+|   |   |   |   borders < 1999.5
+|   |   |   |   |   borders < 894
+|   |   |   |   |   |   borders < 814 : YES (3/0)
+|   |   |   |   |   |   borders >= 814 : NO (1/0)
+|   |   |   |   |   borders >= 894 : YES (4/0)
+|   |   |   |   borders >= 1999.5
+|   |   |   |   |   borders < 3616 : NO (2/0)
+|   |   |   |   |   borders >= 3616 : YES (1/0)
 
-Size of the tree : 43
+Size of the tree : 95
 
 Time taken to build model: 0 seconds
 
 === Stratified cross-validation ===
 === Summary ===
 
-Correctly Classified Instances          64               64      %
-Incorrectly Classified Instances        36               36      %
-Kappa statistic                          0.28  
-Mean absolute error                      0.36  
-Root mean squared error                  0.6   
-Relative absolute error                 72      %
-Root relative squared error            120      %
-Total Number of Instances              100     
+Correctly Classified Instances          78               50      %
+Incorrectly Classified Instances        78               50      %
+Kappa statistic                          0     
+Mean absolute error                      0.53  
+Root mean squared error                  0.6491
+Relative absolute error                105.9746 %
+Root relative squared error            129.8021 %
+Total Number of Instances              156     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0,680    0,400    0,630      0,680    0,654      0,281    0,640     0,588     YES
-                 0,600    0,320    0,652      0,600    0,625      0,281    0,640     0,591     NO
-Weighted Avg.    0,640    0,360    0,641      0,640    0,639      0,281    0,640     0,590     
+                 0,474    0,474    0,500      0,474    0,487      0,000    0,446     0,476     YES
+                 0,526    0,526    0,500      0,526    0,513      0,000    0,446     0,462     NO
+Weighted Avg.    0,500    0,500    0,500      0,500    0,500      0,000    0,446     0,469     
 
 === Confusion Matrix ===
 
   a  b   <-- classified as
- 34 16 |  a = YES
- 20 30 |  b = NO
-
-
+ 37 41 |  a = YES
+ 37 41 |  b = NO

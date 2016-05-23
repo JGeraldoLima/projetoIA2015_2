@@ -2,40 +2,9 @@
 
 Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
 Relation:     party
-Instances:    100
-Attributes:   33
-              bin1
-              bin2
-              bin3
-              bin4
-              bin5
-              bin6
-              bin7
-              bin8
-              bin9
-              bin10
-              bin11
-              bin12
-              bin13
-              bin14
-              bin15
-              bin16
-              bin17
-              bin18
-              bin19
-              bin20
-              bin21
-              bin22
-              bin23
-              bin24
-              bin25
-              bin26
-              bin27
-              bin28
-              bin29
-              bin30
-              bin31
-              bin32
+Instances:    156
+Attributes:   2
+              borders
               isParty
 Test mode:    10-fold cross-validation
 
@@ -45,46 +14,53 @@ Test mode:    10-fold cross-validation
 REPTree
 ============
 
-bin2 < 113.5
-|   bin23 < 27.5
-|   |   bin17 < 41
-|   |   |   bin31 < 9
-|   |   |   |   bin1 < 35.5 : NO (2/0) [2/0]
-|   |   |   |   bin1 >= 35.5 : YES (6/1) [8/3]
-|   |   |   bin31 >= 9 : YES (9/0) [8/4]
-|   |   bin17 >= 41 : NO (3/0) [3/0]
-|   bin23 >= 27.5
-|   |   bin4 < 72.5 : NO (24/0) [7/3]
-|   |   bin4 >= 72.5 : YES (7/3) [2/0]
-bin2 >= 113.5 : YES (15/0) [4/1]
+borders < 8
+|   borders < 2.5
+|   |   borders < 1.5
+|   |   |   borders < 0.5 : NO (21/9) [16/5]
+|   |   |   borders >= 0.5 : YES (6/3) [4/0]
+|   |   borders >= 1.5 : YES (9/3) [1/0]
+|   borders >= 2.5 : NO (11/2) [5/4]
+borders >= 8
+|   borders < 11.5 : YES (3/0) [2/2]
+|   borders >= 11.5
+|   |   borders < 230
+|   |   |   borders < 82
+|   |   |   |   borders < 70
+|   |   |   |   |   borders < 62 : NO (21/10) [12/5]
+|   |   |   |   |   borders >= 62 : YES (2/0) [1/0]
+|   |   |   |   borders >= 70 : NO (2/0) [1/0]
+|   |   |   borders >= 82 : YES (10/1) [6/3]
+|   |   borders >= 230
+|   |   |   borders < 503.5 : NO (8/1) [2/1]
+|   |   |   borders >= 503.5 : YES (11/4) [2/0]
 
-Size of the tree : 13
+Size of the tree : 21
 
-Time taken to build model: 0.04 seconds
+Time taken to build model: 0 seconds
 
 === Stratified cross-validation ===
 === Summary ===
 
-Correctly Classified Instances          63               63      %
-Incorrectly Classified Instances        37               37      %
-Kappa statistic                          0.26  
-Mean absolute error                      0.4343
-Root mean squared error                  0.5024
-Relative absolute error                 86.8685 %
-Root relative squared error            100.4813 %
-Total Number of Instances              100     
+Correctly Classified Instances          76               48.7179 %
+Incorrectly Classified Instances        80               51.2821 %
+Kappa statistic                         -0.0256
+Mean absolute error                      0.5033
+Root mean squared error                  0.5095
+Relative absolute error                100.6422 %
+Root relative squared error            101.8878 %
+Total Number of Instances              156     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0,700    0,440    0,614      0,700    0,654      0,263    0,633     0,618     YES
-                 0,560    0,300    0,651      0,560    0,602      0,263    0,633     0,606     NO
-Weighted Avg.    0,630    0,370    0,633      0,630    0,628      0,263    0,633     0,612     
+                 0,641    0,667    0,490      0,641    0,556      -0,027   0,473     0,484     YES
+                 0,333    0,359    0,481      0,333    0,394      -0,027   0,473     0,488     NO
+Weighted Avg.    0,487    0,513    0,486      0,487    0,475      -0,027   0,473     0,486     
 
 === Confusion Matrix ===
 
   a  b   <-- classified as
- 35 15 |  a = YES
- 22 28 |  b = NO
-
+ 50 28 |  a = YES
+ 52 26 |  b = NO
 
