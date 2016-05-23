@@ -222,17 +222,17 @@ public class TrainingBorder {
 	public static void trainingImages(File[] array, String cl) throws IOException{
 		for (File fileFesta : array) {
 			filename = String.format("./data/%s.txt", cl + "PREWITT_HORIZONTAL");
-			border.calculateBorders(3, CalculateBorder.PREWITT_HORIZONTAL, fileFesta.getPath());
+			border.calculateBorders(CalculateBorder.PREWITT_HORIZONTAL, fileFesta.getPath());
 			filename = String.format("./data/%s.txt", cl + "PREWITT_VERTICAL");
-			border.calculateBorders(3, CalculateBorder.PREWITT_VERTICAL, fileFesta.getPath());
+			border.calculateBorders(CalculateBorder.PREWITT_VERTICAL, fileFesta.getPath());
 			filename = String.format("./data/%s.txt", cl + "SOBEL_HORIZONTAL");
-			border.calculateBorders(3, CalculateBorder.SOBEL_HORIZONTAL, fileFesta.getPath());
+			border.calculateBorders(CalculateBorder.SOBEL_HORIZONTAL, fileFesta.getPath());
 			filename = String.format("./data/%s.txt", cl + "SOBEL_VERTICAL");
-			border.calculateBorders(3, CalculateBorder.SOBEL_VERTICAL, fileFesta.getPath());
+			border.calculateBorders(CalculateBorder.SOBEL_VERTICAL, fileFesta.getPath());
 			filename = String.format("./data/%s.txt", cl + "FREICHEN_HORIZONTAL");
-			border.calculateBorders(3, CalculateBorder.FREICHEN_HORIZONTAL, fileFesta.getPath());
+			border.calculateBorders(CalculateBorder.FREICHEN_HORIZONTAL, fileFesta.getPath());
 			filename = String.format("./data/%s.txt", cl + "FREICHEN_VERTICAL");
-			border.calculateBorders(3, CalculateBorder.FREICHEN_VERTICAL, fileFesta.getPath());
+			border.calculateBorders(CalculateBorder.FREICHEN_VERTICAL, fileFesta.getPath());
 		}
 	}
 	

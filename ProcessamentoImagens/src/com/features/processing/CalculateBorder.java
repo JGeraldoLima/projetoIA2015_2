@@ -35,7 +35,7 @@ public class CalculateBorder {
 	
 	public CalculateBorder() {}
 	
-	public void calculateBorders(int dimension, float[] kernelMatrix, String f) throws IOException{
+	public void calculateBorders(float[] kernelMatrix, String f) throws IOException{
 		PlanarImage input = JAI.create("fileload", f);
 		PlanarImage combined = bandCombination(input);
 		PlanarImage borders  = detectBorder(combined, 3, kernelMatrix);
