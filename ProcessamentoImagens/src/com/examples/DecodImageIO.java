@@ -41,8 +41,8 @@ public class DecodImageIO {
 		// invertImage(f.getPath());
 		// binarizeImage(f.getPath()); //BUG!
 		// suavizeImage(f.getPath());
-		//borderHorizontal(files[1].getPath());
-		//histogramImage(files[1].getPath(), 128);
+		// borderHorizontal(files[1].getPath());
+		// histogramImage(files[1].getPath(), 128);
 		// dilataImage(f.getPath());
 		// erodeImage(f.getPath());
 		// rotateImage(f.getPath());
@@ -54,38 +54,50 @@ public class DecodImageIO {
 		return "Dimensões: " + image.getWidth() + "x" + image.getHeight() + " pixels";
 	}
 
+	private static int[] getPixelData(BufferedImage img, int x, int y) {
+		int argb = img.getRGB(x, y);
+
+		int rgb[] = new int[] { (argb >> 16) & 0xff, // red
+				(argb >> 8) & 0xff, // green
+				(argb) & 0xff // blue
+		};
+
+		System.out.println("rgb: " + rgb[0] + " " + rgb[1] + " " + rgb[2]);
+		return rgb;
+	}
+
 	public static String valuesPixelsWithoutJAI(File f) throws IOException {
-		String msg = "";
+//		String msg = "";
 		BufferedImage imagem = ImageIO.read(f);
-		Raster raster = imagem.getRaster();
+//		Raster raster = imagem.getRaster();
 		int[] pixel = new int[3];
 		int brancos = 0;
 		for (int h = 0; h < imagem.getHeight(); h++) {
 			for (int w = 0; w < imagem.getWidth(); w++) {
-				raster.getPixel(w, h, pixel);
+				pixel = getPixelData(imagem, h, w);
 				if ((pixel[0] == 255) && (pixel[1] == 255) && (pixel[2] == 255))
 					brancos++;
 			}
-			msg += brancos + " pixels brancos\n";
+//			msg += brancos + " pixels brancos\n";
 		}
-		return msg;
+		return String.valueOf(brancos);
 	}
 
 	public static String valuesPixelsWithJAI(File f) throws IOException {
-		String msg = "";
+//		String msg = "";
 		BufferedImage imagem = ImageIO.read(f);
-		RandomIter iterator = RandomIterFactory.create(imagem, null);
+//		RandomIter iterator = RandomIterFactory.create(imagem, null);
 		int[] pixel = new int[3];
 		int brancos = 0;
 		for (int h = 0; h < imagem.getHeight(); h++) {
 			for (int w = 0; w < imagem.getWidth(); w++) {
-				iterator.getPixel(w, h, pixel);
-				if ((pixel[0] == 255) && (pixel[1] == 255) && (pixel[2] == 255))
+				pixel = getPixelData(imagem, w, h);
+				if ((pixel[0] == 0) && (pixel[1] == 0) && (pixel[2] == 0))
 					brancos++;
 			}
-			msg += brancos + "pixels brancos\n";
+			//msg += brancos + "pixels brancos\n";
 		}
-		return msg;
+		return String.valueOf(brancos);
 	}
 
 	public static void displayImageWithoutJAI(File f) throws IOException {
@@ -250,7 +262,7 @@ public class DecodImageIO {
 		dh1.setHeight(160);
 		dh1.setIndexMultiplier(8);
 		f.getContentPane().add(dh1);
-		//f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		// f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.pack();
 		f.setVisible(true);
 	}

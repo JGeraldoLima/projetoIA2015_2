@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     party
+Instances:    156
+Attributes:   2
+              borders
+              isParty
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+borders < 1981
+|   borders < 1368.5
+|   |   borders < 1206.5 : NO (39/11) [14/3]
+|   |   borders >= 1206.5 : YES (3/0) [3/0]
+|   borders >= 1368.5 : NO (8/0) [3/1]
+borders >= 1981 : YES (54/16) [32/13]
+
+Size of the tree : 7
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         105               67.3077 %
+Incorrectly Classified Instances        51               32.6923 %
+Kappa statistic                          0.3462
+Mean absolute error                      0.4242
+Root mean squared error                  0.4839
+Relative absolute error                 84.832  %
+Root relative squared error             96.7598 %
+Total Number of Instances              156     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,615    0,269    0,696      0,615    0,653      0,348    0,647     0,623     YES
+                 0,731    0,385    0,655      0,731    0,691      0,348    0,647     0,613     NO
+Weighted Avg.    0,673    0,327    0,675      0,673    0,672      0,348    0,647     0,618     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 48 30 |  a = YES
+ 21 57 |  b = NO
+
+

@@ -10,108 +10,106 @@ import com.util.CalculateLines;
 public class TrainingBorder {
 	
 	private static File[] filesFesta = new File[] {
-//			new File("images/training/festa/01.jpg"),
-			new File("images/training/festa/02.jpg")
-//			,
-//			new File("images/training/festa/03.jpg"),
-//			new File("images/training/festa/04.jpg"),
-//			new File("images/training/festa/05.jpg"),
-//			new File("images/training/festa/06.jpg"),
-//			new File("images/training/festa/07.jpg"),
-//			new File("images/training/festa/08.jpg"),
-//			new File("images/training/festa/09.jpg"),
-//			new File("images/training/festa/10.jpg"),
-//			new File("images/training/festa/11.jpg"),
-//			new File("images/training/festa/12.jpg"),
-//			new File("images/training/festa/13.jpg"),
-//			new File("images/training/festa/14.jpg"),
-//			new File("images/training/festa/15.jpg"),
-//			new File("images/training/festa/16.jpg"),
-//			new File("images/training/festa/17.jpg"),
-//			new File("images/training/festa/18.jpg"),
-//			new File("images/training/festa/19.jpg"),
-//			new File("images/training/festa/20.jpg"),
-//			new File("images/training/festa/21.jpg"),
-//			new File("images/training/festa/22.jpg"),
-//			new File("images/training/festa/23.jpg"),
-//			new File("images/training/festa/24.jpg"),
-//			new File("images/training/festa/25.jpg"),
-//			new File("images/training/festa/26.jpg"),
-//			new File("images/training/festa/27.jpg"),
-//			new File("images/training/festa/28.jpg"),
-//			new File("images/training/festa/29.jpg"),
-//			new File("images/training/festa/30.jpg"),
-//			new File("images/training/festa/31.jpg"),
-//			new File("images/training/festa/32.jpg"),
-//			new File("images/training/festa/33.jpg"),
-//			new File("images/training/festa/34.jpg"),
-//			new File("images/training/festa/35.jpg"),
-//			new File("images/training/festa/36.jpg"),
-//			new File("images/training/festa/37.jpg"),
-//			new File("images/training/festa/38.jpg"),
-//			new File("images/training/festa/39.jpg"),
-//			new File("images/training/festa/40.jpg"),
-//			new File("images/training/festa/41.jpg"),
-//			new File("images/training/festa/42.jpg"),
-//			new File("images/training/festa/43.jpg"),
-//			new File("images/training/festa/44.jpg"),
-//			new File("images/training/festa/45.jpg"),
-//			new File("images/training/festa/46.jpg"),
-//			new File("images/training/festa/47.jpg"),
-//			new File("images/training/festa/48.jpg"),
-//			new File("images/training/festa/49.jpg"),
-//			new File("images/training/festa/50.jpg"),
-//			new File("images/training/festa/51.jpg"),
-//			new File("images/training/festa/52.jpg"),
-//			new File("images/training/festa/53.jpg"),
-//			new File("images/training/festa/54.jpg"),
-//			new File("images/training/festa/55.jpg"),
-//			new File("images/training/festa/56.jpg"),
-//			new File("images/training/festa/57.jpg"),
-//			new File("images/training/festa/58.jpg"),
-//			new File("images/training/festa/59.jpg"),
-//			new File("images/training/festa/60.jpg"),
-//			new File("images/training/festa/61.jpg"),
-//			new File("images/training/festa/62.jpg"),
-//			new File("images/training/festa/63.jpg"),
-//			new File("images/training/festa/64.jpg"),
-//			new File("images/training/festa/65.jpg"),
-//			new File("images/training/festa/66.jpg"),
-//			new File("images/training/festa/67.jpg"),
-//			new File("images/training/festa/68.jpg"),
-//			new File("images/training/festa/69.jpg"),
-//			new File("images/training/festa/70.jpg"),
-//			new File("images/training/festa/71.jpg"),
-//			new File("images/training/festa/72.jpg"),
-//			new File("images/training/festa/73.jpg"),
-//			new File("images/training/festa/74.jpg"),
-//			new File("images/training/festa/75.jpg"),
-//			new File("images/training/festa/76.jpg"),
-//			new File("images/training/festa/77.jpg"),
-//			new File("images/training/festa/78.jpg"),
-//			new File("images/training/festa/79.jpg"),
-//			new File("images/training/festa/80.jpg"),
-//			new File("images/training/festa/81.jpg"),
-//			new File("images/training/festa/82.jpg"),
-//			new File("images/training/festa/83.jpg"),
-//			new File("images/training/festa/84.jpg"),
-//			new File("images/training/festa/85.jpg"),
-//			new File("images/training/festa/86.jpg"),
-//			new File("images/training/festa/87.jpg"),
-//			new File("images/training/festa/88.jpg"),
-//			new File("images/training/festa/89.jpg"),
-//			new File("images/training/festa/90.jpg"),
-//			new File("images/training/festa/91.jpg"),
-//			new File("images/training/festa/92.jpg"),
-//			new File("images/training/festa/93.jpg"),
-//			new File("images/training/festa/94.jpg"),
-//			new File("images/training/festa/95.jpg"),
-//			new File("images/training/festa/96.jpg"),
-//			new File("images/training/festa/97.jpg"),
-//			new File("images/training/festa/98.jpg"),
-//			new File("images/training/festa/99.jpg"),
-//			new File("images/training/festa/100.jpg")
-			};
+			new File("images/training/festa/01.jpg"),
+			new File("images/training/festa/02.jpg"),
+			new File("images/training/festa/03.jpg"),
+			new File("images/training/festa/04.jpg"),
+			new File("images/training/festa/05.jpg"),
+			new File("images/training/festa/06.jpg"),
+			new File("images/training/festa/07.jpg"),
+			new File("images/training/festa/08.jpg"),
+			new File("images/training/festa/09.jpg"),
+			new File("images/training/festa/10.jpg"),
+			new File("images/training/festa/11.jpg"),
+			new File("images/training/festa/12.jpg"),
+			new File("images/training/festa/13.jpg"),
+			new File("images/training/festa/14.jpg"),
+			new File("images/training/festa/15.jpg"),
+			new File("images/training/festa/16.jpg"),
+			new File("images/training/festa/17.jpg"),
+			new File("images/training/festa/18.jpg"),
+			new File("images/training/festa/19.jpg"),
+			new File("images/training/festa/20.jpg"),
+			new File("images/training/festa/21.jpg"),
+			new File("images/training/festa/22.jpg"),
+			new File("images/training/festa/23.jpg"),
+			new File("images/training/festa/24.jpg"),
+			new File("images/training/festa/25.jpg"),
+			new File("images/training/festa/26.jpg"),
+			new File("images/training/festa/27.jpg"),
+			new File("images/training/festa/28.jpg"),
+			new File("images/training/festa/29.jpg"),
+			new File("images/training/festa/30.jpg"),
+			new File("images/training/festa/31.jpg"),
+			new File("images/training/festa/32.jpg"),
+			new File("images/training/festa/33.jpg"),
+			new File("images/training/festa/34.jpg"),
+			new File("images/training/festa/35.jpg"),
+			new File("images/training/festa/36.jpg"),
+			new File("images/training/festa/37.jpg"),
+			new File("images/training/festa/38.jpg"),
+			new File("images/training/festa/39.jpg"),
+			new File("images/training/festa/40.jpg"),
+			new File("images/training/festa/41.jpg"),
+			new File("images/training/festa/42.jpg"),
+			new File("images/training/festa/43.jpg"),
+			new File("images/training/festa/44.jpg"),
+			new File("images/training/festa/45.jpg"),
+			new File("images/training/festa/46.jpg"),
+			new File("images/training/festa/47.jpg"),
+			new File("images/training/festa/48.jpg"),
+			new File("images/training/festa/49.jpg"),
+			new File("images/training/festa/50.jpg"),
+			new File("images/training/festa/51.jpg"),
+			new File("images/training/festa/52.jpg"),
+			new File("images/training/festa/53.jpg"),
+			new File("images/training/festa/54.jpg"),
+			new File("images/training/festa/55.jpg"),
+			new File("images/training/festa/56.jpg"),
+			new File("images/training/festa/57.jpg"),
+			new File("images/training/festa/58.jpg"),
+			new File("images/training/festa/59.jpg"),
+			new File("images/training/festa/60.jpg"),
+			new File("images/training/festa/61.jpg"),
+			new File("images/training/festa/62.jpg"),
+			new File("images/training/festa/63.jpg"),
+			new File("images/training/festa/64.jpg"),
+			new File("images/training/festa/65.jpg"),
+			new File("images/training/festa/66.jpg"),
+			new File("images/training/festa/67.jpg"),
+			new File("images/training/festa/68.jpg"),
+			new File("images/training/festa/69.jpg"),
+			new File("images/training/festa/70.jpg"),
+			new File("images/training/festa/71.jpg"),
+			new File("images/training/festa/72.jpg"),
+			new File("images/training/festa/73.jpg"),
+			new File("images/training/festa/74.jpg"),
+			new File("images/training/festa/75.jpg"),
+			new File("images/training/festa/76.jpg"),
+			new File("images/training/festa/77.jpg"),
+			new File("images/training/festa/78.jpg"),
+			new File("images/training/festa/79.jpg"),
+			new File("images/training/festa/80.jpg"),
+			new File("images/training/festa/81.jpg"),
+			new File("images/training/festa/82.jpg"),
+			new File("images/training/festa/83.jpg"),
+			new File("images/training/festa/84.jpg"),
+			new File("images/training/festa/85.jpg"),
+			new File("images/training/festa/86.jpg"),
+			new File("images/training/festa/87.jpg"),
+			new File("images/training/festa/88.jpg"),
+			new File("images/training/festa/89.jpg"),
+			new File("images/training/festa/90.jpg"),
+			new File("images/training/festa/91.jpg"),
+			new File("images/training/festa/92.jpg"),
+			new File("images/training/festa/93.jpg"),
+			new File("images/training/festa/94.jpg"),
+			new File("images/training/festa/95.jpg"),
+			new File("images/training/festa/96.jpg"),
+			new File("images/training/festa/97.jpg"),
+			new File("images/training/festa/98.jpg"),
+			new File("images/training/festa/99.jpg"),
+			new File("images/training/festa/100.jpg")};
 	@SuppressWarnings("unused")
 	private static File[] filesNonFesta = new File[] {
 			new File("images/training/non_festa/001.jpg"),
@@ -213,29 +211,29 @@ public class TrainingBorder {
 			new File("images/training/non_festa/097.jpg"),
 			new File("images/training/non_festa/098.jpg"),
 			new File("images/training/non_festa/099.jpg"),
-			new File("images/training/non_festa/100.jpg")
-			};
+			new File("images/training/non_festa/100.jpg")};
 	private static CalculateBorder border = new CalculateBorder();
-	private static CalculateLines lines = new CalculateLines();
-
 	private static String filename;
 	
 	public static void main(String[] args) throws IOException {
-		trainingImages(filesFesta, "LinesTest");
+		trainingImages(filesFesta, "festa");
+		trainingImages(filesNonFesta, "NonFesta");
 	}
 	
-	public static void trainingImages(File[] array, String fileName) throws IOException{
-		filename = String.format("./data/%s.txt", fileName);
+	public static void trainingImages(File[] array, String cl) throws IOException{
 		for (File fileFesta : array) {
-//			border.calculateBorders(3, CalculateBorder.ROBERT_PRINCIPAL, fileFesta.getPath());
-//			border.calculateBorders(3, CalculateBorder.ROBERT_INVERSE, fileFesta.getPath());
-//			border.calculateBorders(3, CalculateBorder.PREWITT_HORIZONTAL, fileFesta.getPath());
-//			border.calculateBorders(3, CalculateBorder.PREWITT_VERTICAL, fileFesta.getPath());
-//			border.calculateBorders(3, CalculateBorder.SOBEL_HORIZONTAL, fileFesta.getPath());
-//			border.calculateBorders(3, CalculateBorder.SOBEL_VERTICAL, fileFesta.getPath());
-//			border.calculateBorders(3, CalculateBorder.FREICHEN_HORIZONTAL, fileFesta.getPath());
-//			border.calculateBorders(3, CalculateBorder.FREICHEN_VERTICAL, fileFesta.getPath());
-//			lines.detectLines(CalculateLines.VERTICAL_LINES, fileFesta.getPath());
+			filename = String.format("./data/%s.txt", cl + "PREWITT_HORIZONTAL");
+			border.calculateBorders(3, CalculateBorder.PREWITT_HORIZONTAL, fileFesta.getPath());
+			filename = String.format("./data/%s.txt", cl + "PREWITT_VERTICAL");
+			border.calculateBorders(3, CalculateBorder.PREWITT_VERTICAL, fileFesta.getPath());
+			filename = String.format("./data/%s.txt", cl + "SOBEL_HORIZONTAL");
+			border.calculateBorders(3, CalculateBorder.SOBEL_HORIZONTAL, fileFesta.getPath());
+			filename = String.format("./data/%s.txt", cl + "SOBEL_VERTICAL");
+			border.calculateBorders(3, CalculateBorder.SOBEL_VERTICAL, fileFesta.getPath());
+			filename = String.format("./data/%s.txt", cl + "FREICHEN_HORIZONTAL");
+			border.calculateBorders(3, CalculateBorder.FREICHEN_HORIZONTAL, fileFesta.getPath());
+			filename = String.format("./data/%s.txt", cl + "FREICHEN_VERTICAL");
+			border.calculateBorders(3, CalculateBorder.FREICHEN_VERTICAL, fileFesta.getPath());
 		}
 	}
 	
