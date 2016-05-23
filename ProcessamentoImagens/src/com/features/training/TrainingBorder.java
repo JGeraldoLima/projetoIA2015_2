@@ -4,8 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import com.util.CalculateBorder;
-import com.util.CalculateLines;
+import com.features.processing.CalculateBorder;
 
 public class TrainingBorder {
 	

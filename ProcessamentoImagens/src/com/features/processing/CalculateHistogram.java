@@ -1,4 +1,4 @@
-package com.util;
+package com.features.processing;
 
 import java.awt.Color;
 import java.awt.Container;
@@ -9,6 +9,9 @@ import javax.media.jai.Histogram;
 import javax.media.jai.JAI;
 import javax.media.jai.PlanarImage;
 import javax.swing.JFrame;
+
+import com.util.DisplayGrayHistogram;
+import com.util.DisplayRGBHistogram;
 
 public class CalculateHistogram {
 

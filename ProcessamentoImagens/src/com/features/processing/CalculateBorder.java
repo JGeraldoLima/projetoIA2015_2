@@ -1,4 +1,4 @@
-package com.util;
+package com.features.processing;
 
 import java.awt.image.BufferedImage;
 import java.awt.image.renderable.ParameterBlock;
@@ -10,6 +10,7 @@ import javax.media.jai.PlanarImage;
 import javax.swing.JFrame;
 
 import com.features.training.TrainingBorder;
+import com.util.DisplayFourSynchronizedImages;
 
 public class CalculateBorder {
 	
