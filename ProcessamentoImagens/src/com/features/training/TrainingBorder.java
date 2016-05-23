@@ -227,14 +227,14 @@ public class TrainingBorder {
 	public static void trainingImages(File[] array, String fileName) throws IOException{
 		filename = String.format("./data/%s.txt", fileName);
 		for (File fileFesta : array) {
-//			border.detectBorder(2, CalculateBorder.ROBERT_PRINCIPAL, fileFesta.getPath());
-//			border.detectBorder(2, CalculateBorder.ROBERT_INVERSE, fileFesta.getPath());
-//			border.detectBorder(3, CalculateBorder.PREWITT_HORIZONTAL, fileFesta.getPath());
-//			border.detectBorder(3, CalculateBorder.PREWITT_VERTICAL, fileFesta.getPath());
-//			border.detectBorder(3, CalculateBorder.SOBEL_HORIZONTAL, fileFesta.getPath());
-//			border.detectBorder(3, CalculateBorder.SOBEL_VERTICAL, fileFesta.getPath());
-//			border.detectBorder(3, CalculateBorder.FREICHEN_HORIZONTAL, fileFesta.getPath());
-//			border.detectBorder(3, CalculateBorder.FREICHEN_VERTICAL, fileFesta.getPath());
+//			border.calculateBorders(3, CalculateBorder.ROBERT_PRINCIPAL, fileFesta.getPath());
+//			border.calculateBorders(3, CalculateBorder.ROBERT_INVERSE, fileFesta.getPath());
+//			border.calculateBorders(3, CalculateBorder.PREWITT_HORIZONTAL, fileFesta.getPath());
+//			border.calculateBorders(3, CalculateBorder.PREWITT_VERTICAL, fileFesta.getPath());
+//			border.calculateBorders(3, CalculateBorder.SOBEL_HORIZONTAL, fileFesta.getPath());
+//			border.calculateBorders(3, CalculateBorder.SOBEL_VERTICAL, fileFesta.getPath());
+//			border.calculateBorders(3, CalculateBorder.FREICHEN_HORIZONTAL, fileFesta.getPath());
+//			border.calculateBorders(3, CalculateBorder.FREICHEN_VERTICAL, fileFesta.getPath());
 //			lines.detectLines(CalculateLines.VERTICAL_LINES, fileFesta.getPath());
 		}
 	}

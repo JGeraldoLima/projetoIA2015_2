@@ -39,27 +39,57 @@ public class CalculateBorder {
 //	private int borderVertical = 0;
 	
 	public CalculateBorder() {}
-
-	public void detectBorder(int dimension, float[] kernelMatrix, String f) {
-		PlanarImage imagem = JAI.create("fileload", f);
-		PlanarImage input = bandCombination(imagem);
-		KernelJAI kernel = new KernelJAI(dimension, dimension, kernelMatrix);
-		PlanarImage bordas = JAI.create("convolve", input, kernel);
-		TrainingBorder.writeLine(bordas.toString());
+	
+	public void calculateBorders(int dimension, float[] kernelMatrix, String f){
+		PlanarImage input = JAI.create("fileload", f);
+		PlanarImage combined = bandCombination(input);
+		PlanarImage borders  = detectBorder(combined, 3, kernelMatrix);
+		PlanarImage binarized = binarizeImage(borders);
 		JFrame frame = new JFrame("Detecção de bordas");
-		frame.add(new DisplayThreeSynchronizedImages(imagem, input, bordas));
+		frame.add(new DisplayFourSynchronizedImages(input, combined, borders, binarized));
 		frame.pack();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 	}
 	
+	/**
+	 * Create a gray-level image with the weighted average of the three bands.
+	 * @param image
+	 * @return
+	 */
 	public PlanarImage bandCombination(PlanarImage image){
-		// Create a gray-level image with the weighted average of the three bands.
 		double[][] matrix = {{ 0.114, 0.587, 0.299, 0 }};
 		ParameterBlock pb = new ParameterBlock();
 		pb.addSource(image);
 		pb.add(matrix);
-		PlanarImage input = JAI.create("bandcombine", pb, null);
-		return input;
+		PlanarImage combined = JAI.create("bandcombine", pb, null);
+		return combined;
+	}
+
+	/**
+	 * 
+	 * @param image
+	 * @param dimension
+	 * @param kernelMatrix
+	 * @return
+	 */
+	public PlanarImage detectBorder(PlanarImage image, int dimension, float[] kernelMatrix) {
+		KernelJAI kernel = new KernelJAI(dimension, dimension, kernelMatrix);
+		PlanarImage bordas = JAI.create("convolve", image, kernel);
+//		TrainingBorder.writeLine(bordas.toString());
+		return bordas;
+	}
+	
+	/**
+	 * 
+	 * @param image
+	 * @return
+	 */
+	public PlanarImage binarizeImage(PlanarImage image) {
+		ParameterBlock pb = new ParameterBlock();
+		pb.addSource(image);
+		pb.add(255.0D);
+		PlanarImage binarizada = JAI.create("binarize", pb);
+		return binarizada;
 	}
 }
