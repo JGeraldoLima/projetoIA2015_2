@@ -49,8 +49,6 @@ public class ReaderBordersTxtToArff {
 	public void saveDataToArff(String party){
 		while (readData() != null) {
 			printer.printf(readData() + ", " + party + "\n");
-			printer.printf(readData() + ", " + party + "\n");
-			printer.printf(readData() + ", " + party + "\n");
 		}
 	}
 	
