@@ -39,7 +39,7 @@ public class CalculateHistogram {
 		dh1.setHeight(160);
 		dh1.setIndexMultiplier(8);
 		f.getContentPane().add(dh1);
-		// f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.pack();
 		f.setVisible(true);
 	}

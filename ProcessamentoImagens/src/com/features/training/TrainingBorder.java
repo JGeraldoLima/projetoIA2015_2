@@ -221,17 +221,19 @@ public class TrainingBorder {
 	
 	public static void trainingImages(File[] array, String cl) throws IOException{
 		for (File fileFesta : array) {
-			filename = String.format("./data/%s.txt", cl + "PREWITT_HORIZONTAL");
-			border.calculateBorders(CalculateBorder.PREWITT_HORIZONTAL, fileFesta.getPath());
-			filename = String.format("./data/%s.txt", cl + "PREWITT_VERTICAL");
-			border.calculateBorders(CalculateBorder.PREWITT_VERTICAL, fileFesta.getPath());
-			filename = String.format("./data/%s.txt", cl + "SOBEL_HORIZONTAL");
-			border.calculateBorders(CalculateBorder.SOBEL_HORIZONTAL, fileFesta.getPath());
-			filename = String.format("./data/%s.txt", cl + "SOBEL_VERTICAL");
-			border.calculateBorders(CalculateBorder.SOBEL_VERTICAL, fileFesta.getPath());
-			filename = String.format("./data/%s.txt", cl + "FREICHEN_HORIZONTAL");
-			border.calculateBorders(CalculateBorder.FREICHEN_HORIZONTAL, fileFesta.getPath());
-			filename = String.format("./data/%s.txt", cl + "FREICHEN_VERTICAL");
+//			filename = String.format("./data/%s.txt", cl + "PREWITT_HORIZONTAL");
+//			border.calculateBorders(CalculateBorder.PREWITT_HORIZONTAL, fileFesta.getPath());
+//			filename = String.format("./data/%s.txt", cl + "PREWITT_VERTICAL");
+//			border.calculateBorders(CalculateBorder.PREWITT_VERTICAL, fileFesta.getPath());
+//			filename = String.format("./data/%s.txt", cl + "SOBEL_HORIZONTAL");
+//			border.calculateBorders(CalculateBorder.SOBEL_HORIZONTAL, fileFesta.getPath());
+//			filename = String.format("./data/%s.txt", cl + "SOBEL_VERTICAL");
+//			border.calculateBorders(CalculateBorder.SOBEL_VERTICAL, fileFesta.getPath());
+//			filename = String.format("./data/%s.txt", cl + "FREICHEN_HORIZONTAL");
+//			border.calculateBorders(CalculateBorder.FREICHEN_HORIZONTAL, fileFesta.getPath());
+//			filename = String.format("./data/%s.txt", cl + "FREICHEN_VERTICAL");
+//			filename = String.format("./data/%s.txt", cl + "32");
+			filename = String.format("./data/%s.txt", cl + "27");
 			border.calculateBorders(CalculateBorder.FREICHEN_VERTICAL, fileFesta.getPath());
 		}
 	}
