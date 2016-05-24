@@ -2,8 +2,40 @@
 
 Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
 Relation:     party
-Instances:    156
-Attributes:   2
+Instances:    100
+Attributes:   34
+              bin1
+              bin2
+              bin3
+              bin4
+              bin5
+              bin6
+              bin7
+              bin8
+              bin9
+              bin10
+              bin11
+              bin12
+              bin13
+              bin14
+              bin15
+              bin16
+              bin17
+              bin18
+              bin19
+              bin20
+              bin21
+              bin22
+              bin23
+              bin24
+              bin25
+              bin26
+              bin27
+              bin28
+              bin29
+              bin30
+              bin31
+              bin32
               borders
               isParty
 Test mode:    10-fold cross-validation
@@ -12,46 +44,54 @@ Test mode:    10-fold cross-validation
 
 Logistic model tree 
 ------------------
-: LM_1:2/2 (156)
+: LM_1:6/6 (100)
 
 Number of Leaves  : 	1
 
 Size of the Tree : 	1
 LM_1:
 Class 0 :
--0.41 + 
-[borders] * 0   
+-0.85 + 
+[bin1] * 0    +
+[bin2] * 0.01 +
+[bin4] * 0    +
+[bin10] * -0 +
+[bin24] * -0.01 +
+[bin32] * 0   
 
 Class 1 :
-0.41 + 
-[borders] * -0
+0.85 + 
+[bin1] * -0 +
+[bin2] * -0.01 +
+[bin4] * -0 +
+[bin10] * 0    +
+[bin24] * 0.01 +
+[bin32] * -0
 
 
-Time taken to build model: 0.2 seconds
+Time taken to build model: 0.04 seconds
 
 === Stratified cross-validation ===
 === Summary ===
 
-Correctly Classified Instances         104               66.6667 %
-Incorrectly Classified Instances        52               33.3333 %
-Kappa statistic                          0.3333
-Mean absolute error                      0.438 
-Root mean squared error                  0.4716
-Relative absolute error                 87.5888 %
-Root relative squared error             94.3034 %
-Total Number of Instances              156     
+Correctly Classified Instances          70               70      %
+Incorrectly Classified Instances        30               30      %
+Kappa statistic                          0.4   
+Mean absolute error                      0.351 
+Root mean squared error                  0.4282
+Relative absolute error                 70.1965 %
+Root relative squared error             85.6334 %
+Total Number of Instances              100     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0,526    0,192    0,732      0,526    0,612      0,347    0,682     0,710     YES
-                 0,808    0,474    0,630      0,808    0,708      0,347    0,682     0,618     NO
-Weighted Avg.    0,667    0,333    0,681      0,667    0,660      0,347    0,682     0,664     
+                 0,680    0,280    0,708      0,680    0,694      0,400    0,802     0,747     YES
+                 0,720    0,320    0,692      0,720    0,706      0,400    0,802     0,830     NO
+Weighted Avg.    0,700    0,300    0,700      0,700    0,700      0,400    0,802     0,789     
 
 === Confusion Matrix ===
 
   a  b   <-- classified as
- 41 37 |  a = YES
- 15 63 |  b = NO
-
-
+ 34 16 |  a = YES
+ 14 36 |  b = NO
