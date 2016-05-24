@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     party
+Instances:    100
+Attributes:   29
+              bin1
+              bin2
+              bin3
+              bin4
+              bin5
+              bin6
+              bin7
+              bin8
+              bin9
+              bin10
+              bin11
+              bin12
+              bin13
+              bin14
+              bin15
+              bin16
+              bin17
+              bin18
+              bin19
+              bin20
+              bin21
+              bin22
+              bin23
+              bin24
+              bin25
+              bin26
+              bin27
+              borders
+              isParty
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          77               77      %
+Incorrectly Classified Instances        23               23      %
+Kappa statistic                          0.54  
+Mean absolute error                      0.2935
+Root mean squared error                  0.3972
+Relative absolute error                 58.7    %
+Root relative squared error             79.4358 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,780    0,240    0,765      0,780    0,772      0,540    0,854     0,862     YES
+                 0,760    0,220    0,776      0,760    0,768      0,540    0,854     0,838     NO
+Weighted Avg.    0,770    0,230    0,770      0,770    0,770      0,540    0,854     0,850     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 39 11 |  a = YES
+ 12 38 |  b = NO

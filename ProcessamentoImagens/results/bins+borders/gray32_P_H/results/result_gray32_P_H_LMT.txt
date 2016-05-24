@@ -1,0 +1,97 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     party
+Instances:    100
+Attributes:   34
+              bin1
+              bin2
+              bin3
+              bin4
+              bin5
+              bin6
+              bin7
+              bin8
+              bin9
+              bin10
+              bin11
+              bin12
+              bin13
+              bin14
+              bin15
+              bin16
+              bin17
+              bin18
+              bin19
+              bin20
+              bin21
+              bin22
+              bin23
+              bin24
+              bin25
+              bin26
+              bin27
+              bin28
+              bin29
+              bin30
+              bin31
+              bin32
+              borders
+              isParty
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:6/6 (100)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.85 + 
+[bin1] * 0    +
+[bin2] * 0.01 +
+[bin4] * 0    +
+[bin10] * -0 +
+[bin24] * -0.01 +
+[bin32] * 0   
+
+Class 1 :
+0.85 + 
+[bin1] * -0 +
+[bin2] * -0.01 +
+[bin4] * -0 +
+[bin10] * 0    +
+[bin24] * 0.01 +
+[bin32] * -0
+
+
+Time taken to build model: 0.49 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          69               69      %
+Incorrectly Classified Instances        31               31      %
+Kappa statistic                          0.38  
+Mean absolute error                      0.3545
+Root mean squared error                  0.4313
+Relative absolute error                 70.9011 %
+Root relative squared error             86.2559 %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,680    0,300    0,694      0,680    0,687      0,380    0,792     0,730     YES
+                 0,700    0,320    0,686      0,700    0,693      0,380    0,792     0,826     NO
+Weighted Avg.    0,690    0,310    0,690      0,690    0,690      0,380    0,792     0,778     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 34 16 |  a = YES
+ 15 35 |  b = NO

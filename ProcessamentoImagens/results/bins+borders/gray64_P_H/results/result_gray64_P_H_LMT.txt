@@ -1,0 +1,135 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     party
+Instances:    100
+Attributes:   66
+              bin1
+              bin2
+              bin3
+              bin4
+              bin5
+              bin6
+              bin7
+              bin8
+              bin9
+              bin10
+              bin11
+              bin12
+              bin13
+              bin14
+              bin15
+              bin16
+              bin17
+              bin18
+              bin19
+              bin20
+              bin21
+              bin22
+              bin23
+              bin24
+              bin25
+              bin26
+              bin27
+              bin28
+              bin29
+              bin30
+              bin31
+              bin32
+              bin33
+              bin34
+              bin35
+              bin36
+              bin37
+              bin38
+              bin39
+              bin40
+              bin41
+              bin42
+              bin43
+              bin44
+              bin45
+              bin46
+              bin47
+              bin48
+              bin49
+              bin50
+              bin51
+              bin52
+              bin53
+              bin54
+              bin55
+              bin56
+              bin57
+              bin58
+              bin59
+              bin60
+              bin61
+              bin62
+              bin63
+              bin64
+              borders
+              isParty
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:10/10 (100)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class 0 :
+-0.68 + 
+[bin1] * 0    +
+[bin3] * 0.01 +
+[bin7] * 0.01 +
+[bin20] * -0 +
+[bin42] * -0.01 +
+[bin49] * -0 +
+[bin56] * -0 +
+[bin60] * 0.01 +
+[bin64] * 0   
+
+Class 1 :
+0.68 + 
+[bin1] * -0 +
+[bin3] * -0.01 +
+[bin7] * -0.01 +
+[bin20] * 0    +
+[bin42] * 0.01 +
+[bin49] * 0    +
+[bin56] * 0    +
+[bin60] * -0.01 +
+[bin64] * -0
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          73               73      %
+Incorrectly Classified Instances        27               27      %
+Kappa statistic                          0.46  
+Mean absolute error                      0.3668
+Root mean squared error                  0.4393
+Relative absolute error                 73.3682 %
+Root relative squared error             87.851  %
+Total Number of Instances              100     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,740    0,280    0,725      0,740    0,733      0,460    0,776     0,761     YES
+                 0,720    0,260    0,735      0,720    0,727      0,460    0,776     0,778     NO
+Weighted Avg.    0,730    0,270    0,730      0,730    0,730      0,460    0,776     0,769     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 37 13 |  a = YES
+ 14 36 |  b = NO
